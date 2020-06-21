@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://luomai.netlify.app/publication-type/1/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/authors/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/tag/deep-learning/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/guo-li/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/project/kungfu/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/luo-mai/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/marcel-wagenlander/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/peter-pietzuch/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/project/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/publication_types/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/publication/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/publication/2020-hotcloud-spotnik/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/tags/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/project/tensorlayer/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/project/hyperpose/</loc>
+    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/talk/2019-kungfu-sosp/</loc>
+    <lastmod>2019-10-27T13:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/talk/</loc>
+    <lastmod>2019-10-27T13:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/alexandros-koliousis/</loc>
+    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/publication/2019-vldb-crossbow/</loc>
+    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/matthias-weidlich/</loc>
+    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/paolo-costa/</loc>
+    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/pijika-watcharapichat/</loc>
+    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/project/rlzoo/</loc>
+    <lastmod>2019-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/publication-type/2/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/andrei-octavian-brabete/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/project/crossbow/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/publication/2019-osr-review/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/talk/2018-google-devfest/</loc>
+    <lastmod>2018-12-01T13:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/publication/2018-vldb-chi/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/kai-zeng/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/le-xu/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/rahul-potharaju/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/saravanan-muthukrishnan/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/shivaram-venkataraman/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/sriram-rao/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/sudheer-dhulipalla/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/terry-kim/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/vamsi-kuppa/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/andrew-w-moore/</loc>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/david-greaves/</loc>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/publication/2017-atc-emu/</loc>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/jon-crowcroft/</loc>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/jonny-shipton/</loc>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/marcin-wojcik/</loc>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/nik-sultana/</loc>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/noa-zilberman/</loc>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/pietro-bressana/</loc>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/richard-clegg/</loc>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/richard-mortier/</loc>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/robert-soule/</loc>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/salvator-galea/</loc>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/akara-supratak/</loc>
+    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/axel-oehmichen/</loc>
+    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/fangde-liu/</loc>
+    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/hao-dong/</loc>
+    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/simiao-yu/</loc>
+    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/publication/2017-multimedia-tensorlayer/</loc>
+    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/yike-guo/</loc>
+    <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/abdul-alim/</loc>
+    <lastmod>2016-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/alexander-l.-wolf/</loc>
+    <lastmod>2016-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/andrew-moore/</loc>
+    <lastmod>2016-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/anil-madhavapeddy/</loc>
+    <lastmod>2016-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/derek-mcauley/</loc>
+    <lastmod>2016-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/eric-seckler/</loc>
+    <lastmod>2016-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/publication/2016-atc-flick/</loc>
+    <lastmod>2016-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/luis-oviedo/</loc>
+    <lastmod>2016-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/lukas-rupprecht/</loc>
+    <lastmod>2016-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/masoud-koleni/</loc>
+    <lastmod>2016-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/matteo-migliavacca/</loc>
+    <lastmod>2016-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/richard-g.-clegg/</loc>
+    <lastmod>2016-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/da-yu/</loc>
+    <lastmod>2016-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/david-oran/</loc>
+    <lastmod>2016-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/luo-mai/</loc>
+    <lastmod>2016-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/orran-krieger/</loc>
+    <lastmod>2016-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/rodrigo-fonseca/</loc>
+    <lastmod>2016-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/somaya-arianfar/</loc>
+    <lastmod>2016-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/publication/2016-hotcloud-netex/</loc>
+    <lastmod>2016-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/chuntao-hong/</loc>
+    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/publication/2015-hotcloud-mlnet/</loc>
+    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/publication/2014-conext-netagg/</loc>
+    <lastmod>2014-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/evangelia-kalyvianaki/</loc>
+    <lastmod>2013-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/publication/2013-ladis-mai/</loc>
+    <lastmod>2013-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/chao-lang/</loc>
+    <lastmod>2011-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/junzhao-du/</loc>
+    <lastmod>2011-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/publication/2011-mass-mai/</loc>
+    <lastmod>2011-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/longfei-shangguan/</loc>
+    <lastmod>2011-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/mo-li/</loc>
+    <lastmod>2011-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/author/zhenjiang-li/</loc>
+    <lastmod>2011-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://luomai.netlify.app/post/</loc>
+  </url>
+  
+</urlset>
