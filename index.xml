@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Luo Mai</title>
-    <link>https://luomai.netlify.app/</link>
-      <atom:link href="https://luomai.netlify.app/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://luomai.github.io/</link>
+      <atom:link href="https://luomai.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Luo Mai</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://luomai.netlify.app/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Luo Mai</title>
-      <link>https://luomai.netlify.app/</link>
+      <link>https://luomai.github.io/</link>
     </image>
     
     <item>
       <title>KungFu</title>
-      <link>https://luomai.netlify.app/project/kungfu/</link>
+      <link>https://luomai.github.io/project/kungfu/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/project/kungfu/</guid>
+      <guid>https://luomai.github.io/project/kungfu/</guid>
       <description>&lt;p&gt;Today&amp;rsquo;s machine learning systems must cope with growing complex models and increasingly complicated deployment environments, making them difficult to constantly deliver high performance with an empirical configuration. To address this, KungFu enables machine learning users to realise adaptive distributed training policies using high-level training monitoring and control APIs. KungFu has a fast and scalable runtime which can automatically scale out policy execution onto distributed GPU servers. Large-scale cluster experiments show that KungFu not only enables real-world adaptive training use cases, but also out-performs state-of-the-art distributed training systems including Horovod and Parameters Servers.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Spotnik: Designing Distributed Machine Learning for Transient Cloud Resources</title>
-      <link>https://luomai.netlify.app/publication/2020-hotcloud-spotnik/</link>
+      <link>https://luomai.github.io/publication/2020-hotcloud-spotnik/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/publication/2020-hotcloud-spotnik/</guid>
+      <guid>https://luomai.github.io/publication/2020-hotcloud-spotnik/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TensorLayer</title>
-      <link>https://luomai.netlify.app/project/tensorlayer/</link>
+      <link>https://luomai.github.io/project/tensorlayer/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/project/tensorlayer/</guid>
+      <guid>https://luomai.github.io/project/tensorlayer/</guid>
       <description>&lt;p&gt;TensorLayer is a popular open-source TensorFlow-based deep learning and reinforcement library. It provides rich neural layers, pre-trained neural networks, data processing, model management and distributed training to facilitate the development of a wide spectrum of deep learning algorithms. TensorLayer has a transparent and flexible programming model, and thus suitable to customise deep neural networks for deployment and research purposes. It exhibits superior performance due to the low-cost integration with the TensorFlow backend. TensorLayer is easy to learn by providing massive tutorials, examples and real-world application codes. Since open-sourced in 2017, it has attracted more than 300,000 downloads, 6000 stars on Github, and 90 contributors around the world. TensorLayer is recently awarded the 2017 best open-source software by the prestigious ACM multimedia community.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>HyperPose</title>
-      <link>https://luomai.netlify.app/project/hyperpose/</link>
+      <link>https://luomai.github.io/project/hyperpose/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/project/hyperpose/</guid>
+      <guid>https://luomai.github.io/project/hyperpose/</guid>
       <description>&lt;p&gt;Estimating human pose is a core task in many multimedia applications.
 To fully achieve its promise,
 users often need to customise pose estimation systems for
@@ -64,34 +64,34 @@ out-performs the performance of state-of-the-art pose estimation systems by up t
     
     <item>
       <title>SOSP AI Systems Workshop</title>
-      <link>https://luomai.netlify.app/talk/2019-kungfu-sosp/</link>
+      <link>https://luomai.github.io/talk/2019-kungfu-sosp/</link>
       <pubDate>Sun, 27 Oct 2019 13:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/talk/2019-kungfu-sosp/</guid>
+      <guid>https://luomai.github.io/talk/2019-kungfu-sosp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CrossBow: Scaling Deep Learning with Small Batch Sizes on Multi-GPU Servers</title>
-      <link>https://luomai.netlify.app/publication/2019-vldb-crossbow/</link>
+      <link>https://luomai.github.io/publication/2019-vldb-crossbow/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/publication/2019-vldb-crossbow/</guid>
+      <guid>https://luomai.github.io/publication/2019-vldb-crossbow/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RLzoo</title>
-      <link>https://luomai.netlify.app/project/rlzoo/</link>
+      <link>https://luomai.github.io/project/rlzoo/</link>
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/project/rlzoo/</guid>
+      <guid>https://luomai.github.io/project/rlzoo/</guid>
       <description>&lt;p&gt;Deep Reinforcement Learning (DRL) has become the foundation of many multimedia applications. To fully achieve its promise, multi-media users are looking for a library that allows them to efficiently design and test DRL agents and integrate the agents into their ap-plications. In this project, we introduce RLzoo, a novel DRL library that makes it easy to design, test and deploy DRL agents. RLzoo has high-level expressive APIs which enable its users to efficiently develop DRL agents. RLzoo users can leverage an automatic agent construction algorithm to seamlessly adopt custom agent modules,e.g., custom neural networks, which is the key for tuning agents for achieving the best possible performance. RLzoo users can access a large number of pre-implemented DRL environments and algorithms, making it a comprehensive DRL platform. On this platform,users can further easily manage and tune DRL agents through an interactive training terminal. Evaluation results show that: com-pared to existing DRL libraries, RLzoo not only achieves a high degree of abstraction in its API design. It also provides numerous useful DRL algorithms and environments which are not available in other libraries.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>CrossBow</title>
-      <link>https://luomai.netlify.app/project/crossbow/</link>
+      <link>https://luomai.github.io/project/crossbow/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/project/crossbow/</guid>
+      <guid>https://luomai.github.io/project/crossbow/</guid>
       <description>&lt;p&gt;Deep learning models are trained on servers with many GPUs, and training must scale with the number of GPUs. Systems such as TensorFlow and Caffe2 train models with parallel synchronous stochastic gradient descent: they process a batch of training data at a time, partitioned across GPUs, and average the resulting partial gradients to obtain an updated global model. To fully utilise all GPUs, systems must increase the batch size, which hinders statistical efficiency. Users tune hyper-parameters such as the learning rate to compensate for this, which is complex and model-specific.
 We introduce Crossbow, a new single-server multi-GPU system for training deep learning models that enables users to freely choose their preferred batch size&amp;mdash;however small&amp;mdash;while scaling to multiple GPUs. Crossbow uses many parallel model replicas and avoids reduced statistical efficiency through a new synchronous training method. We introduce SMA, a synchronous variant of model averaging in which replicas independently explore the solution space with gradient descent, but adjust their search synchronously based on the trajectory of a globally-consistent average model. Crossbow achieves high hardware efficiency with small batch sizes by potentially training multiple model replicas per GPU, automatically tuning the number of replicas to maximise throughput. our experiments show that Crossbow improves the training time of deep learning models on an 8-GPU server by 1.3&amp;ndash;4X compared to TensorFlow.&lt;/p&gt;
 </description>
@@ -99,89 +99,89 @@ We introduce Crossbow, a new single-server multi-GPU system for training deep le
     
     <item>
       <title>Taming Hyper-parameters in Deep Learning Systems</title>
-      <link>https://luomai.netlify.app/publication/2019-osr-review/</link>
+      <link>https://luomai.github.io/publication/2019-osr-review/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/publication/2019-osr-review/</guid>
+      <guid>https://luomai.github.io/publication/2019-osr-review/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Google Developer Festival</title>
-      <link>https://luomai.netlify.app/talk/2018-google-devfest/</link>
+      <link>https://luomai.github.io/talk/2018-google-devfest/</link>
       <pubDate>Sat, 01 Dec 2018 13:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/talk/2018-google-devfest/</guid>
+      <guid>https://luomai.github.io/talk/2018-google-devfest/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Chi: A Scalable and Programmable Control Plane for Distributed Stream Processing Systems</title>
-      <link>https://luomai.netlify.app/publication/2018-vldb-chi/</link>
+      <link>https://luomai.github.io/publication/2018-vldb-chi/</link>
       <pubDate>Sun, 01 Jul 2018 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/publication/2018-vldb-chi/</guid>
+      <guid>https://luomai.github.io/publication/2018-vldb-chi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Emu: Rapid Prototyping of Networking Services</title>
-      <link>https://luomai.netlify.app/publication/2017-atc-emu/</link>
+      <link>https://luomai.github.io/publication/2017-atc-emu/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/publication/2017-atc-emu/</guid>
+      <guid>https://luomai.github.io/publication/2017-atc-emu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TensorLayer: A Versatile Library for Efficient Deep Learning Development</title>
-      <link>https://luomai.netlify.app/publication/2017-multimedia-tensorlayer/</link>
+      <link>https://luomai.github.io/publication/2017-multimedia-tensorlayer/</link>
       <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/publication/2017-multimedia-tensorlayer/</guid>
+      <guid>https://luomai.github.io/publication/2017-multimedia-tensorlayer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Flick: Developing and Running Application-specific Network Services </title>
-      <link>https://luomai.netlify.app/publication/2016-atc-flick/</link>
+      <link>https://luomai.github.io/publication/2016-atc-flick/</link>
       <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/publication/2016-atc-flick/</guid>
+      <guid>https://luomai.github.io/publication/2016-atc-flick/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Towards a Network Marketplace in a Cloud</title>
-      <link>https://luomai.netlify.app/publication/2016-hotcloud-netex/</link>
+      <link>https://luomai.github.io/publication/2016-hotcloud-netex/</link>
       <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/publication/2016-hotcloud-netex/</guid>
+      <guid>https://luomai.github.io/publication/2016-hotcloud-netex/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Optimizing Network Performance in Distributed Machine Learning</title>
-      <link>https://luomai.netlify.app/publication/2015-hotcloud-mlnet/</link>
+      <link>https://luomai.github.io/publication/2015-hotcloud-mlnet/</link>
       <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/publication/2015-hotcloud-mlnet/</guid>
+      <guid>https://luomai.github.io/publication/2015-hotcloud-mlnet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NetAgg: Using Middleboxes for Application-specific On-path Aggregation in Data Centres</title>
-      <link>https://luomai.netlify.app/publication/2014-conext-netagg/</link>
+      <link>https://luomai.github.io/publication/2014-conext-netagg/</link>
       <pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/publication/2014-conext-netagg/</guid>
+      <guid>https://luomai.github.io/publication/2014-conext-netagg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Exploiting Time-malleability in Cloud-based Batch Processing Systems</title>
-      <link>https://luomai.netlify.app/publication/2013-ladis-mai/</link>
+      <link>https://luomai.github.io/publication/2013-ladis-mai/</link>
       <pubDate>Sun, 01 Dec 2013 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/publication/2013-ladis-mai/</guid>
+      <guid>https://luomai.github.io/publication/2013-ladis-mai/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Load Balanced Rendezvous Data Collection in Wireless Sensor Networks</title>
-      <link>https://luomai.netlify.app/publication/2011-mass-mai/</link>
+      <link>https://luomai.github.io/publication/2011-mass-mai/</link>
       <pubDate>Thu, 01 Dec 2011 00:00:00 +0000</pubDate>
-      <guid>https://luomai.netlify.app/publication/2011-mass-mai/</guid>
+      <guid>https://luomai.github.io/publication/2011-mass-mai/</guid>
       <description></description>
     </item>
     
