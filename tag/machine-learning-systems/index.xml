@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning Systems | Luo Mai</title>
+    <link>https://luomai.github.io/tag/machine-learning-systems/</link>
+      <atom:link href="https://luomai.github.io/tag/machine-learning-systems/index.xml" rel="self" type="application/rss+xml" />
+    <description>Machine Learning Systems</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Machine Learning Systems</title>
+      <link>https://luomai.github.io/tag/machine-learning-systems/</link>
+    </image>
+    
+    <item>
+      <title>KungFu</title>
+      <link>https://luomai.github.io/project/kungfu/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/project/kungfu/</guid>
+      <description>&lt;p&gt;Today&amp;rsquo;s machine learning systems must cope with growing complex models and increasingly complicated deployment environments, making them difficult to constantly deliver high performance with an empirical configuration. To address this, KungFu enables machine learning users to realise adaptive distributed training policies using high-level training monitoring and control APIs. KungFu has a fast and scalable runtime which can automatically scale out policy execution onto distributed GPU servers. Large-scale cluster experiments show that KungFu not only enables real-world adaptive training use cases, but also out-performs state-of-the-art distributed training systems including Horovod and Parameters Servers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spotnik: Designing Distributed Machine Learning for Transient Cloud Resources</title>
+      <link>https://luomai.github.io/publication/2020-hotcloud-spotnik/</link>
+      <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/publication/2020-hotcloud-spotnik/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HyperPose</title>
+      <link>https://luomai.github.io/project/hyperpose/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/project/hyperpose/</guid>
+      <description>&lt;p&gt;Estimating human pose is a core task in many multimedia applications.
+To fully achieve its promise,
+users often need to customise pose estimation systems for
+best possible accuracy, and optimise the systems so that they can achieve real-time processing
+of high-resolution video streams.
+To meet these needs, we introduce HyperPose, a library for building pose estimation systems.
+HyperPose provides a large collection of high-level APIs to help
+users develop pose estimation algorithms that can achieve high
+accuracy in the wild.
+HyperPose further provides a high-performance algorithm execution engine.
+This engine has a high-performance dataflow for
+executing pose estimation algorithms. It dynamically
+dispatches dataflow operators onto CPUs/GPUs, which maximises
+hardware efficiency, thus achieving real-time processing. Evaluation result show that HyperPose allows users
+to declare many useful pose estimation algorithms. It also
+out-performs the performance of state-of-the-art pose estimation systems by up to 3.1x.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>CrossBow: Scaling Deep Learning with Small Batch Sizes on Multi-GPU Servers</title>
+      <link>https://luomai.github.io/publication/2019-vldb-crossbow/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/publication/2019-vldb-crossbow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CrossBow</title>
+      <link>https://luomai.github.io/project/crossbow/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/project/crossbow/</guid>
+      <description>&lt;p&gt;Deep learning models are trained on servers with many GPUs, and training must scale with the number of GPUs. Systems such as TensorFlow and Caffe2 train models with parallel synchronous stochastic gradient descent: they process a batch of training data at a time, partitioned across GPUs, and average the resulting partial gradients to obtain an updated global model. To fully utilise all GPUs, systems must increase the batch size, which hinders statistical efficiency. Users tune hyper-parameters such as the learning rate to compensate for this, which is complex and model-specific.
+We introduce Crossbow, a new single-server multi-GPU system for training deep learning models that enables users to freely choose their preferred batch size&amp;mdash;however small&amp;mdash;while scaling to multiple GPUs. Crossbow uses many parallel model replicas and avoids reduced statistical efficiency through a new synchronous training method. We introduce SMA, a synchronous variant of model averaging in which replicas independently explore the solution space with gradient descent, but adjust their search synchronously based on the trajectory of a globally-consistent average model. Crossbow achieves high hardware efficiency with small batch sizes by potentially training multiple model replicas per GPU, automatically tuning the number of replicas to maximise throughput. our experiments show that Crossbow improves the training time of deep learning models on an 8-GPU server by 1.3&amp;ndash;4X compared to TensorFlow.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Taming Hyper-parameters in Deep Learning Systems</title>
+      <link>https://luomai.github.io/publication/2019-osr-review/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/publication/2019-osr-review/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimizing Network Performance in Distributed Machine Learning</title>
+      <link>https://luomai.github.io/publication/2015-hotcloud-mlnet/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/publication/2015-hotcloud-mlnet/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -13,11 +13,6 @@
   </url>
   
   <url>
-    <loc>https://luomai.github.io/tag/deep-learning/</loc>
-    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://luomai.github.io/author/guo-li/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
   </url>
@@ -34,6 +29,11 @@
   
   <url>
     <loc>https://luomai.github.io/author/luo-mai/</loc>
+    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.github.io/tag/machine-learning-systems/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -70,6 +70,16 @@
   <url>
     <loc>https://luomai.github.io/tags/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.github.io/tag/deep-learning/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.github.io/tag/reinforcement-learning/</loc>
+    <lastmod>2020-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -148,6 +158,11 @@
   </url>
   
   <url>
+    <loc>https://luomai.github.io/tag/big-data-systems/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://luomai.github.io/publication/2018-vldb-chi/</loc>
     <lastmod>2018-07-01T00:00:00+00:00</lastmod>
   </url>
@@ -199,6 +214,11 @@
   
   <url>
     <loc>https://luomai.github.io/author/andrew-w-moore/</loc>
+    <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.github.io/tag/data-centre-networks/</loc>
     <lastmod>2017-08-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -358,6 +378,11 @@
   </url>
   
   <url>
+    <loc>https://luomai.github.io/tag/cloud-computing/</loc>
+    <lastmod>2016-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://luomai.github.io/author/da-yu/</loc>
     <lastmod>2016-07-01T00:00:00+00:00</lastmod>
   </url>
@@ -439,6 +464,11 @@
   
   <url>
     <loc>https://luomai.github.io/author/mo-li/</loc>
+    <lastmod>2011-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://luomai.github.io/tag/mobile-computing/</loc>
     <lastmod>2011-12-01T00:00:00+00:00</lastmod>
   </url>
   
