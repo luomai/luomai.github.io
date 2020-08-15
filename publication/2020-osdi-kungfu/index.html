@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="To achieve higher utilisation, cloud providers offer VMs with GPUs as lower-cost transient cloud resources. Transient VMs can be revoked at short notice and vary in their availability. This poses challenges to distributed machine learning (ML) jobs, which perform long-running stateful computation in which many workers maintain and synchronise model replicas. With transient VMs, existing systems either require a fixed number of reserved VMs or degrade performance when recovering from revoked transient VMs. We believe that future distributed ML systems must be de- signed from the ground up for transient cloud resources. This paper describes SPOTNIK, a system for training ML models that features a more adaptive design to accommodate transient VMs: (i) SPOTNIK uses an adaptive implementation of the all-reduce collective communication operation. As workers on transient VMs are revoked, SPOTNIK updates its membership and uses the all-reduce ring to recover; and (ii) SPOTNIK supports the adaptation of the synchronisation strategy between workers. This allows a training job to switch between different strategies in response to the revocation of transient VMs. Our experiments show that, after VM revocation, SPOTNIK recovers training within 300 ms for ResNet/ImageNet.">
+  <meta name="description" content=" When using distributed machine learning (ML) systems to train models on a cluster of worker machines, users must configure a large number of parameters: hyper-parameters (e.g. the batch size and the learning rate) affect model convergence; system parameters (e.g. the number of workers and their communication topology) impact training performance. In current systems, adapting such parameters during training is ill-supported. Users must set system parameters at deployment time, and provide fixed adaptation schedules for hyper-parameters in the training program. We describe KungFu, a distributed ML library for Tensor- Flow that is designed to enable adaptive training. KungFu allows user to express high-level Adaptation Policies (APs) that describe how to change hyper- and system parameters during training. APs take real-time monitored metrics (e.g. signal-to-noise ratios and noise scale) as input and trigger control actions (e.g. cluster rescaling or updating the synchronisation strategy). For execution, APs are translated into monitoring and control operators, which are embedded in the dataflow graph. APs exploit an efficient asynchronous collective communication layer, which ensures concurrency and consistency of monitoring and adaptation operations.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/publication/2020-hotcloud-spotnik/">
+  <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/publication/2020-osdi-kungfu/">
 
   
 
@@ -255,7 +255,7 @@
   <link rel="icon" type="image/png" href="/images/icon-edin_hud383f4077f72c24bde8c995b899d2eaf_36716_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon-edin_hud383f4077f72c24bde8c995b899d2eaf_36716_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://luomai.github.io/publication/2020-hotcloud-spotnik/">
+  <link rel="canonical" href="https://luomai.github.io/publication/2020-osdi-kungfu/">
 
   
   
@@ -271,15 +271,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Luo Mai - University of Edinburgh">
-  <meta property="og:url" content="https://luomai.github.io/publication/2020-hotcloud-spotnik/">
-  <meta property="og:title" content="Spotnik: Designing Distributed Machine Learning for Transient Cloud Resources | Luo Mai - University of Edinburgh">
-  <meta property="og:description" content="To achieve higher utilisation, cloud providers offer VMs with GPUs as lower-cost transient cloud resources. Transient VMs can be revoked at short notice and vary in their availability. This poses challenges to distributed machine learning (ML) jobs, which perform long-running stateful computation in which many workers maintain and synchronise model replicas. With transient VMs, existing systems either require a fixed number of reserved VMs or degrade performance when recovering from revoked transient VMs. We believe that future distributed ML systems must be de- signed from the ground up for transient cloud resources. This paper describes SPOTNIK, a system for training ML models that features a more adaptive design to accommodate transient VMs: (i) SPOTNIK uses an adaptive implementation of the all-reduce collective communication operation. As workers on transient VMs are revoked, SPOTNIK updates its membership and uses the all-reduce ring to recover; and (ii) SPOTNIK supports the adaptation of the synchronisation strategy between workers. This allows a training job to switch between different strategies in response to the revocation of transient VMs. Our experiments show that, after VM revocation, SPOTNIK recovers training within 300 ms for ResNet/ImageNet."><meta property="og:image" content="https://luomai.github.io/images/icon-edin_hud383f4077f72c24bde8c995b899d2eaf_36716_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="https://luomai.github.io/publication/2020-osdi-kungfu/">
+  <meta property="og:title" content="KungFu: Making Training in Distributed Machine Learning Adaptive | Luo Mai - University of Edinburgh">
+  <meta property="og:description" content=" When using distributed machine learning (ML) systems to train models on a cluster of worker machines, users must configure a large number of parameters: hyper-parameters (e.g. the batch size and the learning rate) affect model convergence; system parameters (e.g. the number of workers and their communication topology) impact training performance. In current systems, adapting such parameters during training is ill-supported. Users must set system parameters at deployment time, and provide fixed adaptation schedules for hyper-parameters in the training program. We describe KungFu, a distributed ML library for Tensor- Flow that is designed to enable adaptive training. KungFu allows user to express high-level Adaptation Policies (APs) that describe how to change hyper- and system parameters during training. APs take real-time monitored metrics (e.g. signal-to-noise ratios and noise scale) as input and trigger control actions (e.g. cluster rescaling or updating the synchronisation strategy). For execution, APs are translated into monitoring and control operators, which are embedded in the dataflow graph. APs exploit an efficient asynchronous collective communication layer, which ensures concurrency and consistency of monitoring and adaptation operations."><meta property="og:image" content="https://luomai.github.io/images/icon-edin_hud383f4077f72c24bde8c995b899d2eaf_36716_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://luomai.github.io/images/icon-edin_hud383f4077f72c24bde8c995b899d2eaf_36716_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-06-01T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-08-14T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-06-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2020-11-01T00:00:00&#43;00:00">
   
 
   
@@ -301,16 +301,16 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://luomai.github.io/publication/2020-hotcloud-spotnik/"
+    "@id": "https://luomai.github.io/publication/2020-osdi-kungfu/"
   },
-  "headline": "Spotnik: Designing Distributed Machine Learning for Transient Cloud Resources",
+  "headline": "KungFu: Making Training in Distributed Machine Learning Adaptive",
   
-  "datePublished": "2020-06-01T00:00:00Z",
-  "dateModified": "2020-06-01T00:00:00Z",
+  "datePublished": "2020-08-14T00:00:00Z",
+  "dateModified": "2020-11-01T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Marcel Wagenlander"
+    "name": "Luo Mai"
   },
   
   "publisher": {
@@ -321,7 +321,7 @@
       "url": "https://luomai.github.io/images/icon-edin_hud383f4077f72c24bde8c995b899d2eaf_36716_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "To achieve higher utilisation, cloud providers offer VMs with GPUs as lower-cost transient cloud resources. Transient VMs can be revoked at short notice and vary in their availability. This poses challenges to distributed machine learning (ML) jobs, which perform long-running stateful computation in which many workers maintain and synchronise model replicas. With transient VMs, existing systems either require a fixed number of reserved VMs or degrade performance when recovering from revoked transient VMs. We believe that future distributed ML systems must be de- signed from the ground up for transient cloud resources. This paper describes SPOTNIK, a system for training ML models that features a more adaptive design to accommodate transient VMs: (i) SPOTNIK uses an adaptive implementation of the all-reduce collective communication operation. As workers on transient VMs are revoked, SPOTNIK updates its membership and uses the all-reduce ring to recover; and (ii) SPOTNIK supports the adaptation of the synchronisation strategy between workers. This allows a training job to switch between different strategies in response to the revocation of transient VMs. Our experiments show that, after VM revocation, SPOTNIK recovers training within 300 ms for ResNet/ImageNet."
+  "description": " When using distributed machine learning (ML) systems to train models on a cluster of worker machines, users must configure a large number of parameters: hyper-parameters (e.g. the batch size and the learning rate) affect model convergence; system parameters (e.g. the number of workers and their communication topology) impact training performance. In current systems, adapting such parameters during training is ill-supported. Users must set system parameters at deployment time, and provide fixed adaptation schedules for hyper-parameters in the training program. We describe KungFu, a distributed ML library for Tensor- Flow that is designed to enable adaptive training. KungFu allows user to express high-level Adaptation Policies (APs) that describe how to change hyper- and system parameters during training. APs take real-time monitored metrics (e.g. signal-to-noise ratios and noise scale) as input and trigger control actions (e.g. cluster rescaling or updating the synchronisation strategy). For execution, APs are translated into monitoring and control operators, which are embedded in the dataflow graph. APs exploit an efficient asynchronous collective communication layer, which ensures concurrency and consistency of monitoring and adaptation operations."
 }
 </script>
 
@@ -339,7 +339,7 @@
 
 
 
-  <title>Spotnik: Designing Distributed Machine Learning for Transient Cloud Resources | Luo Mai - University of Edinburgh</title>
+  <title>KungFu: Making Training in Distributed Machine Learning Adaptive | Luo Mai - University of Edinburgh</title>
 
 </head>
 
@@ -679,7 +679,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Spotnik: Designing Distributed Machine Learning for Transient Cloud Resources</h1>
+  <h1>KungFu: Making Training in Distributed Machine Learning Adaptive</h1>
 
   
 
@@ -697,7 +697,7 @@
     
 
   
-  <span >Marcel Wagenlander</span>, <span ><a href="/author/luo-mai/">Luo Mai</a></span>, <span >Guo Li</span>, <span >Peter Pietzuch</span>
+  <span ><a href="/author/luo-mai/">Luo Mai</a></span>, <span >Guo Li</span>, <span >Marcel Wagenlander</span>, <span >Konstantinos Fertakis</span>, <span >Andrei-Octavian Brabete</span>, <span >Peter Pietzuch</span>
   </div>
   
   
@@ -708,7 +708,7 @@
     
       
     
-    June 2020
+    November 2020
   </span>
   
 
@@ -734,49 +734,10 @@
 
 
 
-  
 
 
 
 
-
-
-<div class="btn-links mb-3">
-  
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="/publication/2020-hotcloud-spotnik/2020-hotcloud-spotnik.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
 
 
   
@@ -788,7 +749,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">To achieve higher utilisation, cloud providers offer VMs with GPUs as lower-cost transient cloud resources. Transient VMs can be revoked at short notice and vary in their availability. This poses challenges to distributed machine learning (ML) jobs, which perform long-running stateful computation in which many workers maintain and synchronise model replicas. With transient VMs, existing systems either require a fixed number of reserved VMs or degrade performance when recovering from revoked transient VMs. We believe that future distributed ML systems must be de- signed from the ground up for transient cloud resources. This paper describes SPOTNIK, a system for training ML models that features a more adaptive design to accommodate transient VMs: (i) SPOTNIK uses an adaptive implementation of the all-reduce collective communication operation. As workers on transient VMs are revoked, SPOTNIK updates its membership and uses the all-reduce ring to recover; and (ii) SPOTNIK supports the adaptation of the synchronisation strategy between workers. This allows a training job to switch between different strategies in response to the revocation of transient VMs. Our experiments show that, after VM revocation, SPOTNIK recovers training within 300 ms for ResNet/ImageNet.</p>
+    <p class="pub-abstract">When using distributed machine learning (ML) systems to train models on a cluster of worker machines, users must configure a large number of parameters: hyper-parameters (e.g. the batch size and the learning rate) affect model convergence; system parameters (e.g. the number of workers and their communication topology) impact training performance. In current systems, adapting such parameters during training is ill-supported. Users must set system parameters at deployment time, and provide fixed adaptation schedules for hyper-parameters in the training program. We describe KungFu, a distributed ML library for Tensor- Flow that is designed to enable adaptive training. KungFu allows user to express high-level Adaptation Policies (APs) that describe how to change hyper- and system parameters during training. APs take real-time monitored metrics (e.g. signal-to-noise ratios and noise scale) as input and trigger control actions (e.g. cluster rescaling or updating the synchronisation strategy). For execution, APs are translated into monitoring and control operators, which are embedded in the dataflow graph. APs exploit an efficient asynchronous collective communication layer, which ensures concurrency and consistency of monitoring and adaptation operations.</p>
     
 
     
@@ -818,7 +779,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In <em>USENIX Workshop on Hot Topics in Cloud Computing</em></div>
+          <div class="col-12 col-md-9">In <em>USENIX Symposium on Operating Systems Design and Implementation</em></div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -841,8 +802,6 @@
   
   <a class="badge badge-light" href="/tag/machine-learning-systems/">Machine Learning Systems</a>
   
-  <a class="badge badge-light" href="/tag/cloud-computing/">Cloud Computing</a>
-  
 </div>
 
 
@@ -856,39 +815,6 @@
 
 
 
-
-
-  
-    
-    
-
-
-
-
-
-  
-    
-    
-    
-    
-    
-    <div class="media author-card content-widget-hr">
-      
-        
-        <img class="avatar mr-3 avatar-circle" src="/author/marcel-wagenlander/avatar_hu6d702ff0575ac68a353cf9d4427fc8f1_82564_270x270_fill_q90_lanczos_center.jpg" alt="Marcel Wagenlander">
-      
-
-      <div class="media-body">
-        <h5 class="card-title"><a href="/author/marcel-wagenlander/">Marcel Wagenlander</a></h5>
-        <h6 class="card-subtitle">Visiting Student</h6>
-        
-        <ul class="network-icon" aria-hidden="true">
-  
-</ul>
-
-      </div>
-    </div>
-  
 
 
   
@@ -993,6 +919,83 @@
 
 
   
+    
+    
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/author/marcel-wagenlander/avatar_hu6d702ff0575ac68a353cf9d4427fc8f1_82564_270x270_fill_q90_lanczos_center.jpg" alt="Marcel Wagenlander">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/author/marcel-wagenlander/">Marcel Wagenlander</a></h5>
+        <h6 class="card-subtitle">Visiting Student</h6>
+        
+        <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/author/andrei-octavian-brabete/avatar_huca222852bfd65a137e66c30f33b71961_44942_270x270_fill_q90_lanczos_center.jpg" alt="Andrei-Octavian Brabete">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/author/andrei-octavian-brabete/">Andrei-Octavian Brabete</a></h5>
+        <h6 class="card-subtitle">MEng Student</h6>
+        
+        <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
 
 
   
@@ -1014,7 +1017,7 @@
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/publication/2020-osdi-kungfu/">KungFu: Making Training in Distributed Machine Learning Adaptive</a></li>
+      <li><a href="/publication/2020-hotcloud-spotnik/">Spotnik: Designing Distributed Machine Learning for Transient Cloud Resources</a></li>
       
       <li><a href="/publication/2019-osr-review/">Taming Hyper-parameters in Deep Learning Systems</a></li>
       

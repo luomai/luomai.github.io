@@ -21,6 +21,14 @@
     </item>
     
     <item>
+      <title>KungFu: Making Training in Distributed Machine Learning Adaptive</title>
+      <link>https://luomai.github.io/publication/2020-osdi-kungfu/</link>
+      <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/publication/2020-osdi-kungfu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Spotnik: Designing Distributed Machine Learning for Transient Cloud Resources</title>
       <link>https://luomai.github.io/publication/2020-hotcloud-spotnik/</link>
       <pubDate>Mon, 01 Jun 2020 00:00:00 +0000</pubDate>
