@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Luo Mai - University of Edinburgh</title>
+    <title>Luo Mai</title>
     <link>https://luomai.github.io/</link>
       <atom:link href="https://luomai.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <description>Luo Mai - University of Edinburgh</description>
+    <description>Luo Mai</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://luomai.github.io/images/icon-edin_hud383f4077f72c24bde8c995b899d2eaf_36716_512x512_fill_lanczos_center_2.png</url>
-      <title>Luo Mai - University of Edinburgh</title>
+      <title>Luo Mai</title>
       <link>https://luomai.github.io/</link>
     </image>
     
@@ -26,6 +26,24 @@
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
       <guid>https://luomai.github.io/publication/2020-osdi-kungfu/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>KungFu to appear at OSDI 2020</title>
+      <link>https://luomai.github.io/post/kungfu-accept-news/</link>
+      <pubDate>Tue, 18 Aug 2020 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/kungfu-accept-news/</guid>
+      <description>&lt;p&gt;Our Paper &amp;ldquo;KungFu: Making Training in Distributed Machine Learning Adaptive&amp;rdquo; is accepted by USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2020. The camera-ready version will be available in November.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cameo to appear at NSDI 2021</title>
+      <link>https://luomai.github.io/post/cameo-accept-news/</link>
+      <pubDate>Sun, 05 Jul 2020 13:45:55 +0100</pubDate>
+      <guid>https://luomai.github.io/post/cameo-accept-news/</guid>
+      <description>&lt;p&gt;Our Paper &amp;ldquo;Move Fast and Meet Deadlines: Fine-grained Real-time Stream Processing with Cameo&amp;rdquo; is accepted by USENIX Symposium on Networked Systems Design and Implementation (NSDI) 2021. The camera-ready version will be available in October.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -75,6 +93,15 @@ dispatches dataflow operators onto CPUs/GPUs, which maximises
 hardware efficiency, thus achieving real-time processing. Evaluation result show that HyperPose allows users
 to declare many useful pose estimation algorithms. It also
 out-performs the performance of state-of-the-art pose estimation systems by up to 3.1x.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Invited talk in the AI systems workshop at SOSP 2019</title>
+      <link>https://luomai.github.io/post/talk-sosp/</link>
+      <pubDate>Tue, 05 Nov 2019 13:53:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/talk-sosp/</guid>
+      <description>&lt;p&gt;I am invited to give a talk: &amp;ldquo;Adaptive Distributed Training of Deep Learning Models&amp;rdquo; in the Workshop on AI Systems at ACM Symposium on Operating Systems Principles (SOSP) 2019.&lt;/p&gt;
 </description>
     </item>
     
