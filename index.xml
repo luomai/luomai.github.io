@@ -21,6 +21,16 @@
     </item>
     
     <item>
+      <title>Invited Lecture at Oxford ML Summer School</title>
+      <link>https://luomai.github.io/post/oxfordml-news/</link>
+      <pubDate>Wed, 31 Mar 2021 13:45:55 +0100</pubDate>
+      <guid>https://luomai.github.io/post/oxfordml-news/</guid>
+      <description>&lt;p&gt;I am honored to give a lecture about AI/ML systems at the prestigious 
+&lt;a href=&#34;https://www.oxfordml.school&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Oxford Machine Learning Summer School&lt;/a&gt;. The school covers some of the most important topics in ML/DL that the field is showing a growing interest in (e.g., Bayesian ML, representation learning, computer vision, natural language processing (NLP), reinforcement learning, causal ML, and transfer learning).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>KungFu: Making Training in Distributed Machine Learning Adaptive</title>
       <link>https://luomai.github.io/publication/2020-osdi-kungfu/</link>
       <pubDate>Sun, 01 Nov 2020 00:00:00 +0000</pubDate>
