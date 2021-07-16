@@ -5,12 +5,21 @@
     <link>https://luomai.github.io/post/</link>
       <atom:link href="https://luomai.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 31 Mar 2021 13:45:55 +0100</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 10 Jun 2021 13:45:55 +0100</lastBuildDate>
     <image>
       <url>https://luomai.github.io/images/icon-edin_hud383f4077f72c24bde8c995b899d2eaf_36716_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>https://luomai.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>Invited Talks at TikTok, SenseTime, Tencent and SIGMOD.</title>
+      <link>https://luomai.github.io/post/21-summer-invited-talks-news/</link>
+      <pubDate>Thu, 10 Jun 2021 13:45:55 +0100</pubDate>
+      <guid>https://luomai.github.io/post/21-summer-invited-talks-news/</guid>
+      <description>&lt;p&gt;I am excited to give a talk: &amp;ldquo;Future Scalable and Adaptive Distributed Machine Learning Systems&amp;rdquo; at TikTok, SenseTime, Tencent and SIGMOD Enterprise Database Workshop 2021.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Invited Lecture at Oxford ML Summer School</title>
