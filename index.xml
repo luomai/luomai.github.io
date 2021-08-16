@@ -5,12 +5,21 @@
     <link>https://luomai.github.io/</link>
       <atom:link href="https://luomai.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Luo Mai</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 15 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 15 Aug 2021 13:35:37 +0100</lastBuildDate>
     <image>
       <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Luo Mai</title>
       <link>https://luomai.github.io/</link>
     </image>
+    
+    <item>
+      <title>HyperPose and RLzoo to appear at ACM Multimedia 2021</title>
+      <link>https://luomai.github.io/post/hyperpose-rlzoo-accept-news/</link>
+      <pubDate>Sun, 15 Aug 2021 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/hyperpose-rlzoo-accept-news/</guid>
+      <description>&lt;p&gt;2 papers (HyperPose and RLzoo) are accepted to the Open-source Software Competition Track in ACM Multimedia 2021. ACM Multimedia is the worldwide premier conference and a key world event to display scientific achievements and innovative industrial products in the multimedia field.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Efficient Reinforcement Learning Development with RLzoo</title>
