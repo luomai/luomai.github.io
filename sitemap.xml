@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://luomai.github.io/author/xiulong-yuan/</loc>
+  </url><url>
+    <loc>https://luomai.github.io/author/zeyuan-tan/</loc>
+  </url><url>
+    <loc>https://luomai.github.io/author/jie-ren/</loc>
+  </url><url>
+    <loc>https://luomai.github.io/author/yao-fu/</loc>
+  </url><url>
+    <loc>https://luomai.github.io/author/man-kit-sit/</loc>
+  </url><url>
+    <loc>https://luomai.github.io/author/leyang-xue/</loc>
+  </url><url>
     <loc>https://luomai.github.io/post/hyperpose-rlzoo-accept-news/</loc>
     <lastmod>2021-08-15T13:35:37+01:00</lastmod>
   </url><url>
@@ -344,7 +356,5 @@
     <loc>https://luomai.github.io/categories/</loc>
   </url><url>
     <loc>https://luomai.github.io/author/ioan-budea/</loc>
-  </url><url>
-    <loc>https://luomai.github.io/author/zeyuan-tan/</loc>
   </url>
 </urlset>
