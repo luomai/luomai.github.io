@@ -5,12 +5,32 @@
     <link>https://luomai.github.io/project/</link>
       <atom:link href="https://luomai.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 31 Oct 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
       <link>https://luomai.github.io/project/</link>
     </image>
+    
+    <item>
+      <title>Quiver</title>
+      <link>https://luomai.github.io/project/quiver/</link>
+      <pubDate>Sun, 31 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/project/quiver/</guid>
+      <description>&lt;p&gt;The primary motivation for the Quiver project is to make it easy to take a PyG script and scale it across many GPUs and CPUs. A typical scenario is: Quiver users can leverage the high-level APIs and rich examples of PyG to design graph learning algorithms, and then use Quiver to scale PyG algorithms to run at large scale. To make such scaling efficient, Quiver has several features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;High performance&lt;/strong&gt;: Quiver enables GPUs to be efficiently used in accelerating performance-critical graph learning tasks: graph sampling, feature collection and data-parallel training. Quiver thus can out-perform PyG and DGL even with a single GPU, especially when processing large-scale datasets and models.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;High scalability&lt;/strong&gt;: Quiver can achieve (super) linear scalability in distributed graph learning. This is contributed by Quiver&amp;rsquo;s novel communication-efficient data/processor management techniques and effective usage of fast networking technologies (e.g., NVLink and RDMA).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Easy to use&lt;/strong&gt;: Quiver requires only a few new lines of code in existing PyG programs and it has no external heavy dependency. Quiver is thus easy to be adopted by PyG users and integrated into production clusters.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>KungFu</title>

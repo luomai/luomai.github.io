@@ -14,13 +14,22 @@
   </url><url>
     <loc>https://luomai.github.io/author/leyang-xue/</loc>
   </url><url>
-    <loc>https://luomai.github.io/post/hyperpose-rlzoo-accept-news/</loc>
-    <lastmod>2021-08-15T13:35:37+01:00</lastmod>
-  </url><url>
     <loc>https://luomai.github.io/</loc>
-    <lastmod>2021-08-15T13:35:37+01:00</lastmod>
+    <lastmod>2021-10-31T13:45:55+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/post/</loc>
+    <lastmod>2021-10-31T13:45:55+01:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/post/21-quiver-opensource/</loc>
+    <lastmod>2021-10-31T13:45:55+01:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/project/</loc>
+    <lastmod>2021-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/project/quiver/</loc>
+    <lastmod>2021-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/post/21-hyperpose-rlzoo-accept-news/</loc>
     <lastmod>2021-08-15T13:35:37+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/publication-type/1/</loc>
@@ -77,6 +86,9 @@
     <loc>https://luomai.github.io/author/zihan-ding/</loc>
     <lastmod>2021-08-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://luomai.github.io/post/21-oxfordml-news/</loc>
+    <lastmod>2021-07-31T13:45:55+01:00</lastmod>
+  </url><url>
     <loc>https://luomai.github.io/post/21-summer-invited-talks-news/</loc>
     <lastmod>2021-06-10T13:45:55+01:00</lastmod>
   </url><url>
@@ -98,9 +110,6 @@
     <loc>https://luomai.github.io/author/shivaram-venkataraman/</loc>
     <lastmod>2021-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://luomai.github.io/post/oxfordml-news/</loc>
-    <lastmod>2021-03-31T13:45:55+01:00</lastmod>
-  </url><url>
     <loc>https://luomai.github.io/author/andrei-octavian-brabete/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -116,19 +125,16 @@
     <loc>https://luomai.github.io/author/peter-pietzuch/</loc>
     <lastmod>2020-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://luomai.github.io/post/kungfu-accept-news/</loc>
+    <loc>https://luomai.github.io/post/20-kungfu-accept-news/</loc>
     <lastmod>2020-08-18T13:35:37+01:00</lastmod>
   </url><url>
-    <loc>https://luomai.github.io/post/cameo-accept-news/</loc>
+    <loc>https://luomai.github.io/post/21-cameo-accept-news/</loc>
     <lastmod>2020-07-05T13:45:55+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/tag/cloud-computing/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/project/kungfu/</loc>
-    <lastmod>2020-06-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/project/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/publication/2020-hotcloud-spotnik/</loc>
@@ -140,7 +146,7 @@
     <loc>https://luomai.github.io/project/hyperpose/</loc>
     <lastmod>2020-04-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://luomai.github.io/post/talk-sosp/</loc>
+    <loc>https://luomai.github.io/post/19-talk-sosp/</loc>
     <lastmod>2019-11-05T13:53:37+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/talk/2019-kungfu-sosp/</loc>
@@ -354,6 +360,8 @@
     <lastmod>2011-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/categories/</loc>
+  </url><url>
+    <loc>https://luomai.github.io/author/guanqi-zhan/</loc>
   </url><url>
     <loc>https://luomai.github.io/author/ioan-budea/</loc>
   </url>
