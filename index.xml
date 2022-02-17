@@ -19,7 +19,7 @@
       <guid>https://luomai.github.io/post/21-quiver-opensource/</guid>
       <description>&lt;p&gt;
 &lt;a href=&#34;https://github.com/quiver-team/torch-quiver&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quiver&lt;/a&gt; is a distributed graph learning library for 
-&lt;a href=&#34;https://github.com/pyg-team/pytorch_geometric&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PyTorch Geometric&lt;/a&gt; (PyG). Its excellent performance and scalablity has made it quickly become the &lt;strong&gt;recommended&lt;/strong&gt; distributed library for PyG.&lt;/p&gt;
+&lt;a href=&#34;https://github.com/pyg-team/pytorch_geometric&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PyTorch Geometric&lt;/a&gt; (PyG). Its excellent performance and scalability has made it quickly become the &lt;strong&gt;recommended&lt;/strong&gt; distributed library for PyG.&lt;/p&gt;
 </description>
     </item>
     
@@ -69,7 +69,7 @@
     </item>
     
     <item>
-      <title>Invited lecture at the Oxford ML sunmer school</title>
+      <title>Invited lecture at the Oxford ML summer school</title>
       <link>https://luomai.github.io/post/21-oxfordml-news/</link>
       <pubDate>Sat, 31 Jul 2021 13:45:55 +0100</pubDate>
       <guid>https://luomai.github.io/post/21-oxfordml-news/</guid>
