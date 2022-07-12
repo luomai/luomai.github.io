@@ -2,27 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://luomai.github.io/author/jie-ren/</loc>
+  </url><url>
     <loc>https://luomai.github.io/author/xiulong-yuan/</loc>
   </url><url>
     <loc>https://luomai.github.io/author/zeyuan-tan/</loc>
   </url><url>
-    <loc>https://luomai.github.io/author/yao-fu/</loc>
+    <loc>https://luomai.github.io/author/chijun-sima/</loc>
     <lastmod>2022-07-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://luomai.github.io/author/jie-ren/</loc>
+    <loc>https://luomai.github.io/author/yao-fu/</loc>
+    <lastmod>2022-07-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/man-kit-sit/</loc>
     <lastmod>2022-07-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/leyang-xue/</loc>
   </url><url>
+    <loc>https://luomai.github.io/</loc>
+    <lastmod>2022-07-10T13:35:37+01:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/post/22-megba-eccv/</loc>
+    <lastmod>2022-07-10T13:35:37+01:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/post/</loc>
+    <lastmod>2022-07-10T13:35:37+01:00</lastmod>
+  </url><url>
     <loc>https://luomai.github.io/publication-type/1/</loc>
     <lastmod>2022-07-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/authors/</loc>
-    <lastmod>2022-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/author/chijun-sima/</loc>
     <lastmod>2022-07-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/publication/2022-osdi-ekko/</loc>
@@ -38,9 +47,6 @@
     <lastmod>2022-07-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/liyi-guo/</loc>
-    <lastmod>2022-07-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/</loc>
     <lastmod>2022-07-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/luo-mai/</loc>
@@ -68,9 +74,6 @@
     <lastmod>2022-07-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/post/22-ekko-osdi/</loc>
-    <lastmod>2022-03-18T13:35:37+01:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/post/</loc>
     <lastmod>2022-03-18T13:35:37+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/post/21-quiver-opensource/</loc>

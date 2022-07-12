@@ -5,12 +5,21 @@
     <link>https://luomai.github.io/</link>
       <atom:link href="https://luomai.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Luo Mai</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 10 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 10 Jul 2022 13:35:37 +0100</lastBuildDate>
     <image>
       <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Luo Mai</title>
       <link>https://luomai.github.io/</link>
     </image>
+    
+    <item>
+      <title>MegBA is accepted to ECCV 2022</title>
+      <link>https://luomai.github.io/post/22-megba-eccv/</link>
+      <pubDate>Sun, 10 Jul 2022 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/22-megba-eccv/</guid>
+      <description>&lt;p&gt;Our Paper &amp;ldquo;MegBA: A GPU-Based Distributed Library for Large-Scale Bundle Adjustment&amp;rdquo; is accepted by ECCV 2022.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Ekko: A Large-Scale Deep Learning Recommender System with Low-Latency Model Update</title>
@@ -21,7 +30,7 @@
     </item>
     
     <item>
-      <title>Ekko to appear at OSDI 2022</title>
+      <title>Ekko is accepted to OSDI 2022</title>
       <link>https://luomai.github.io/post/22-ekko-osdi/</link>
       <pubDate>Fri, 18 Mar 2022 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/22-ekko-osdi/</guid>
