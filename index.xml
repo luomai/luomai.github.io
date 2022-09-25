@@ -5,7 +5,7 @@
     <link>https://luomai.github.io/</link>
       <atom:link href="https://luomai.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Luo Mai</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 10 Jul 2022 13:35:37 +0100</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 10 Sep 2022 13:35:37 +0100</lastBuildDate>
     <image>
       <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Luo Mai</title>
@@ -13,7 +13,25 @@
     </image>
     
     <item>
-      <title>MegBA is accepted to ECCV 2022</title>
+      <title>Paper in NeurIPS 2022</title>
+      <link>https://luomai.github.io/post/22-settling-neurips/</link>
+      <pubDate>Sat, 10 Sep 2022 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/22-settling-neurips/</guid>
+      <description>&lt;p&gt;Our paper &amp;ldquo;Settling the Bias and Variance of Meta-Gradient Estimation for Meta-Reinforcement Learning&amp;rdquo; is accepted by NeurIPS 2022. This paper is based on our recently released differential optimisation library: 
+&lt;a href=&#34;https://github.com/metaopt/torchopt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TorchOpt&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MegBA: A GPU-Based Distributed Library for Large-Scale Bundle Adjustment</title>
+      <link>https://luomai.github.io/publication/2022-eccv-megba/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/publication/2022-eccv-megba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MegBA in ECCV 2022</title>
       <link>https://luomai.github.io/post/22-megba-eccv/</link>
       <pubDate>Sun, 10 Jul 2022 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/22-megba-eccv/</guid>
@@ -30,7 +48,7 @@
     </item>
     
     <item>
-      <title>Ekko is accepted to OSDI 2022</title>
+      <title>Ekko in OSDI 2022</title>
       <link>https://luomai.github.io/post/22-ekko-osdi/</link>
       <pubDate>Fri, 18 Mar 2022 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/22-ekko-osdi/</guid>

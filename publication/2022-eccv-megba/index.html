@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="We study the rendezvous data collection problem for the mobile sink in wireless sensor networks. We introduce to jointly optimize trajectory planning for the mobile sink and workload balancing for the network. By doing so, the mobile sink is able to efficiently collect network-wide data within a given delay bound and the network can eliminate the energy bottleneck to dramatically prolong its lifetime. Such a joint optimization problem is shown to be NP-hard and we propose an approximation algorithm, named RPS-LB, to approach the optimal solution. In RPS-LB, according to observed properties of the median reference structure in the network, a series of Rendezvous Points (RPs) are selected to construct the trajectory for the mobile sink and the derived approximation ratio of RPS- LB guarantees that the formed trajectory is comparable with the optimal solution. The workload allocated to each RP is proven to be balanced mathematically. We then relax the assumption that mobile sink knows the location of each sensor node and present a localized, fully distributed version, RPS-LB-D, which largely improves the system applicability in practice. We verify the effectiveness of our proposals via extensive experiments.">
+  <meta name="description" content="Large-scale Bundle Adjustment (BA) requires massive memory and computation resources which are difficult to be fulfilled by existing BA libraries. In this paper, we propose MegBA, a GPU-based distributed BA library. MegBA can provide massive aggregated memory by automatically partitioning large BA problems, and assigning the solvers of sub-problems to parallel nodes. The parallel solvers adopt distributed Precondition Conjugate Gradient and distributed Schur Elimination, so that an effective solution, which can match the precision of those computed by a single node, can be efficiently computed. To accelerate BA computation, we implement end-to-end BA computation using high-performance primitives available on commodity GPUs. MegBA exposes easy-to-use APIs that are compatible with existing popular BA libraries. Experiments show that MegBA can significantly outperform state-of-the-art BA libraries: Ceres (41.45×), RootBA (64.576×) and DeepLM (6.769×) in several large-scale BA benchmarks. The code of MegBA is available at: https://github.com/MegviiRobot/MegBA.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/publication/2011-mass-mai/">
+  <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/publication/2022-eccv-megba/">
 
   
 
@@ -255,7 +255,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
 
-  <link rel="canonical" href="https://luomai.github.io/publication/2011-mass-mai/">
+  <link rel="canonical" href="https://luomai.github.io/publication/2022-eccv-megba/">
 
   
   
@@ -271,15 +271,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Luo Mai">
-  <meta property="og:url" content="https://luomai.github.io/publication/2011-mass-mai/">
-  <meta property="og:title" content="Load Balanced Rendezvous Data Collection in Wireless Sensor Networks | Luo Mai">
-  <meta property="og:description" content="We study the rendezvous data collection problem for the mobile sink in wireless sensor networks. We introduce to jointly optimize trajectory planning for the mobile sink and workload balancing for the network. By doing so, the mobile sink is able to efficiently collect network-wide data within a given delay bound and the network can eliminate the energy bottleneck to dramatically prolong its lifetime. Such a joint optimization problem is shown to be NP-hard and we propose an approximation algorithm, named RPS-LB, to approach the optimal solution. In RPS-LB, according to observed properties of the median reference structure in the network, a series of Rendezvous Points (RPs) are selected to construct the trajectory for the mobile sink and the derived approximation ratio of RPS- LB guarantees that the formed trajectory is comparable with the optimal solution. The workload allocated to each RP is proven to be balanced mathematically. We then relax the assumption that mobile sink knows the location of each sensor node and present a localized, fully distributed version, RPS-LB-D, which largely improves the system applicability in practice. We verify the effectiveness of our proposals via extensive experiments."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="og:url" content="https://luomai.github.io/publication/2022-eccv-megba/">
+  <meta property="og:title" content="MegBA: A GPU-Based Distributed Library for Large-Scale Bundle Adjustment | Luo Mai">
+  <meta property="og:description" content="Large-scale Bundle Adjustment (BA) requires massive memory and computation resources which are difficult to be fulfilled by existing BA libraries. In this paper, we propose MegBA, a GPU-based distributed BA library. MegBA can provide massive aggregated memory by automatically partitioning large BA problems, and assigning the solvers of sub-problems to parallel nodes. The parallel solvers adopt distributed Precondition Conjugate Gradient and distributed Schur Elimination, so that an effective solution, which can match the precision of those computed by a single node, can be efficiently computed. To accelerate BA computation, we implement end-to-end BA computation using high-performance primitives available on commodity GPUs. MegBA exposes easy-to-use APIs that are compatible with existing popular BA libraries. Experiments show that MegBA can significantly outperform state-of-the-art BA libraries: Ceres (41.45×), RootBA (64.576×) and DeepLM (6.769×) in several large-scale BA benchmarks. The code of MegBA is available at: https://github.com/MegviiRobot/MegBA."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2011-12-01T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2022-08-10T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2011-12-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2022-08-10T00:00:00&#43;00:00">
   
 
   
@@ -301,16 +301,16 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://luomai.github.io/publication/2011-mass-mai/"
+    "@id": "https://luomai.github.io/publication/2022-eccv-megba/"
   },
-  "headline": "Load Balanced Rendezvous Data Collection in Wireless Sensor Networks",
+  "headline": "MegBA: A GPU-Based Distributed Library for Large-Scale Bundle Adjustment",
   
-  "datePublished": "2011-12-01T00:00:00Z",
-  "dateModified": "2011-12-01T00:00:00Z",
+  "datePublished": "2022-08-10T00:00:00Z",
+  "dateModified": "2022-08-10T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Luo Mai"
+    "name": "Jie Ren"
   },
   
   "publisher": {
@@ -321,7 +321,7 @@
       "url": "https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "We study the rendezvous data collection problem for the mobile sink in wireless sensor networks. We introduce to jointly optimize trajectory planning for the mobile sink and workload balancing for the network. By doing so, the mobile sink is able to efficiently collect network-wide data within a given delay bound and the network can eliminate the energy bottleneck to dramatically prolong its lifetime. Such a joint optimization problem is shown to be NP-hard and we propose an approximation algorithm, named RPS-LB, to approach the optimal solution. In RPS-LB, according to observed properties of the median reference structure in the network, a series of Rendezvous Points (RPs) are selected to construct the trajectory for the mobile sink and the derived approximation ratio of RPS- LB guarantees that the formed trajectory is comparable with the optimal solution. The workload allocated to each RP is proven to be balanced mathematically. We then relax the assumption that mobile sink knows the location of each sensor node and present a localized, fully distributed version, RPS-LB-D, which largely improves the system applicability in practice. We verify the effectiveness of our proposals via extensive experiments."
+  "description": "Large-scale Bundle Adjustment (BA) requires massive memory and computation resources which are difficult to be fulfilled by existing BA libraries. In this paper, we propose MegBA, a GPU-based distributed BA library. MegBA can provide massive aggregated memory by automatically partitioning large BA problems, and assigning the solvers of sub-problems to parallel nodes. The parallel solvers adopt distributed Precondition Conjugate Gradient and distributed Schur Elimination, so that an effective solution, which can match the precision of those computed by a single node, can be efficiently computed. To accelerate BA computation, we implement end-to-end BA computation using high-performance primitives available on commodity GPUs. MegBA exposes easy-to-use APIs that are compatible with existing popular BA libraries. Experiments show that MegBA can significantly outperform state-of-the-art BA libraries: Ceres (41.45×), RootBA (64.576×) and DeepLM (6.769×) in several large-scale BA benchmarks. The code of MegBA is available at: https://github.com/MegviiRobot/MegBA."
 }
 </script>
 
@@ -339,7 +339,7 @@
 
 
 
-  <title>Load Balanced Rendezvous Data Collection in Wireless Sensor Networks | Luo Mai</title>
+  <title>MegBA: A GPU-Based Distributed Library for Large-Scale Bundle Adjustment | Luo Mai</title>
 
 </head>
 
@@ -708,7 +708,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Load Balanced Rendezvous Data Collection in Wireless Sensor Networks</h1>
+  <h1>MegBA: A GPU-Based Distributed Library for Large-Scale Bundle Adjustment</h1>
 
   
 
@@ -726,7 +726,7 @@
     
 
   
-  <span ><a href="/author/luo-mai/">Luo Mai</a></span>, <span >Longfei Shangguan</span>, <span >Chao Lang</span>, <span >Junzhao Du</span>, <span >Zhenjiang Li</span>, <span >Mo Li</span>
+  <span >Jie Ren*</span>, <span >Wenteng Liang*</span>, <span >Ran Yan</span>, <span ><a href="/author/luo-mai/">Luo Mai</a></span>, <span >Shiwen Liu</span>, <span >Xiao Liu</span>
   </div>
   
   
@@ -737,7 +737,7 @@
     
       
     
-    December 2011
+    August 2022
   </span>
   
 
@@ -785,12 +785,20 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="/publication/2011-mass-mai/2011-mass-mai.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="/publication/2022-eccv-megba/2022-eccv-megba.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
 
 
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/MegviiRobot/MegBA" target="_blank" rel="noopener">
+  Code
+</a>
 
 
 
@@ -817,7 +825,8 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">We study the rendezvous data collection problem for the mobile sink in wireless sensor networks. We introduce to jointly optimize trajectory planning for the mobile sink and workload balancing for the network. By doing so, the mobile sink is able to efficiently collect network-wide data within a given delay bound and the network can eliminate the energy bottleneck to dramatically prolong its lifetime. Such a joint optimization problem is shown to be NP-hard and we propose an approximation algorithm, named RPS-LB, to approach the optimal solution. In RPS-LB, according to observed properties of the median reference structure in the network, a series of Rendezvous Points (RPs) are selected to construct the trajectory for the mobile sink and the derived approximation ratio of RPS- LB guarantees that the formed trajectory is comparable with the optimal solution. The workload allocated to each RP is proven to be balanced mathematically. We then relax the assumption that mobile sink knows the location of each sensor node and present a localized, fully distributed version, RPS-LB-D, which largely improves the system applicability in practice. We verify the effectiveness of our proposals via extensive experiments.</p>
+    <p class="pub-abstract">Large-scale Bundle Adjustment (BA) requires massive memory and computation resources which are difficult to be fulfilled by existing BA libraries. In this paper, we propose MegBA, a GPU-based distributed BA library. MegBA can provide massive aggregated memory by automatically partitioning large BA problems, and assigning the solvers of sub-problems to parallel nodes. The parallel solvers adopt distributed Precondition Conjugate Gradient and distributed Schur Elimination, so that an effective solution, which can match the precision of those computed by a single node, can be efficiently computed. To accelerate BA computation, we implement end-to-end BA computation using high-performance primitives available on commodity GPUs. MegBA exposes easy-to-use APIs that are compatible with existing popular BA libraries. Experiments show that MegBA can significantly outperform state-of-the-art BA libraries: Ceres (41.45×), RootBA (64.576×) and DeepLM (6.769×) in several large-scale BA benchmarks. The code of MegBA is available at: 
+<a href="https://github.com/MegviiRobot/MegBA" target="_blank" rel="noopener">https://github.com/MegviiRobot/MegBA</a>.</p>
     
 
     
@@ -847,7 +856,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In <em>IEEE International Conference on Mobile Ad-hoc and Sensor Systems</em></div>
+          <div class="col-12 col-md-9">In <em>European Conference on Computer Vision (ECCV)</em></div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -868,7 +877,7 @@
 
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tag/mobile-computing/">Mobile Computing</a>
+  <a class="badge badge-light" href="/tag/machine-learning-systems/">Machine Learning Systems</a>
   
 </div>
 
@@ -883,6 +892,61 @@
 
 
 
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-square" src="/author/jie-ren/avatar_huf8f4355ccfaa4bd5fbd1e415b8039d9a_679271_270x270_fill_lanczos_center_3.png" alt="Jie Ren">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/author/jie-ren/">Jie Ren</a></h5>
+        <h6 class="card-subtitle">Collaborator</h6>
+        
+        <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
 
 
   
@@ -1007,39 +1071,6 @@
 
 
   
-    
-    
-
-
-
-
-
-  
-
-
-  
-    
-    
-
-
-
-
-
-  
-
-
-  
-    
-    
-
-
-
-
-
-  
-
-
-  
 
 
 
@@ -1058,8 +1089,6 @@
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/publication/2022-eccv-megba/">MegBA: A GPU-Based Distributed Library for Large-Scale Bundle Adjustment</a></li>
-      
       <li><a href="/publication/2022-osdi-ekko/">Ekko: A Large-Scale Deep Learning Recommender System with Low-Latency Model Update</a></li>
       
       <li><a href="/publication/2021-multimedia-rlzoo/">Efficient Reinforcement Learning Development with RLzoo</a></li>
@@ -1067,6 +1096,8 @@
       <li><a href="/publication/2021-multimedia-hyperpose/">Fast and Flexible Human Pose Estimation with HyperPose</a></li>
       
       <li><a href="/publication/2020-osdi-kungfu/">KungFu: Making Training in Distributed Machine Learning Adaptive</a></li>
+      
+      <li><a href="/publication/2020-hotcloud-spotnik/">Spotnik: Designing Distributed Machine Learning for Transient Cloud Resources</a></li>
       
     </ul>
   </div>
