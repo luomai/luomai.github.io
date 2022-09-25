@@ -17,9 +17,17 @@
       <link>https://luomai.github.io/post/22-settling-neurips/</link>
       <pubDate>Sat, 10 Sep 2022 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/22-settling-neurips/</guid>
-      <description>&lt;p&gt;Our paper &amp;ldquo;Settling the Bias and Variance of Meta-Gradient Estimation for Meta-Reinforcement Learning&amp;rdquo; is accepted by NeurIPS 2022. This paper is based on our recently released differential optimisation library: 
+      <description>&lt;p&gt;Our paper &amp;ldquo;A Theoretical Understanding of Gradient Bias in Meta-Reinforcement Learning&amp;rdquo; is accepted by NeurIPS 2022. This paper is based on our recently released differential optimisation library: 
 &lt;a href=&#34;https://github.com/metaopt/torchopt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TorchOpt&lt;/a&gt;.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>A Theoretical Understanding of Gradient Bias in Meta-Reinforcement Learning</title>
+      <link>https://luomai.github.io/publication/2022-neurips-settling/</link>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/publication/2022-neurips-settling/</guid>
+      <description></description>
     </item>
     
     <item>
