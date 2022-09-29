@@ -17,7 +17,7 @@
       <link>https://luomai.github.io/post/22-settling-neurips/</link>
       <pubDate>Sat, 10 Sep 2022 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/22-settling-neurips/</guid>
-      <description>&lt;p&gt;Our paper &amp;ldquo;A Theoretical Understanding of Gradient Bias in Meta-Reinforcement Learning&amp;rdquo; is accepted by NeurIPS 2022. This paper is based on our recently released differential optimisation library: 
+      <description>&lt;p&gt;Our paper &amp;ldquo;A Theoretical Understanding of Gradient Bias in Meta-Reinforcement Learning&amp;rdquo; is accepted by NeurIPS 2022, a top confernece in the area of machine learning. This paper is based on our recently released differential optimisation library: 
 &lt;a href=&#34;https://github.com/metaopt/torchopt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TorchOpt&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
@@ -27,7 +27,7 @@
       <link>https://luomai.github.io/post/22-megba-eccv/</link>
       <pubDate>Sun, 10 Jul 2022 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/22-megba-eccv/</guid>
-      <description>&lt;p&gt;Our Paper &amp;ldquo;MegBA: A GPU-Based Distributed Library for Large-Scale Bundle Adjustment&amp;rdquo; is accepted by ECCV 2022.&lt;/p&gt;
+      <description>&lt;p&gt;Our Paper &amp;ldquo;MegBA: A GPU-Based Distributed Library for Large-Scale Bundle Adjustment&amp;rdquo; is accepted by ECCV 2022. ECCV is considered to be one of the top conferences in computer vision, alongside CVPR and ICCV.&lt;/p&gt;
 </description>
     </item>
     
@@ -36,7 +36,8 @@
       <link>https://luomai.github.io/post/22-ekko-osdi/</link>
       <pubDate>Fri, 18 Mar 2022 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/22-ekko-osdi/</guid>
-      <description>&lt;p&gt;Our Paper &amp;ldquo;Ekko: A Large-Scale Deep Learning Recommender System with Low-Latency Model Update&amp;rdquo; is accepted by USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2022.&lt;/p&gt;
+      <description>&lt;p&gt;Our Paper &amp;ldquo;Ekko: A Large-Scale Deep Learning Recommender System with Low-Latency Model Update&amp;rdquo; is accepted by USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2022. OSDI is a highly selective flagship conference in computer science, especially on the topic of computer systems. &lt;strong&gt;This year, there were only 2 accepted papers from UK institutes.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;OSDI brings together professionals from academic and industrial backgrounds in what has become a premier forum for discussing the design, implementation, and implications of systems software. The symposium emphasizes innovative research as well as quantified or insightful experiences in systems design and implementation.&lt;/p&gt;
 </description>
     </item>
     
@@ -84,7 +85,7 @@
       <link>https://luomai.github.io/post/20-kungfu-accept-news/</link>
       <pubDate>Tue, 18 Aug 2020 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/20-kungfu-accept-news/</guid>
-      <description>&lt;p&gt;Our Paper &amp;ldquo;KungFu: Making Training in Distributed Machine Learning Adaptive&amp;rdquo; is accepted by USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2020.&lt;/p&gt;
+      <description>&lt;p&gt;Our Paper &amp;ldquo;KungFu: Making Training in Distributed Machine Learning Adaptive&amp;rdquo; is accepted by USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2020. OSDI is a highly selective flagship conference in computer science, especially on the topic of computer systems.&lt;/p&gt;
 &lt;p&gt;OSDI brings together professionals from academic and industrial backgrounds in what has become a premier forum for discussing the design, implementation, and implications of systems software. The symposium emphasizes innovative research as well as quantified or insightful experiences in systems design and implementation.&lt;/p&gt;
 </description>
     </item>
