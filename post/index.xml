@@ -13,12 +13,12 @@
     </image>
     
     <item>
-      <title>Papers in NeurIPS 2022</title>
+      <title>TorchOpt and papers are accepted to NeurIPS 2022</title>
       <link>https://luomai.github.io/post/22-settling-neurips/</link>
       <pubDate>Sat, 10 Sep 2022 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/22-settling-neurips/</guid>
-      <description>&lt;p&gt;Our paper &amp;ldquo;A Theoretical Understanding of Gradient Bias in Meta-Reinforcement Learning&amp;rdquo; is accepted by NeurIPS 2022, a leading confernece in the area of machine learning. This paper is based on our recently released differential optimisation library: 
-&lt;a href=&#34;https://github.com/metaopt/torchopt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TorchOpt&lt;/a&gt;. TorchOpt is also accepted as a paper by the International OPT Workshop on Optimization for Machine Learning co-located with NeurIPS 2022.&lt;/p&gt;
+      <description>&lt;p&gt;Our paper &amp;ldquo;A Theoretical Understanding of Gradient Bias in Meta-Reinforcement Learning&amp;rdquo; is accepted by NeurIPS 2022. This paper is based on our recently released system for differential optimisation: 
+&lt;a href=&#34;https://github.com/metaopt/torchopt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TorchOpt&lt;/a&gt;. TorchOpt is accepted as a paper by the 14th International Workshop for Optimization for Machine Learning (OPT) co-located with NeurIPS 2022.&lt;/p&gt;
 </description>
     </item>
     
