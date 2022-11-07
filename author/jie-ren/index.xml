@@ -21,6 +21,14 @@
     </item>
     
     <item>
+      <title>TorchOpt: An Efficient library for Differentiable Optimization</title>
+      <link>https://luomai.github.io/publication/2022-neurips-torchopt/</link>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/publication/2022-neurips-torchopt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>MegBA: A GPU-Based Distributed Library for Large-Scale Bundle Adjustment</title>
       <link>https://luomai.github.io/publication/2022-eccv-megba/</link>
       <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>

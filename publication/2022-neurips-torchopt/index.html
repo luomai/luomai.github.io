@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="Our Paper &ldquo;KungFu: Making Training in Distributed Machine Learning Adaptive&rdquo; is accepted by USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2020. OSDI is a highly selective flagship conference in computer science, especially on the topic of computer systems.">
+  <meta name="description" content="Recent years have witnessed the booming of various differentiable optimization algorithms. These algorithms exhibit different execution patterns, and their execution needs massive computational resources that go beyond a single CPU and GPU. Existing differentiable optimization libraries, however, cannot support efficient algorithm development and multi-CPU/GPU execution, making the development of differentiable optimization algorithms often cumbersome and expensive. This paper introduces TorchOpt, a PyTorch-based efficient library for differentiable optimization. TorchOpt provides a unified and expressive bi-level optimization programming abstraction. This abstraction allows users to efficiently declare and analyze various differentiable optimization programs with explicit gradients, implicit gradients, and zero-order gradients. TorchOpt further provides a high-performance distributed execution runtime. This runtime can fully parallelize computation-intensive differentiation operations (e.g. tensor tree flatten) on CPUs/GPUs and automatically distribute computation to distributed devices. Experimental results show that TorchOpt outperforms state-of-the-art libraries by 7x on an 8-GPU server.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/post/20-kungfu-accept-news/">
+  <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/publication/2022-neurips-torchopt/">
 
   
 
@@ -255,7 +255,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
 
-  <link rel="canonical" href="https://luomai.github.io/post/20-kungfu-accept-news/">
+  <link rel="canonical" href="https://luomai.github.io/publication/2022-neurips-torchopt/">
 
   
   
@@ -271,15 +271,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Luo Mai">
-  <meta property="og:url" content="https://luomai.github.io/post/20-kungfu-accept-news/">
-  <meta property="og:title" content="KungFu to appear at OSDI 2020 | Luo Mai">
-  <meta property="og:description" content="Our Paper &ldquo;KungFu: Making Training in Distributed Machine Learning Adaptive&rdquo; is accepted by USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2020. OSDI is a highly selective flagship conference in computer science, especially on the topic of computer systems."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="og:url" content="https://luomai.github.io/publication/2022-neurips-torchopt/">
+  <meta property="og:title" content="TorchOpt: An Efficient library for Differentiable Optimization | Luo Mai">
+  <meta property="og:description" content="Recent years have witnessed the booming of various differentiable optimization algorithms. These algorithms exhibit different execution patterns, and their execution needs massive computational resources that go beyond a single CPU and GPU. Existing differentiable optimization libraries, however, cannot support efficient algorithm development and multi-CPU/GPU execution, making the development of differentiable optimization algorithms often cumbersome and expensive. This paper introduces TorchOpt, a PyTorch-based efficient library for differentiable optimization. TorchOpt provides a unified and expressive bi-level optimization programming abstraction. This abstraction allows users to efficiently declare and analyze various differentiable optimization programs with explicit gradients, implicit gradients, and zero-order gradients. TorchOpt further provides a high-performance distributed execution runtime. This runtime can fully parallelize computation-intensive differentiation operations (e.g. tensor tree flatten) on CPUs/GPUs and automatically distribute computation to distributed devices. Experimental results show that TorchOpt outperforms state-of-the-art libraries by 7x on an 8-GPU server."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-08-18T13:35:37&#43;01:00">
+      <meta property="article:published_time" content="2022-08-15T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-08-18T13:35:37&#43;01:00">
+    <meta property="article:modified_time" content="2022-08-15T00:00:00&#43;00:00">
   
 
   
@@ -291,8 +291,6 @@
 
 
 
-
-  
 
 
 
@@ -300,19 +298,19 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://luomai.github.io/post/20-kungfu-accept-news/"
+    "@id": "https://luomai.github.io/publication/2022-neurips-torchopt/"
   },
-  "headline": "KungFu to appear at OSDI 2020",
+  "headline": "TorchOpt: An Efficient library for Differentiable Optimization",
   
-  "datePublished": "2020-08-18T13:35:37+01:00",
-  "dateModified": "2020-08-18T13:35:37+01:00",
+  "datePublished": "2022-08-15T00:00:00Z",
+  "dateModified": "2022-08-15T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Luo Mai"
+    "name": "Jie Ren"
   },
   
   "publisher": {
@@ -323,7 +321,7 @@
       "url": "https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Our Paper \u0026ldquo;KungFu: Making Training in Distributed Machine Learning Adaptive\u0026rdquo; is accepted by USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2020. OSDI is a highly selective flagship conference in computer science, especially on the topic of computer systems."
+  "description": "Recent years have witnessed the booming of various differentiable optimization algorithms. These algorithms exhibit different execution patterns, and their execution needs massive computational resources that go beyond a single CPU and GPU. Existing differentiable optimization libraries, however, cannot support efficient algorithm development and multi-CPU/GPU execution, making the development of differentiable optimization algorithms often cumbersome and expensive. This paper introduces TorchOpt, a PyTorch-based efficient library for differentiable optimization. TorchOpt provides a unified and expressive bi-level optimization programming abstraction. This abstraction allows users to efficiently declare and analyze various differentiable optimization programs with explicit gradients, implicit gradients, and zero-order gradients. TorchOpt further provides a high-performance distributed execution runtime. This runtime can fully parallelize computation-intensive differentiation operations (e.g. tensor tree flatten) on CPUs/GPUs and automatically distribute computation to distributed devices. Experimental results show that TorchOpt outperforms state-of-the-art libraries by 7x on an 8-GPU server."
 }
 </script>
 
@@ -341,7 +339,7 @@
 
 
 
-  <title>KungFu to appear at OSDI 2020 | Luo Mai</title>
+  <title>TorchOpt: An Efficient library for Differentiable Optimization | Luo Mai</title>
 
 </head>
 
@@ -689,7 +687,7 @@
 </nav>
 
 
-  <article class="article">
+  <div class="pub">
 
   
 
@@ -710,7 +708,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>KungFu to appear at OSDI 2020</h1>
+  <h1>TorchOpt: An Efficient library for Differentiable Optimization</h1>
 
   
 
@@ -722,6 +720,16 @@
 
   
   
+  
+  
+  <div>
+    
+
+  
+  <span >Jie Ren</span>, <span >Xidong Feng</span>, <span >Bo Liu</span>, <span >Xuehai Pan</span>, <span ><a href="/author/luo-mai/">Luo Mai</a></span>, <span >Yaodong Yang</span>
+  </div>
+  
+  
 
   
   <span class="article-date">
@@ -729,7 +737,7 @@
     
       
     
-    Aug 18, 2020
+    August 2022
   </span>
   
 
@@ -760,6 +768,47 @@
 
 
 
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/metaopt/torchopt" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
 
   
 </div>
@@ -768,11 +817,49 @@
 
   <div class="article-container">
 
-    <div class="article-style">
-      <p>Our Paper &ldquo;KungFu: Making Training in Distributed Machine Learning Adaptive&rdquo; is accepted by USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2020. OSDI is a highly selective flagship conference in computer science, especially on the topic of computer systems.</p>
-<p>OSDI brings together professionals from academic and industrial backgrounds in what has become a premier forum for discussing the design, implementation, and implications of systems software. The symposium emphasizes innovative research as well as quantified or insightful experiences in systems design and implementation.</p>
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract">Recent years have witnessed the booming of various differentiable optimization algorithms. These algorithms exhibit different execution patterns, and their execution needs massive computational resources that go beyond a single CPU and GPU. Existing differentiable optimization libraries, however, cannot support efficient algorithm development and multi-CPU/GPU execution, making the development of differentiable optimization algorithms often cumbersome and expensive. This paper introduces TorchOpt, a PyTorch-based efficient library for differentiable optimization. TorchOpt provides a unified and expressive bi-level optimization programming abstraction. This abstraction allows users to efficiently declare and analyze various differentiable optimization programs with explicit gradients, implicit gradients, and zero-order gradients. TorchOpt further provides a high-performance distributed execution runtime. This runtime can fully parallelize computation-intensive differentiation operations (e.g. tensor tree flatten) on CPUs/GPUs and automatically distribute computation to distributed devices. Experimental results show that TorchOpt outperforms state-of-the-art libraries by 7x on an 8-GPU server.</p>
+    
 
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
     </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">In <em>Optimization for Machine Learning Workshop (Co-located with NeurIPS 2022)</em></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
 
     
 
@@ -781,6 +868,12 @@
 
 
 
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/machine-learning-systems/">Machine Learning Systems</a>
+  
+</div>
+
 
 
 
@@ -795,7 +888,74 @@
 
 
   
+    
+    
+
+
+
+
+
   
+    
+    
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-square" src="/author/jie-ren/avatar_huf8f4355ccfaa4bd5fbd1e415b8039d9a_679271_270x270_fill_lanczos_center_3.png" alt="Jie Ren">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/author/jie-ren/">Jie Ren</a></h5>
+        <h6 class="card-subtitle">Collaborator</h6>
+        
+        <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
 
 
 
@@ -892,6 +1052,18 @@
   
 
 
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
 
 
 
@@ -905,6 +1077,23 @@
 
 
   
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/2022-neurips-settling/">A Theoretical Understanding of Gradient Bias in Meta-Reinforcement Learning</a></li>
+      
+      <li><a href="/publication/2022-osdi-ekko/">Ekko: A Large-Scale Deep Learning Recommender System with Low-Latency Model Update</a></li>
+      
+      <li><a href="/publication/2022-eccv-megba/">MegBA: A GPU-Based Distributed Library for Large-Scale Bundle Adjustment</a></li>
+      
+      <li><a href="/publication/2020-osdi-kungfu/">KungFu: Making Training in Distributed Machine Learning Adaptive</a></li>
+      
+      <li><a href="/publication/2021-multimedia-rlzoo/">Efficient Reinforcement Learning Development with RLzoo</a></li>
+      
+    </ul>
+  </div>
   
 
 
@@ -912,7 +1101,7 @@
 
 
   </div>
-</article>
+</div>
 
       
 
