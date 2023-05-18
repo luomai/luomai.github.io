@@ -5,12 +5,20 @@
     <link>https://luomai.github.io/author/luo-mai/</link>
       <atom:link href="https://luomai.github.io/author/luo-mai/index.xml" rel="self" type="application/rss+xml" />
     <description>Luo Mai</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Nov 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 May 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Luo Mai</title>
       <link>https://luomai.github.io/author/luo-mai/</link>
     </image>
+    
+    <item>
+      <title>GEAR: A GPU-Centric Experience Replay System for Large Reinforcement Learning Models</title>
+      <link>https://luomai.github.io/publication/2023-icml-gear/</link>
+      <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/publication/2023-icml-gear/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Ekko: A Large-Scale Deep Learning Recommender System with Low-Latency Model Update</title>
@@ -29,7 +37,7 @@
     </item>
     
     <item>
-      <title>TorchOpt: An Efficient library for Differentiable Optimization</title>
+      <title>TorchOpt: An Efficient Library for Differentiable Optimization</title>
       <link>https://luomai.github.io/publication/2022-neurips-torchopt/</link>
       <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
       <guid>https://luomai.github.io/publication/2022-neurips-torchopt/</guid>

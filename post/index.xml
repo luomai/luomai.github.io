@@ -13,12 +13,17 @@
     </image>
     
     <item>
-      <title>TorchOpt and papers are accepted to NeurIPS 2022</title>
+      <title>Our AI system papers in NeurIPS 2022 and ICML 2023</title>
       <link>https://luomai.github.io/post/22-settling-neurips/</link>
       <pubDate>Sat, 10 Sep 2022 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/22-settling-neurips/</guid>
-      <description>&lt;p&gt;Our paper &amp;ldquo;A Theoretical Understanding of Gradient Bias in Meta-Reinforcement Learning&amp;rdquo; is accepted by NeurIPS 2022. This paper is based on our recently released system for differential optimisation: 
-&lt;a href=&#34;https://github.com/metaopt/torchopt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TorchOpt&lt;/a&gt;. TorchOpt is accepted as a paper by the 14th International Workshop for Optimization for Machine Learning (OPT) co-located with NeurIPS 2022.&lt;/p&gt;
+      <description>&lt;p&gt;We have three papers to appear in leading machine learning conferences:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;GEAR: A GPU-Centric Experience Replay System for Large Reinforcement Learning Models&amp;rdquo; to appear in ICML 2023.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;A Theoretical Understanding of Gradient Bias in Meta-Reinforcement Learning&amp;rdquo; appeared in NeurIPS 2022. This paper is based on our recently released software for differential optimisation: 
+&lt;a href=&#34;https://github.com/metaopt/torchopt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TorchOpt&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;TorchOpt: An Efficient Library for Differentiable Optimization &amp;quot; appeared in the 14th International Workshop for Optimization for Machine Learning (OPT) co-located with NeurIPS 2022.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
