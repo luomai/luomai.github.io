@@ -5,12 +5,42 @@
     <link>https://luomai.github.io/project/</link>
       <atom:link href="https://luomai.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 31 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 31 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
       <link>https://luomai.github.io/project/</link>
     </image>
+    
+    <item>
+      <title>MegBA</title>
+      <link>https://luomai.github.io/project/megba/</link>
+      <pubDate>Mon, 31 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/project/megba/</guid>
+      <description>&lt;p&gt;MegBA is a fast and distributed library for large-scale Bundle Adjustment (BA). MegBA has a novel end-to-end vectorised BA algorithm which can fully exploit the massive parallel cores on GPUs, thus speeding up the entire BA computation. It also has a novel distributed BA algorithm that can automatically partition BA problems, and solve BA sub-problems using distributed GPUs. The GPUs synchronise intermediate solving state using network-efficient collective communication, and the synchronisation is designed to minimise communication cost. MegBA has a memory-efficient GPU runtime and it exposes g2o-compatible APIs. Experiments show that MegBA can out-perform state-of-the-art BA libraries (i.e., Ceres and DeepLM) by ~50x and ~5x respectively, in public large-scale BA benchmarks.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TorchOpt</title>
+      <link>https://luomai.github.io/project/torchopt/</link>
+      <pubDate>Mon, 31 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/project/torchopt/</guid>
+      <description>&lt;p&gt;TorchOpt is an efficient library for differentiable optimization built upon PyTorch. TorchOpt is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Comprehensive&lt;/strong&gt;: TorchOpt provides three differentiation modes - explicit differentiation, implicit differentiation, and zero-order differentiation for handling different differentiable optimization situations.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Flexible&lt;/strong&gt;: TorchOpt provides both functional and objective-oriented API for users&amp;rsquo; different preferences. Users can implement differentiable optimization in JAX-like or PyTorch-like style.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Efficient&lt;/strong&gt;: TorchOpt provides (1) CPU/GPU acceleration differentiable optimizer (2) RPC-based distributed training framework (3) Fast Tree Operations, to largely increase the training efficiency for bi-level optimization problems.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Beyond differentiable optimization, TorchOpt can also be regarded as a functional optimizer that enables JAX-like composable functional optimizer for PyTorch. With TorchOpt, users can easily conduct neural network optimization in PyTorch with a functional style optimizer, similar to Optax in JAX.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Quiver</title>
@@ -80,16 +110,6 @@ out-performs the performance of state-of-the-art pose estimation systems by up t
       <pubDate>Sun, 01 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://luomai.github.io/project/rlzoo/</guid>
       <description>&lt;p&gt;Deep Reinforcement Learning (DRL) has become the foundation of many multimedia applications. To fully achieve its promise, multi-media users are looking for a library that allows them to efficiently design and test DRL agents and integrate the agents into their ap-plications. In this project, we introduce RLzoo, a novel DRL library that makes it easy to design, test and deploy DRL agents. RLzoo has high-level expressive APIs which enable its users to efficiently develop DRL agents. RLzoo users can leverage an automatic agent construction algorithm to seamlessly adopt custom agent modules,e.g., custom neural networks, which is the key for tuning agents for achieving the best possible performance. RLzoo users can access a large number of pre-implemented DRL environments and algorithms, making it a comprehensive DRL platform. On this platform,users can further easily manage and tune DRL agents through an interactive training terminal. Evaluation results show that: com-pared to existing DRL libraries, RLzoo not only achieves a high degree of abstraction in its API design. It also provides numerous useful DRL algorithms and environments which are not available in other libraries.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>CrossBow</title>
-      <link>https://luomai.github.io/project/crossbow/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://luomai.github.io/project/crossbow/</guid>
-      <description>&lt;p&gt;Deep learning models are trained on servers with many GPUs, and training must scale with the number of GPUs. Systems such as TensorFlow and Caffe2 train models with parallel synchronous stochastic gradient descent: they process a batch of training data at a time, partitioned across GPUs, and average the resulting partial gradients to obtain an updated global model. To fully utilise all GPUs, systems must increase the batch size, which hinders statistical efficiency. Users tune hyper-parameters such as the learning rate to compensate for this, which is complex and model-specific.
-We introduce Crossbow, a new single-server multi-GPU system for training deep learning models that enables users to freely choose their preferred batch size&amp;mdash;however small&amp;mdash;while scaling to multiple GPUs. Crossbow uses many parallel model replicas and avoids reduced statistical efficiency through a new synchronous training method. We introduce SMA, a synchronous variant of model averaging in which replicas independently explore the solution space with gradient descent, but adjust their search synchronously based on the trajectory of a globally-consistent average model. Crossbow achieves high hardware efficiency with small batch sizes by potentially training multiple model replicas per GPU, automatically tuning the number of replicas to maximise throughput. our experiments show that Crossbow improves the training time of deep learning models on an 8-GPU server by 1.3&amp;ndash;4X compared to TensorFlow.&lt;/p&gt;
 </description>
     </item>
     

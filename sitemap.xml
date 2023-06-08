@@ -6,8 +6,10 @@
     <lastmod>2022-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/xiulong-yuan/</loc>
+    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/zeyuan-tan/</loc>
+    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/chijun-sima/</loc>
     <lastmod>2022-11-01T00:00:00+00:00</lastmod>
@@ -65,6 +67,24 @@
     <loc>https://luomai.github.io/author/ying-wen/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://luomai.github.io/author/baole-ai/</loc>
+    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/author/guo-li/</loc>
+    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/author/kai-zeng/</loc>
+    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/author/peter-pietzuch/</loc>
+    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/publication/2023-arxiv-quiver/</loc>
+    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/author/xiaoze-liu/</loc>
+    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://luomai.github.io/publication/2022-osdi-ekko/</loc>
     <lastmod>2022-11-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -88,6 +108,15 @@
   </url><url>
     <loc>https://luomai.github.io/author/yongsheng-li/</loc>
     <lastmod>2022-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/project/megba/</loc>
+    <lastmod>2022-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/project/</loc>
+    <lastmod>2022-10-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/project/torchopt/</loc>
+    <lastmod>2022-10-31T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/post/</loc>
     <lastmod>2023-05-10T13:35:37+01:00</lastmod>
@@ -158,9 +187,6 @@
     <loc>https://luomai.github.io/post/21-quiver-opensource/</loc>
     <lastmod>2021-10-31T13:45:55+01:00</lastmod>
   </url><url>
-    <loc>https://luomai.github.io/project/</loc>
-    <lastmod>2021-10-31T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://luomai.github.io/project/quiver/</loc>
     <lastmod>2021-10-31T00:00:00+00:00</lastmod>
   </url><url>
@@ -171,9 +197,6 @@
     <lastmod>2021-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/publication/2021-multimedia-hyperpose/</loc>
-    <lastmod>2021-08-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/author/guo-li/</loc>
     <lastmod>2021-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/hao-dong/</loc>
@@ -216,9 +239,6 @@
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/marcel-wagenlander/</loc>
-    <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/author/peter-pietzuch/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/post/20-kungfu-accept-news/</loc>
@@ -272,9 +292,6 @@
     <loc>https://luomai.github.io/publication-type/2/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://luomai.github.io/project/crossbow/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://luomai.github.io/publication/2019-osr-review/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -282,9 +299,6 @@
     <lastmod>2018-12-01T13:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/publication/2018-vldb-chi/</loc>
-    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/author/kai-zeng/</loc>
     <lastmod>2018-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/saravanan-muthukrishnan/</loc>

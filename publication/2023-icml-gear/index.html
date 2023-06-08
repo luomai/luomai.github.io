@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="Large Reinforcement Learning (RL) models require experience replay systems that can efficiently store and select from massive amounts of trajectories. This requirement, however, cannot be met by existing experience replay systems: they incur memory, computation and communication bottlenecks when being used with training large RL models. To address this, this paper presents GEAR, a novel distributed GPU-centric experience replay system. GEAR can store trajectory shards on GPU servers which train large RL models, increasing the memory efficiency of storing trajectories. GEAR further enables distributed GPU servers to accelerate various trajectory selection strategies, avoiding computation bottlenecks. GEAR also has GPU kernels that can collect trajectories using zero-copy access to host memory and remote-directed-memory access over InfiniBand, optimising the communication efficiency in collecting trajectories. Cluster experiments show that GEAR achieves up to 6 times performance over the state-of-the-art system: Reverb when training large RL models.">
+  <meta name="description" content=" This paper introduces a distributed, GPU-centric experience replay system, GEAR, designed to perform scalable reinforcement learning (RL) with large sequence models (such as transformers). With such models, existing systems such as Reverb face considerable bottlenecks in mem- ory, computation, and communication. GEAR, however, optimizes memory efficiency by enabling the memory resources on GPU servers (including host memory and device memory) to manage trajectory data. Furthermore, it facilitates decentralized GPU devices to expedite vari- ous trajectory selection strategies, circumventing computational bottlenecks. GEAR is equipped with GPU kernels capable of collecting trajec- tories using zero-copy access to host memory, along with remote-directed-memory access over InfiniBand, improving communication efficiency. Cluster experiments have shown that GEAR can achieve performance levels up to 6× greater than Reverb when training state-of-the-art large RL models. GEAR is open-sourced at https:// github.com/bigrl-team/gear.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/publication/2023-icml-gear/">
@@ -273,7 +273,7 @@
   <meta property="og:site_name" content="Luo Mai">
   <meta property="og:url" content="https://luomai.github.io/publication/2023-icml-gear/">
   <meta property="og:title" content="GEAR: A GPU-Centric Experience Replay System for Large Reinforcement Learning Models | Luo Mai">
-  <meta property="og:description" content="Large Reinforcement Learning (RL) models require experience replay systems that can efficiently store and select from massive amounts of trajectories. This requirement, however, cannot be met by existing experience replay systems: they incur memory, computation and communication bottlenecks when being used with training large RL models. To address this, this paper presents GEAR, a novel distributed GPU-centric experience replay system. GEAR can store trajectory shards on GPU servers which train large RL models, increasing the memory efficiency of storing trajectories. GEAR further enables distributed GPU servers to accelerate various trajectory selection strategies, avoiding computation bottlenecks. GEAR also has GPU kernels that can collect trajectories using zero-copy access to host memory and remote-directed-memory access over InfiniBand, optimising the communication efficiency in collecting trajectories. Cluster experiments show that GEAR achieves up to 6 times performance over the state-of-the-art system: Reverb when training large RL models."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="og:description" content=" This paper introduces a distributed, GPU-centric experience replay system, GEAR, designed to perform scalable reinforcement learning (RL) with large sequence models (such as transformers). With such models, existing systems such as Reverb face considerable bottlenecks in mem- ory, computation, and communication. GEAR, however, optimizes memory efficiency by enabling the memory resources on GPU servers (including host memory and device memory) to manage trajectory data. Furthermore, it facilitates decentralized GPU devices to expedite vari- ous trajectory selection strategies, circumventing computational bottlenecks. GEAR is equipped with GPU kernels capable of collecting trajec- tories using zero-copy access to host memory, along with remote-directed-memory access over InfiniBand, improving communication efficiency. Cluster experiments have shown that GEAR can achieve performance levels up to 6× greater than Reverb when training state-of-the-art large RL models. GEAR is open-sourced at https:// github.com/bigrl-team/gear."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
@@ -321,7 +321,7 @@
       "url": "https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Large Reinforcement Learning (RL) models require experience replay systems that can efficiently store and select from massive amounts of trajectories. This requirement, however, cannot be met by existing experience replay systems: they incur memory, computation and communication bottlenecks when being used with training large RL models. To address this, this paper presents GEAR, a novel distributed GPU-centric experience replay system. GEAR can store trajectory shards on GPU servers which train large RL models, increasing the memory efficiency of storing trajectories. GEAR further enables distributed GPU servers to accelerate various trajectory selection strategies, avoiding computation bottlenecks. GEAR also has GPU kernels that can collect trajectories using zero-copy access to host memory and remote-directed-memory access over InfiniBand, optimising the communication efficiency in collecting trajectories. Cluster experiments show that GEAR achieves up to 6 times performance over the state-of-the-art system: Reverb when training large RL models."
+  "description": " This paper introduces a distributed, GPU-centric experience replay system, GEAR, designed to perform scalable reinforcement learning (RL) with large sequence models (such as transformers). With such models, existing systems such as Reverb face considerable bottlenecks in mem- ory, computation, and communication. GEAR, however, optimizes memory efficiency by enabling the memory resources on GPU servers (including host memory and device memory) to manage trajectory data. Furthermore, it facilitates decentralized GPU devices to expedite vari- ous trajectory selection strategies, circumventing computational bottlenecks. GEAR is equipped with GPU kernels capable of collecting trajec- tories using zero-copy access to host memory, along with remote-directed-memory access over InfiniBand, improving communication efficiency. Cluster experiments have shown that GEAR can achieve performance levels up to 6× greater than Reverb when training state-of-the-art large RL models. GEAR is open-sourced at https:// github.com/bigrl-team/gear."
 }
 </script>
 
@@ -763,10 +763,57 @@
 
 
 
+  
 
 
 
 
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="/publication/2023-icml-gear/2023-icml-gear.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary my-1 mr-1" href="https://%20github.com/bigrl-team/gear" target="_blank" rel="noopener">
+  Code
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
 
 
   
@@ -778,7 +825,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Large Reinforcement Learning (RL) models require experience replay systems that can efficiently store and select from massive amounts of trajectories. This requirement, however, cannot be met by existing experience replay systems: they incur memory, computation and communication bottlenecks when being used with training large RL models. To address this, this paper presents GEAR, a novel distributed GPU-centric experience replay system. GEAR can store trajectory shards on GPU servers which train large RL models, increasing the memory efficiency of storing trajectories. GEAR further enables distributed GPU servers to accelerate various trajectory selection strategies, avoiding computation bottlenecks. GEAR also has GPU kernels that can collect trajectories using zero-copy access to host memory and remote-directed-memory access over InfiniBand, optimising the communication efficiency in collecting trajectories. Cluster experiments show that GEAR achieves up to 6 times performance over the state-of-the-art system: Reverb when training large RL models.</p>
+    <p class="pub-abstract">This paper introduces a distributed, GPU-centric experience replay system, GEAR, designed to perform scalable reinforcement learning (RL) with large sequence models (such as transformers). With such models, existing systems such as Reverb face considerable bottlenecks in mem- ory, computation, and communication. GEAR, however, optimizes memory efficiency by enabling the memory resources on GPU servers (including host memory and device memory) to manage trajectory data. Furthermore, it facilitates decentralized GPU devices to expedite vari- ous trajectory selection strategies, circumventing computational bottlenecks. GEAR is equipped with GPU kernels capable of collecting trajec- tories using zero-copy access to host memory, along with remote-directed-memory access over InfiniBand, improving communication efficiency. Cluster experiments have shown that GEAR can achieve performance levels up to 6× greater than Reverb when training state-of-the-art large RL models. GEAR is open-sourced at https:// github.com/bigrl-team/gear.</p>
     
 
     
@@ -1089,11 +1136,11 @@
       
       <li><a href="/publication/2022-neurips-torchopt/">TorchOpt: An Efficient Library for Differentiable Optimization</a></li>
       
+      <li><a href="/publication/2023-arxiv-quiver/">Quiver: Supporting GPUs for Low-Latency, High-Throughput GNN Serving with Workload Awareness</a></li>
+      
       <li><a href="/publication/2022-osdi-ekko/">Ekko: A Large-Scale Deep Learning Recommender System with Low-Latency Model Update</a></li>
       
       <li><a href="/publication/2022-eccv-megba/">MegBA: A GPU-Based Distributed Library for Large-Scale Bundle Adjustment</a></li>
-      
-      <li><a href="/publication/2020-osdi-kungfu/">KungFu: Making Training in Distributed Machine Learning Adaptive</a></li>
       
     </ul>
   </div>
