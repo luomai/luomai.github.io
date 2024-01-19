@@ -5,7 +5,7 @@
     <link>https://luomai.github.io/post/</link>
       <atom:link href="https://luomai.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 10 Sep 2022 13:35:37 +0100</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 10 Dec 2023 13:35:37 +0100</lastBuildDate>
     <image>
       <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
@@ -13,22 +13,45 @@
     </image>
     
     <item>
-      <title>TorchOpt and Gear to appear in NeurIPS and ICML</title>
-      <link>https://luomai.github.io/post/22-settling-neurips/</link>
-      <pubDate>Sat, 10 Sep 2022 13:35:37 +0100</pubDate>
-      <guid>https://luomai.github.io/post/22-settling-neurips/</guid>
-      <description>&lt;p&gt;We have three papers to appear in leading machine learning conferences:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&amp;ldquo;GEAR: A GPU-Centric Experience Replay System for Large Reinforcement Learning Models&amp;rdquo; to appear in ICML 2023.&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;A Theoretical Understanding of Gradient Bias in Meta-Reinforcement Learning&amp;rdquo; appeared in NeurIPS 2022. This paper is based on our open-source library for differential optimisation: 
-&lt;a href=&#34;https://github.com/metaopt/torchopt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TorchOpt&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;TorchOpt: An Efficient Library for Differentiable Optimization &amp;quot; appeared in the 14th International Workshop for Optimization for Machine Learning (OPT) co-located with NeurIPS 2022.&lt;/li&gt;
-&lt;/ul&gt;
+      <title>TorchOpt in JMLR 2023 and becomes a PyTorch Ecosystem Project.</title>
+      <link>https://luomai.github.io/post/23-torchopt-jmlr/</link>
+      <pubDate>Sun, 10 Dec 2023 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/23-torchopt-jmlr/</guid>
+      <description>&lt;p&gt;After 2 years incubation, 
+&lt;a href=&#34;https://github.com/metaopt/torchopt&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;TorchOpt&lt;/a&gt; has become a PyTorch Ecosystem Project 
+&lt;a href=&#34;https://medium.com/pytorch/introducing-torchopt-a-high-performance-differentiable-optimization-library-for-pytorch-37c4c0ef6ae1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Announcement&lt;/a&gt;. Its paper is also accepted by the JMLR in the open-source software track.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>MegBA in ECCV 2022</title>
+      <title>School Nomination for Prestigious Chancellor&#39;s Rising Star in Research</title>
+      <link>https://luomai.github.io/post/23-rising-star/</link>
+      <pubDate>Fri, 10 Nov 2023 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/23-rising-star/</guid>
+      <description>&lt;p&gt;I am nominated by the school for a Chancellor&amp;rsquo;s Rising Star in Research Award, a prestigious honour for young faculty joined University of Edinburgh between 2018 and 2023. The nomination passes highly-selective panels at the school and the college level.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Gear library in ICML 2023.</title>
+      <link>https://luomai.github.io/post/23-gear-icml/</link>
+      <pubDate>Sun, 10 Sep 2023 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/23-gear-icml/</guid>
+      <description>&lt;p&gt;Gear system to appear in ICML 2023.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ekko system in OSDI 2022</title>
+      <link>https://luomai.github.io/post/22-ekko-osdi/</link>
+      <pubDate>Sun, 18 Dec 2022 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/22-ekko-osdi/</guid>
+      <description>&lt;p&gt;Our Paper &amp;ldquo;Ekko: A Large-Scale Deep Learning Recommender System with Low-Latency Model Update&amp;rdquo; is accepted by USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2022. OSDI brings together professionals from academic and industrial backgrounds in what has become a premier forum for discussing the design, implementation, and implications of systems software. The symposium emphasizes innovative research as well as quantified or insightful experiences in systems design and implementation.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MegBA library in ECCV 2022</title>
       <link>https://luomai.github.io/post/22-megba-eccv/</link>
       <pubDate>Sun, 10 Jul 2022 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/22-megba-eccv/</guid>
@@ -37,31 +60,11 @@
     </item>
     
     <item>
-      <title>Ekko in OSDI 2022</title>
-      <link>https://luomai.github.io/post/22-ekko-osdi/</link>
-      <pubDate>Fri, 18 Mar 2022 13:35:37 +0100</pubDate>
-      <guid>https://luomai.github.io/post/22-ekko-osdi/</guid>
-      <description>&lt;p&gt;Our Paper &amp;ldquo;Ekko: A Large-Scale Deep Learning Recommender System with Low-Latency Model Update&amp;rdquo; is accepted by USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2022. OSDI brings together professionals from academic and industrial backgrounds in what has become a premier forum for discussing the design, implementation, and implications of systems software. The symposium emphasizes innovative research as well as quantified or insightful experiences in systems design and implementation.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Quiver is open-sourced</title>
-      <link>https://luomai.github.io/post/21-quiver-opensource/</link>
-      <pubDate>Sun, 31 Oct 2021 13:45:55 +0100</pubDate>
-      <guid>https://luomai.github.io/post/21-quiver-opensource/</guid>
-      <description>&lt;p&gt;
-&lt;a href=&#34;https://github.com/quiver-team/torch-quiver&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Quiver&lt;/a&gt; is a distributed graph learning library for 
-&lt;a href=&#34;https://github.com/pyg-team/pytorch_geometric&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PyTorch Geometric&lt;/a&gt; (PyG). Its excellent performance and scalability has made it quickly become the &lt;strong&gt;recommended&lt;/strong&gt; distributed library for PyG.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>HyperPose and RLzoo in open-source software competition</title>
-      <link>https://luomai.github.io/post/21-hyperpose-rlzoo-accept-news/</link>
-      <pubDate>Sun, 15 Aug 2021 13:35:37 +0100</pubDate>
-      <guid>https://luomai.github.io/post/21-hyperpose-rlzoo-accept-news/</guid>
-      <description>&lt;p&gt;HyperPose and RLzoo are both accepted to the Open-source Software Competition in ACM Multimedia 2021. ACM Multimedia is the worldwide premier conference and a key world event to display scientific achievements and innovative industrial products in the multimedia field.&lt;/p&gt;
+      <title>Meta RL paper in NeruIPS 2022.</title>
+      <link>https://luomai.github.io/post/22-metarl-nips/</link>
+      <pubDate>Sun, 10 Jul 2022 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/22-metarl-nips/</guid>
+      <description>&lt;p&gt;Meta RL paper to appear in NeurIPS 2022.&lt;/p&gt;
 </description>
     </item>
     
@@ -76,16 +79,7 @@
     </item>
     
     <item>
-      <title>Invited talks at TikTok, SenseTime, Tencent and SIGMOD.</title>
-      <link>https://luomai.github.io/post/21-summer-invited-talks-news/</link>
-      <pubDate>Thu, 10 Jun 2021 13:45:55 +0100</pubDate>
-      <guid>https://luomai.github.io/post/21-summer-invited-talks-news/</guid>
-      <description>&lt;p&gt;I am excited to give talks about future AI/Data systems at TikTok, SenseTime, Tencent and SIGMOD Enterprise Database Workshop 2021.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>KungFu to appear at OSDI 2020</title>
+      <title>KungFu system in OSDI 2020</title>
       <link>https://luomai.github.io/post/20-kungfu-accept-news/</link>
       <pubDate>Tue, 18 Aug 2020 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/20-kungfu-accept-news/</guid>
@@ -95,7 +89,7 @@
     </item>
     
     <item>
-      <title>Cameo to appear at NSDI 2021</title>
+      <title>Cameo system in NSDI 2021</title>
       <link>https://luomai.github.io/post/21-cameo-accept-news/</link>
       <pubDate>Sun, 05 Jul 2020 13:45:55 +0100</pubDate>
       <guid>https://luomai.github.io/post/21-cameo-accept-news/</guid>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://luomai.github.io/author/jie-ren/</loc>
-    <lastmod>2022-08-15T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/xiulong-yuan/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
@@ -15,7 +15,7 @@
     <lastmod>2022-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/yao-fu/</loc>
-    <lastmod>2022-11-01T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/man-kit-sit/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
@@ -25,11 +25,58 @@
     <loc>https://luomai.github.io/author/congjie-he/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://luomai.github.io/author/yeqi-huang/</loc>
+  </url><url>
     <loc>https://luomai.github.io/publication-type/1/</loc>
-    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/authors/</loc>
-    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/author/bo-liu/</loc>
+    <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/</loc>
+    <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/author/luo-mai/</loc>
+    <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/tag/machine-learning-systems/</loc>
+    <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/publication_types/</loc>
+    <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/publication/</loc>
+    <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/tags/</loc>
+    <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/publication/2023-jmlr-torchopt/</loc>
+    <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/author/xidong-feng/</loc>
+    <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/author/xuehai-pan/</loc>
+    <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/author/yaodong-yang/</loc>
+    <lastmod>2023-12-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/post/</loc>
+    <lastmod>2023-12-10T13:35:37+01:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/post/23-torchopt-jmlr/</loc>
+    <lastmod>2023-12-10T13:35:37+01:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/post/23-rising-star/</loc>
+    <lastmod>2023-11-10T13:35:37+01:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/post/23-gear-icml/</loc>
+    <lastmod>2023-09-10T13:35:37+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/publication/2023-icml-gear/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
@@ -40,28 +87,7 @@
     <loc>https://luomai.github.io/author/jun-wang/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://luomai.github.io/</loc>
-    <lastmod>2023-05-10T13:35:37+01:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/author/luo-mai/</loc>
-    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/tag/machine-learning-systems/</loc>
-    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/publication_types/</loc>
-    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/publication/</loc>
-    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/tags/</loc>
-    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://luomai.github.io/author/weinan-zhang/</loc>
-    <lastmod>2023-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/author/yaodong-yang/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/ying-wen/</loc>
@@ -84,6 +110,9 @@
   </url><url>
     <loc>https://luomai.github.io/author/xiaoze-liu/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/post/22-ekko-osdi/</loc>
+    <lastmod>2022-12-18T13:35:37+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/publication/2022-osdi-ekko/</loc>
     <lastmod>2022-11-01T00:00:00+00:00</lastmod>
@@ -118,31 +147,13 @@
     <loc>https://luomai.github.io/project/torchopt/</loc>
     <lastmod>2022-10-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://luomai.github.io/post/</loc>
-    <lastmod>2023-05-10T13:35:37+01:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/post/22-settling-neurips/</loc>
-    <lastmod>2023-05-10T13:35:37+01:00</lastmod>
-  </url><url>
     <loc>https://luomai.github.io/publication/2022-neurips-settling/</loc>
-    <lastmod>2022-08-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/author/bo-liu/</loc>
     <lastmod>2022-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/haifeng-zhang/</loc>
     <lastmod>2022-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/rui-zhu/</loc>
-    <lastmod>2022-08-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/publication/2022-neurips-torchopt/</loc>
-    <lastmod>2022-08-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/author/xidong-feng/</loc>
-    <lastmod>2022-08-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/author/xuehai-pan/</loc>
     <lastmod>2022-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/publication/2022-eccv-megba/</loc>
@@ -163,8 +174,8 @@
     <loc>https://luomai.github.io/post/22-megba-eccv/</loc>
     <lastmod>2022-07-10T13:35:37+01:00</lastmod>
   </url><url>
-    <loc>https://luomai.github.io/post/22-ekko-osdi/</loc>
-    <lastmod>2022-03-18T13:35:37+01:00</lastmod>
+    <loc>https://luomai.github.io/post/22-metarl-nips/</loc>
+    <lastmod>2022-07-10T13:35:37+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/tag/big-data-systems/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
@@ -184,14 +195,8 @@
     <loc>https://luomai.github.io/author/shivaram-venkataraman/</loc>
     <lastmod>2021-12-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://luomai.github.io/post/21-quiver-opensource/</loc>
-    <lastmod>2021-10-31T13:45:55+01:00</lastmod>
-  </url><url>
     <loc>https://luomai.github.io/project/quiver/</loc>
     <lastmod>2021-10-31T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/post/21-hyperpose-rlzoo-accept-news/</loc>
-    <lastmod>2021-08-15T13:35:37+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/publication/2021-multimedia-rlzoo/</loc>
     <lastmod>2021-08-15T00:00:00+00:00</lastmod>
@@ -225,9 +230,6 @@
   </url><url>
     <loc>https://luomai.github.io/post/21-oxfordml-news/</loc>
     <lastmod>2021-07-31T13:45:55+01:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/post/21-summer-invited-talks-news/</loc>
-    <lastmod>2021-06-10T13:45:55+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/andrei-octavian-brabete/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
