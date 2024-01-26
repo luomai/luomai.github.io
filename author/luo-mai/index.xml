@@ -5,12 +5,28 @@
     <link>https://luomai.github.io/author/luo-mai/</link>
       <atom:link href="https://luomai.github.io/author/luo-mai/index.xml" rel="self" type="application/rss+xml" />
     <description>Luo Mai</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 15 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Luo Mai</title>
       <link>https://luomai.github.io/author/luo-mai/</link>
     </image>
+    
+    <item>
+      <title>MoE-Infinity: Activation-Aware Expert Offloading for Efficient MoE Serving</title>
+      <link>https://luomai.github.io/publication/2024-arxiv-moe-infinity/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/publication/2024-arxiv-moe-infinity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ServerlessLLM: Locality-Enhanced Serverless Inference for Large Language Models</title>
+      <link>https://luomai.github.io/publication/2024-arxiv-serverlessllm/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/publication/2024-arxiv-serverlessllm/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>TorchOpt: An Efficient Library for Differentiable Optimization</title>
