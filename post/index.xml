@@ -13,6 +13,15 @@
     </image>
     
     <item>
+      <title>ServerlessLLM gets accepted to OSDI 2024.</title>
+      <link>https://luomai.github.io/post/24-serverlessllm-osdi/</link>
+      <pubDate>Sun, 10 Dec 2023 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/24-serverlessllm-osdi/</guid>
+      <description>&lt;p&gt;ServerlessLLM is a new system that enables cost-effective locality-enhanced serverless inference for LLMs. Its paper has been accepted to the top system conference OSDI&#39;24, and we are in the procese of open-sourcing it. Stay tuned.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>TorchOpt becomes a PyTorch Ecosystem Project, and its paper gets in JMLR 2023.</title>
       <link>https://luomai.github.io/post/23-torchopt-jmlr/</link>
       <pubDate>Sun, 10 Dec 2023 13:35:37 +0100</pubDate>

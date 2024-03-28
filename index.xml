@@ -22,9 +22,9 @@
     
     <item>
       <title>ServerlessLLM: Locality-Enhanced Serverless Inference for Large Language Models</title>
-      <link>https://luomai.github.io/publication/2024-arxiv-serverlessllm/</link>
+      <link>https://luomai.github.io/publication/2024-osdi-serverlessllm/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://luomai.github.io/publication/2024-arxiv-serverlessllm/</guid>
+      <guid>https://luomai.github.io/publication/2024-osdi-serverlessllm/</guid>
       <description></description>
     </item>
     
@@ -34,6 +34,15 @@
       <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://luomai.github.io/publication/2023-jmlr-torchopt/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>ServerlessLLM gets accepted to OSDI 2024.</title>
+      <link>https://luomai.github.io/post/24-serverlessllm-osdi/</link>
+      <pubDate>Sun, 10 Dec 2023 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/24-serverlessllm-osdi/</guid>
+      <description>&lt;p&gt;ServerlessLLM is a new system that enables cost-effective locality-enhanced serverless inference for LLMs. Its paper has been accepted to the top system conference OSDI&#39;24, and we are in the procese of open-sourcing it. Stay tuned.&lt;/p&gt;
+</description>
     </item>
     
     <item>

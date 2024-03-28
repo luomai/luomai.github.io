@@ -64,7 +64,7 @@
     <loc>https://luomai.github.io/publication/</loc>
     <lastmod>2024-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://luomai.github.io/publication/2024-arxiv-serverlessllm/</loc>
+    <loc>https://luomai.github.io/publication/2024-osdi-serverlessllm/</loc>
     <lastmod>2024-01-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/tags/</loc>
@@ -92,6 +92,9 @@
     <lastmod>2023-12-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/post/</loc>
+    <lastmod>2023-12-10T13:35:37+01:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/post/24-serverlessllm-osdi/</loc>
     <lastmod>2023-12-10T13:35:37+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/post/23-torchopt-jmlr/</loc>

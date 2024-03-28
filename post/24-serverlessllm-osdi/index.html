@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content=" When using distributed machine learning (ML) systems to train models on a cluster of worker machines, users must configure a large number of parameters: hyper-parameters (e.g. the batch size and the learning rate) affect model convergence; system parameters (e.g. the number of workers and their communication topology) impact training performance. In current systems, adapting such parameters during training is ill-supported. Users must set system parameters at deployment time, and provide fixed adaptation schedules for hyper-parameters in the training program. We describe KungFu, a distributed ML library for Tensor- Flow that is designed to enable adaptive training. KungFu allows user to express high-level Adaptation Policies (APs) that describe how to change hyper- and system parameters during training. APs take real-time monitored metrics (e.g. signal-to-noise ratios and noise scale) as input and trigger control actions (e.g. cluster rescaling or updating the synchronisation strategy). For execution, APs are translated into monitoring and control operators, which are embedded in the dataflow graph. APs exploit an efficient asynchronous collective communication layer, which ensures concurrency and consistency of monitoring and adaptation operations.">
+  <meta name="description" content="ServerlessLLM is a new system that enables cost-effective locality-enhanced serverless inference for LLMs. Its paper has been accepted to the top system conference OSDI&#39;24, and we are in the procese of open-sourcing it.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/publication/2020-osdi-kungfu/">
+  <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/post/24-serverlessllm-osdi/">
 
   
 
@@ -255,7 +255,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
 
-  <link rel="canonical" href="https://luomai.github.io/publication/2020-osdi-kungfu/">
+  <link rel="canonical" href="https://luomai.github.io/post/24-serverlessllm-osdi/">
 
   
   
@@ -271,15 +271,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Luo Mai">
-  <meta property="og:url" content="https://luomai.github.io/publication/2020-osdi-kungfu/">
-  <meta property="og:title" content="KungFu: Making Training in Distributed Machine Learning Adaptive | Luo Mai">
-  <meta property="og:description" content=" When using distributed machine learning (ML) systems to train models on a cluster of worker machines, users must configure a large number of parameters: hyper-parameters (e.g. the batch size and the learning rate) affect model convergence; system parameters (e.g. the number of workers and their communication topology) impact training performance. In current systems, adapting such parameters during training is ill-supported. Users must set system parameters at deployment time, and provide fixed adaptation schedules for hyper-parameters in the training program. We describe KungFu, a distributed ML library for Tensor- Flow that is designed to enable adaptive training. KungFu allows user to express high-level Adaptation Policies (APs) that describe how to change hyper- and system parameters during training. APs take real-time monitored metrics (e.g. signal-to-noise ratios and noise scale) as input and trigger control actions (e.g. cluster rescaling or updating the synchronisation strategy). For execution, APs are translated into monitoring and control operators, which are embedded in the dataflow graph. APs exploit an efficient asynchronous collective communication layer, which ensures concurrency and consistency of monitoring and adaptation operations."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="og:url" content="https://luomai.github.io/post/24-serverlessllm-osdi/">
+  <meta property="og:title" content="ServerlessLLM gets accepted to OSDI 2024. | Luo Mai">
+  <meta property="og:description" content="ServerlessLLM is a new system that enables cost-effective locality-enhanced serverless inference for LLMs. Its paper has been accepted to the top system conference OSDI&#39;24, and we are in the procese of open-sourcing it."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-12-14T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2023-12-10T13:35:37&#43;01:00">
     
-    <meta property="article:modified_time" content="2020-12-01T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2023-12-10T13:35:37&#43;01:00">
   
 
   
@@ -291,6 +291,8 @@
 
 
 
+
+  
 
 
 
@@ -298,15 +300,15 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://luomai.github.io/publication/2020-osdi-kungfu/"
+    "@id": "https://luomai.github.io/post/24-serverlessllm-osdi/"
   },
-  "headline": "KungFu: Making Training in Distributed Machine Learning Adaptive",
+  "headline": "ServerlessLLM gets accepted to OSDI 2024.",
   
-  "datePublished": "2020-12-14T00:00:00Z",
-  "dateModified": "2020-12-01T00:00:00Z",
+  "datePublished": "2023-12-10T13:35:37+01:00",
+  "dateModified": "2023-12-10T13:35:37+01:00",
   
   "author": {
     "@type": "Person",
@@ -321,7 +323,7 @@
       "url": "https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": " When using distributed machine learning (ML) systems to train models on a cluster of worker machines, users must configure a large number of parameters: hyper-parameters (e.g. the batch size and the learning rate) affect model convergence; system parameters (e.g. the number of workers and their communication topology) impact training performance. In current systems, adapting such parameters during training is ill-supported. Users must set system parameters at deployment time, and provide fixed adaptation schedules for hyper-parameters in the training program. We describe KungFu, a distributed ML library for Tensor- Flow that is designed to enable adaptive training. KungFu allows user to express high-level Adaptation Policies (APs) that describe how to change hyper- and system parameters during training. APs take real-time monitored metrics (e.g. signal-to-noise ratios and noise scale) as input and trigger control actions (e.g. cluster rescaling or updating the synchronisation strategy). For execution, APs are translated into monitoring and control operators, which are embedded in the dataflow graph. APs exploit an efficient asynchronous collective communication layer, which ensures concurrency and consistency of monitoring and adaptation operations."
+  "description": "ServerlessLLM is a new system that enables cost-effective locality-enhanced serverless inference for LLMs. Its paper has been accepted to the top system conference OSDI'24, and we are in the procese of open-sourcing it."
 }
 </script>
 
@@ -339,7 +341,7 @@
 
 
 
-  <title>KungFu: Making Training in Distributed Machine Learning Adaptive | Luo Mai</title>
+  <title>ServerlessLLM gets accepted to OSDI 2024. | Luo Mai</title>
 
 </head>
 
@@ -687,7 +689,7 @@
 </nav>
 
 
-  <div class="pub">
+  <article class="article">
 
   
 
@@ -708,7 +710,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>KungFu: Making Training in Distributed Machine Learning Adaptive</h1>
+  <h1>ServerlessLLM gets accepted to OSDI 2024.</h1>
 
   
 
@@ -720,16 +722,6 @@
 
   
   
-  
-  
-  <div>
-    
-
-  
-  <span ><a href="/author/luo-mai/">Luo Mai</a></span>, <span >Guo Li</span>, <span >Marcel Wagenlander</span>, <span >Konstantinos Fertakis</span>, <span >Andrei-Octavian Brabete</span>, <span >Peter Pietzuch</span>
-  </div>
-  
-  
 
   
   <span class="article-date">
@@ -737,7 +729,7 @@
     
       
     
-    December 2020
+    Dec 10, 2023
   </span>
   
 
@@ -763,57 +755,10 @@
 
 
 
-  
 
 
 
 
-
-
-<div class="btn-links mb-3">
-  
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="/publication/2020-osdi-kungfu/2020-osdi-kungfu.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/lsds/KungFu" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
 
 
   
@@ -823,49 +768,10 @@
 
   <div class="article-container">
 
-    
-    <h3>Abstract</h3>
-    <p class="pub-abstract">When using distributed machine learning (ML) systems to train models on a cluster of worker machines, users must configure a large number of parameters: hyper-parameters (e.g. the batch size and the learning rate) affect model convergence; system parameters (e.g. the number of workers and their communication topology) impact training performance. In current systems, adapting such parameters during training is ill-supported. Users must set system parameters at deployment time, and provide fixed adaptation schedules for hyper-parameters in the training program. We describe KungFu, a distributed ML library for Tensor- Flow that is designed to enable adaptive training. KungFu allows user to express high-level Adaptation Policies (APs) that describe how to change hyper- and system parameters during training. APs take real-time monitored metrics (e.g. signal-to-noise ratios and noise scale) as input and trigger control actions (e.g. cluster rescaling or updating the synchronisation strategy). For execution, APs are translated into monitoring and control operators, which are embedded in the dataflow graph. APs exploit an efficient asynchronous collective communication layer, which ensures concurrency and consistency of monitoring and adaptation operations.</p>
-    
+    <div class="article-style">
+      <p>ServerlessLLM is a new system that enables cost-effective locality-enhanced serverless inference for LLMs. Its paper has been accepted to the top system conference OSDI'24, and we are in the procese of open-sourcing it. Stay tuned.</p>
 
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Type</div>
-          <div class="col-12 col-md-9">
-            
-            
-            <a href="/publication/#1">
-              Conference paper
-            </a>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
     </div>
-    <div class="d-md-none space-below"></div>
-    
-
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In <em>USENIX Symposium on Operating Systems Design and Implementation (OSDI)</em></div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
-    
-
-    <div class="space-below"></div>
-
-    <div class="article-style"></div>
 
     
 
@@ -873,12 +779,6 @@
 
 
 
-
-<div class="article-tags">
-  
-  <a class="badge badge-light" href="/tag/machine-learning-systems/">Machine Learning Systems</a>
-  
-</div>
 
 
 
@@ -894,8 +794,7 @@
 
 
   
-    
-    
+  
 
 
 
@@ -992,100 +891,6 @@
   
 
 
-  
-    
-    
-
-
-
-
-
-  
-
-
-  
-    
-    
-
-
-
-
-
-  
-    
-    
-    
-    
-    
-    <div class="media author-card content-widget-hr">
-      
-
-      <div class="media-body">
-        <h5 class="card-title"><a href="/author/marcel-wagenlander/">Marcel Wagenlander</a></h5>
-        <h6 class="card-subtitle">Visiting Student</h6>
-        
-        <ul class="network-icon" aria-hidden="true">
-  
-</ul>
-
-      </div>
-    </div>
-  
-
-
-  
-    
-    
-
-
-
-
-
-  
-
-
-  
-    
-    
-
-
-
-
-
-  
-    
-    
-    
-    
-    
-    <div class="media author-card content-widget-hr">
-      
-
-      <div class="media-body">
-        <h5 class="card-title"><a href="/author/andrei-octavian-brabete/">Andrei-Octavian Brabete</a></h5>
-        <h6 class="card-subtitle">MEng Student</h6>
-        
-        <ul class="network-icon" aria-hidden="true">
-  
-</ul>
-
-      </div>
-    </div>
-  
-
-
-  
-    
-    
-
-
-
-
-
-  
-
-
-  
 
 
 
@@ -1099,23 +904,6 @@
 
 
   
-  
-  <div class="article-widget content-widget-hr">
-    <h3>Related</h3>
-    <ul>
-      
-      <li><a href="/publication/2020-hotcloud-spotnik/">Spotnik: Designing Distributed Machine Learning for Transient Cloud Resources</a></li>
-      
-      <li><a href="/publication/2019-osr-review/">Taming Hyper-parameters in Deep Learning Systems</a></li>
-      
-      <li><a href="/publication/2023-arxiv-quiver/">Quiver: Supporting GPUs for Low-Latency, High-Throughput GNN Serving with Workload Awareness</a></li>
-      
-      <li><a href="/publication/2024-osdi-serverlessllm/">ServerlessLLM: Locality-Enhanced Serverless Inference for Large Language Models</a></li>
-      
-      <li><a href="/publication/2021-multimedia-rlzoo/">Efficient Reinforcement Learning Development with RLzoo</a></li>
-      
-    </ul>
-  </div>
   
 
 
@@ -1123,7 +911,7 @@
 
 
   </div>
-</div>
+</article>
 
       
 
