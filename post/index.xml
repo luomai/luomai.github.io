@@ -17,7 +17,8 @@
       <link>https://luomai.github.io/post/24-serverlessllm-osdi/</link>
       <pubDate>Sun, 10 Dec 2023 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/24-serverlessllm-osdi/</guid>
-      <description>&lt;p&gt;ServerlessLLM is a new system that enables cost-effective locality-enhanced serverless inference for LLMs. Its paper has been accepted to the top system conference OSDI&#39;24, and we are in the procese of open-sourcing it. Stay tuned.&lt;/p&gt;
+      <description>&lt;p&gt;ServerlessLLM is a new system that enables cost-effective serverless inference for LLMs. Its key contribution is to make &amp;ldquo;Checkpoint Locality&amp;rdquo; to be effectively realized. It achieves this through a combination of a new LLM checkpoint format and a fast loader on multi-tier storage, an efficient algorithm for LLM inference live migration and a new locality-friendly GPU serverless architecture.&lt;/p&gt;
+&lt;p&gt;The ServerlessLLM paper has been accepted to the top system conference OSDI&#39;24, and we are in the procese of open-sourcing it. Stay tuned.&lt;/p&gt;
 </description>
     </item>
     
