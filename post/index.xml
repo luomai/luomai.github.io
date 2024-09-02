@@ -5,7 +5,7 @@
     <link>https://luomai.github.io/post/</link>
       <atom:link href="https://luomai.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 10 Dec 2023 13:35:37 +0100</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 10 Jul 2024 13:35:37 +0100</lastBuildDate>
     <image>
       <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
@@ -13,12 +13,30 @@
     </image>
     
     <item>
+      <title>Tenplex in SOSP 2024.</title>
+      <link>https://luomai.github.io/post/24-tenplex-sosp/</link>
+      <pubDate>Wed, 10 Jul 2024 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/24-tenplex-sosp/</guid>
+      <description>&lt;p&gt;Tenplex is a new system enabling elastic training of LLMs with advanced multi-dimensional parallelism. The Tenplex paper has been accepted for presentation at the 30th Symposium on Operating Systems Principles (SOSP’24). We are currently preparing to open-source the project. Stay tuned.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Trilled to receive Microsoft Research Startrack Scholar Award.</title>
+      <link>https://luomai.github.io/post/24-startrack-microsoft/</link>
+      <pubDate>Fri, 10 May 2024 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/24-startrack-microsoft/</guid>
+      <description>&lt;p&gt;I am thrilled to receive the Microsoft Research Startrack Scholar Award, a prestigious honor for young faculty in the field of computer science.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>ServerlessLLM in OSDI 2024.</title>
       <link>https://luomai.github.io/post/24-serverlessllm-osdi/</link>
       <pubDate>Sun, 10 Dec 2023 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/24-serverlessllm-osdi/</guid>
-      <description>&lt;p&gt;ServerlessLLM is a new system that enables cost-effective serverless inference for LLMs. Its key contribution is to make &amp;ldquo;Checkpoint Locality&amp;rdquo; effectively realized. It achieves this through a combination of a new LLM checkpoint format and a fast loader on multi-tier storage, an efficient algorithm for LLM inference live migration, and a new locality-friendly GPU serverless architecture.&lt;/p&gt;
-&lt;p&gt;The ServerlessLLM paper has been accepted to the top system conference OSDI&#39;24, and we are in the process of open-sourcing it. Stay tuned.&lt;/p&gt;
+      <description>&lt;p&gt;ServerlessLLM is a new system enabling cost-effective serverless inference for LLMs by implementing a scalable and high-performance “checkpoint storage layer” on GPU servers. It achieves this through an innovative LLM checkpoint format, a multi-tier checkpoint loading subsystem, an efficient live migration algorithm, and a locality-friendly GPU serverless architecture.&lt;/p&gt;
+&lt;p&gt;The ServerlessLLM paper has been accepted to the top systems conference, OSDI’24, and we are preparing to open-source the project. Stay tuned.&lt;/p&gt;
 </description>
     </item>
     
@@ -75,16 +93,6 @@
       <pubDate>Sun, 10 Jul 2022 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/22-metarl-nips/</guid>
       <description>&lt;p&gt;Meta RL paper to appear in NeurIPS 2022.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Invited lecture at the Oxford ML summer school</title>
-      <link>https://luomai.github.io/post/21-oxfordml-news/</link>
-      <pubDate>Sat, 31 Jul 2021 13:45:55 +0100</pubDate>
-      <guid>https://luomai.github.io/post/21-oxfordml-news/</guid>
-      <description>&lt;p&gt;I am honored to give a lecture about AI/ML systems at the prestigious 
-&lt;a href=&#34;https://www.oxfordml.school&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Oxford Machine Learning Summer School&lt;/a&gt;. The school covers some of the most important topics in ML/DL that the field is showing a growing interest in (e.g., Bayesian ML, representation learning, computer vision, natural language processing (NLP), reinforcement learning, causal ML, and transfer learning).&lt;/p&gt;
 </description>
     </item>
     

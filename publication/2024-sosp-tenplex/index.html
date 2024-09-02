@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="Luo Mai - University of Edinburgh">
+  <meta name="description" content="Deep learning (DL) jobs use multi-dimensional parallelism, i.e. combining data, model, and pipeline parallelism, to use large GPU clusters efficiently. Long-running jobs may experience changes to their GPU allocation: (i) resource elasticity during training adds or removes GPUs; (ii) hardware maintenance may require redeployment on different GPUs; and (iii) GPU failures force jobs to run with fewer devices. Current DL frameworks tie jobs to a set of GPUs and thus lack support for these scenarios. In particular, they cannot change the multi-dimensional parallelism of an already-running job in an efficient and model-independent way. We describe Scalai, a state management library for DL systems that enables jobs to change their parallelism dynamically after the GPU allocation is updated at runtime. Scalai achieves this through a new abstraction, a parallelizable tensor collection (PTC), that externalizes the job state during training. After a GPU change, Scalai uses the PTC to transform the job state: the PTC repartitions the dataset state under data parallelism and exposes it to DL workers through a virtual file system; and the PTC obtains the model state as partitioned checkpoints and transforms them to reflect the new parallelization configuration. For efficiency, Scalai executes PTC transformations in parallel with minimum data movement between workers. Our experiments show that Scalai enables DL jobs to support dynamic parallelization with low overhead.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/tags/">
+  <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/publication/2024-sosp-tenplex/">
 
   
 
@@ -250,14 +250,12 @@
   
 
   
-  <link rel="alternate" href="/tags/index.xml" type="application/rss+xml" title="Luo Mai">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
 
-  <link rel="canonical" href="https://luomai.github.io/tags/">
+  <link rel="canonical" href="https://luomai.github.io/publication/2024-sosp-tenplex/">
 
   
   
@@ -273,18 +271,61 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Luo Mai">
-  <meta property="og:url" content="https://luomai.github.io/tags/">
-  <meta property="og:title" content="Tags | Luo Mai">
-  <meta property="og:description" content="Luo Mai - University of Edinburgh"><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="og:url" content="https://luomai.github.io/publication/2024-sosp-tenplex/">
+  <meta property="og:title" content="Tenplex: Dynamic Parallelism for Deep Learning using Parallelizable Tensor Collections | Luo Mai">
+  <meta property="og:description" content="Deep learning (DL) jobs use multi-dimensional parallelism, i.e. combining data, model, and pipeline parallelism, to use large GPU clusters efficiently. Long-running jobs may experience changes to their GPU allocation: (i) resource elasticity during training adds or removes GPUs; (ii) hardware maintenance may require redeployment on different GPUs; and (iii) GPU failures force jobs to run with fewer devices. Current DL frameworks tie jobs to a set of GPUs and thus lack support for these scenarios. In particular, they cannot change the multi-dimensional parallelism of an already-running job in an efficient and model-independent way. We describe Scalai, a state management library for DL systems that enables jobs to change their parallelism dynamically after the GPU allocation is updated at runtime. Scalai achieves this through a new abstraction, a parallelizable tensor collection (PTC), that externalizes the job state during training. After a GPU change, Scalai uses the PTC to transform the job state: the PTC repartitions the dataset state under data parallelism and exposes it to DL workers through a virtual file system; and the PTC obtains the model state as partitioned checkpoints and transforms them to reflect the new parallelization configuration. For efficiency, Scalai executes PTC transformations in parallel with minimum data movement between workers. Our experiments show that Scalai enables DL jobs to support dynamic parallelization with low overhead."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2024-07-26T00:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2024-07-26T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2024-07-26T00:00:00&#43;00:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://luomai.github.io/publication/2024-sosp-tenplex/"
+  },
+  "headline": "Tenplex: Dynamic Parallelism for Deep Learning using Parallelizable Tensor Collections",
+  
+  "datePublished": "2024-07-26T00:00:00Z",
+  "dateModified": "2024-07-26T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Marcel Wagenlander"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Luo Mai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Deep learning (DL) jobs use multi-dimensional parallelism, i.e. combining data, model, and pipeline parallelism, to use large GPU clusters efficiently. Long-running jobs may experience changes to their GPU allocation: (i) resource elasticity during training adds or removes GPUs; (ii) hardware maintenance may require redeployment on different GPUs; and (iii) GPU failures force jobs to run with fewer devices. Current DL frameworks tie jobs to a set of GPUs and thus lack support for these scenarios. In particular, they cannot change the multi-dimensional parallelism of an already-running job in an efficient and model-independent way. We describe Scalai, a state management library for DL systems that enables jobs to change their parallelism dynamically after the GPU allocation is updated at runtime. Scalai achieves this through a new abstraction, a parallelizable tensor collection (PTC), that externalizes the job state during training. After a GPU change, Scalai uses the PTC to transform the job state: the PTC repartitions the dataset state under data parallelism and exposes it to DL workers through a virtual file system; and the PTC obtains the model state as partitioned checkpoints and transforms them to reflect the new parallelization configuration. For efficiency, Scalai executes PTC transformations in parallel with minimum data movement between workers. Our experiments show that Scalai enables DL jobs to support dynamic parallelization with low overhead."
+}
+</script>
+
+  
 
   
 
@@ -292,10 +333,13 @@
   
 
 
+  
 
 
 
-  <title>Tags | Luo Mai</title>
+
+
+  <title>Tenplex: Dynamic Parallelism for Deep Learning using Parallelizable Tensor Collections | Luo Mai</title>
 
 </head>
 
@@ -643,6 +687,89 @@
 </nav>
 
 
+  <div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Tenplex: Dynamic Parallelism for Deep Learning using Parallelizable Tensor Collections</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span >Marcel Wagenländer</span>, <span >Guo Li</span>, <span >Bo Zhao</span>, <span ><a href="/author/luo-mai/">Luo Mai</a></span>, <span >Peter Pietzuch</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    July 2024
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
   
 
 
@@ -652,85 +779,312 @@
 
 
 
-
-
-
-
-  
-
-  
-  
   
     
   
-<div class="universal-wrapper pt-3">
-  <h1>Tags</h1>
 
-  
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="https://arxiv.org/abs/2312.05181" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
+  <div class="article-container">
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract">Deep learning (DL) jobs use multi-dimensional parallelism, i.e. combining data, model, and pipeline parallelism, to use large GPU clusters efficiently. Long-running jobs may experience changes to their GPU allocation: (i) resource elasticity during training adds or removes GPUs; (ii) hardware maintenance may require redeployment on different GPUs; and (iii) GPU failures force jobs to run with fewer devices. Current DL frameworks tie jobs to a set of GPUs and thus lack support for these scenarios. In particular, they cannot change the multi-dimensional parallelism of an already-running job in an efficient and model-independent way. We describe Scalai, a state management library for DL systems that enables jobs to change their parallelism dynamically after the GPU allocation is updated at runtime. Scalai achieves this through a new abstraction, a parallelizable tensor collection (PTC), that externalizes the job state during training. After a GPU change, Scalai uses the PTC to transform the job state: the PTC repartitions the dataset state under data parallelism and exposes it to DL workers through a virtual file system; and the PTC obtains the model state as partitioned checkpoints and transforms them to reflect the new parallelization configuration. For efficiency, Scalai executes PTC transformations in parallel with minimum data movement between workers. Our experiments show that Scalai enables DL jobs to support dynamic parallelization with low overhead.</p>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">In *The 30th Symposium on Operating Systems Principles (SOSP'24) *</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
   
+  <a class="badge badge-light" href="/tag/machine-learning-systems/">Machine Learning Systems</a>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/author/marcel-wagenlander/">Marcel Wagenlander</a></h5>
+        <h6 class="card-subtitle">Visiting Student</h6>
+        
+        <ul class="network-icon" aria-hidden="true">
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+    
+      
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-square" src="/author/luo-mai/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_231267_270x270_fill_q90_lanczos_center.jpg" alt="Luo Mai">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="https://luomai.github.io">Luo Mai</a></h5>
+        <h6 class="card-subtitle">Assistant Professor</h6>
+        <p class="card-text">My research interests include computer systems, machine learning and data management.</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:luo.mai@ed.ac.uk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=I6GYccIAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/luomai" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/luo-mai-72253242/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
 
   
   
-    
-    
-    
-    <div>
-      <h2><a href="/tag/machine-learning-systems/" >Machine Learning Systems</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tag/big-data-systems/" >Big Data Systems</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tag/cloud-computing/" >Cloud Computing</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tag/data-centre-networks/" >Data Centre Networks</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
-  
-    
-    
-    
-    <div>
-      <h2><a href="/tag/mobile-computing/" >Mobile Computing</a></h2>
-      <div class="article-style">
-        
-      </div>
-    </div>
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/2023-arxiv-quiver/">Quiver: Supporting GPUs for Low-Latency, High-Throughput GNN Serving with Workload Awareness</a></li>
+      
+      <li><a href="/publication/2020-osdi-kungfu/">KungFu: Making Training in Distributed Machine Learning Adaptive</a></li>
+      
+      <li><a href="/publication/2020-hotcloud-spotnik/">Spotnik: Designing Distributed Machine Learning for Transient Cloud Resources</a></li>
+      
+      <li><a href="/publication/2019-osr-review/">Taming Hyper-parameters in Deep Learning Systems</a></li>
+      
+      <li><a href="/publication/2021-multimedia-rlzoo/">Efficient Reinforcement Learning Development with RLzoo</a></li>
+      
+    </ul>
+  </div>
   
 
-  
 
+
+
+
+  </div>
 </div>
 
       
