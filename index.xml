@@ -174,15 +174,6 @@
     </item>
     
     <item>
-      <title>Meta RL paper in NeruIPS 2022.</title>
-      <link>https://luomai.github.io/post/22-metarl-nips/</link>
-      <pubDate>Sun, 10 Jul 2022 13:35:37 +0100</pubDate>
-      <guid>https://luomai.github.io/post/22-metarl-nips/</guid>
-      <description>&lt;p&gt;Meta RL paper to appear in NeurIPS 2022.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Move Fast and Meet Deadlines: Fine-grained Real-time Stream Processing with Cameo</title>
       <link>https://luomai.github.io/publication/2021-nsdi-cameo/</link>
       <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
