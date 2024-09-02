@@ -21,14 +21,6 @@
     </item>
     
     <item>
-      <title>Quiver: Supporting GPUs for Low-Latency, High-Throughput GNN Serving with Workload Awareness</title>
-      <link>https://luomai.github.io/publication/2023-arxiv-quiver/</link>
-      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://luomai.github.io/publication/2023-arxiv-quiver/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>KungFu: Making Training in Distributed Machine Learning Adaptive</title>
       <link>https://luomai.github.io/publication/2020-osdi-kungfu/</link>
       <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>

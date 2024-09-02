@@ -6,10 +6,8 @@
     <lastmod>2023-12-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/xiulong-yuan/</loc>
-    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/zeyuan-tan/</loc>
-    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/chijun-sima/</loc>
     <lastmod>2022-11-01T00:00:00+00:00</lastmod>
@@ -89,19 +87,10 @@
     <loc>https://luomai.github.io/author/dmitrii-ustiugov/</loc>
     <lastmod>2024-01-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://luomai.github.io/author/mahesh-marina/</loc>
-    <lastmod>2024-01-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/publication/2024-arxiv-moe-infinity/</loc>
-    <lastmod>2024-01-26T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://luomai.github.io/publication/2024-osdi-serverlessllm/</loc>
     <lastmod>2024-01-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/yuvraj-patel/</loc>
-    <lastmod>2024-01-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/author/zhan-lu/</loc>
     <lastmod>2024-01-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/bo-liu/</loc>
@@ -145,18 +134,6 @@
   </url><url>
     <loc>https://luomai.github.io/author/ying-wen/</loc>
     <lastmod>2023-05-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/author/baole-ai/</loc>
-    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/author/kai-zeng/</loc>
-    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/publication/2023-arxiv-quiver/</loc>
-    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/author/xiaoze-liu/</loc>
-    <lastmod>2023-04-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/post/22-ekko-osdi/</loc>
     <lastmod>2022-12-18T13:35:37+01:00</lastmod>
@@ -275,6 +252,9 @@
     <loc>https://luomai.github.io/author/zihan-ding/</loc>
     <lastmod>2021-08-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://luomai.github.io/post/21-cameo-accept-news/</loc>
+    <lastmod>2021-07-05T13:45:55+01:00</lastmod>
+  </url><url>
     <loc>https://luomai.github.io/author/konstantinos-fertakis/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -283,9 +263,6 @@
   </url><url>
     <loc>https://luomai.github.io/post/20-kungfu-accept-news/</loc>
     <lastmod>2020-08-18T13:35:37+01:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/post/21-cameo-accept-news/</loc>
-    <lastmod>2020-07-05T13:45:55+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/tag/cloud-computing/</loc>
     <lastmod>2020-06-01T00:00:00+00:00</lastmod>
@@ -339,6 +316,9 @@
     <lastmod>2018-12-01T13:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/publication/2018-vldb-chi/</loc>
+    <lastmod>2018-07-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/author/kai-zeng/</loc>
     <lastmod>2018-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/author/saravanan-muthukrishnan/</loc>

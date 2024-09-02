@@ -13,14 +13,6 @@
     </image>
     
     <item>
-      <title>MoE-Infinity: Activation-Aware Expert Offloading for Efficient MoE Serving</title>
-      <link>https://luomai.github.io/publication/2024-arxiv-moe-infinity/</link>
-      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://luomai.github.io/publication/2024-arxiv-moe-infinity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ServerlessLLM: Locality-Enhanced Serverless Inference for Large Language Models</title>
       <link>https://luomai.github.io/publication/2024-osdi-serverlessllm/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>

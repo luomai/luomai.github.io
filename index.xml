@@ -39,14 +39,6 @@
     </item>
     
     <item>
-      <title>MoE-Infinity: Activation-Aware Expert Offloading for Efficient MoE Serving</title>
-      <link>https://luomai.github.io/publication/2024-arxiv-moe-infinity/</link>
-      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://luomai.github.io/publication/2024-arxiv-moe-infinity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>ServerlessLLM: Locality-Enhanced Serverless Inference for Large Language Models</title>
       <link>https://luomai.github.io/publication/2024-osdi-serverlessllm/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
@@ -106,14 +98,6 @@
       <link>https://luomai.github.io/publication/2023-icml-gear/</link>
       <pubDate>Mon, 01 May 2023 00:00:00 +0000</pubDate>
       <guid>https://luomai.github.io/publication/2023-icml-gear/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Quiver: Supporting GPUs for Low-Latency, High-Throughput GNN Serving with Workload Awareness</title>
-      <link>https://luomai.github.io/publication/2023-arxiv-quiver/</link>
-      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
-      <guid>https://luomai.github.io/publication/2023-arxiv-quiver/</guid>
       <description></description>
     </item>
     
@@ -243,6 +227,17 @@
     </item>
     
     <item>
+      <title>Cameo system in NSDI 2021</title>
+      <link>https://luomai.github.io/post/21-cameo-accept-news/</link>
+      <pubDate>Mon, 05 Jul 2021 13:45:55 +0100</pubDate>
+      <guid>https://luomai.github.io/post/21-cameo-accept-news/</guid>
+      <description>&lt;p&gt;Our Paper &amp;ldquo;Move Fast and Meet Deadlines: Fine-grained Real-time Stream Processing with Cameo&amp;rdquo; is accepted by USENIX Symposium on Networked Systems Design and Implementation (NSDI) 2021.&lt;/p&gt;
+&lt;p&gt;NSDI focuses on the design principles, implementation, and practical evaluation of networked and distributed systems. Its goal is to bring together researchers from across the networking and systems community to foster a broad approach to addressing overlapping research challenges.&lt;/p&gt;
+&lt;p&gt;NSDI provides a high-quality forum for presenting results and discussing ideas that further the knowledge and understanding of the networked systems community as a whole, continue a significant research dialog, or push the architectural boundaries of network services.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>KungFu: Making Training in Distributed Machine Learning Adaptive</title>
       <link>https://luomai.github.io/publication/2020-osdi-kungfu/</link>
       <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
@@ -257,17 +252,6 @@
       <guid>https://luomai.github.io/post/20-kungfu-accept-news/</guid>
       <description>&lt;p&gt;Our Paper &amp;ldquo;KungFu: Making Training in Distributed Machine Learning Adaptive&amp;rdquo; is accepted by USENIX Symposium on Operating Systems Design and Implementation (OSDI) 2020.&lt;/p&gt;
 &lt;p&gt;OSDI brings together professionals from academic and industrial backgrounds in what has become a premier forum for discussing the design, implementation, and implications of systems software. The symposium emphasizes innovative research as well as quantified or insightful experiences in systems design and implementation.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Cameo system in NSDI 2021</title>
-      <link>https://luomai.github.io/post/21-cameo-accept-news/</link>
-      <pubDate>Sun, 05 Jul 2020 13:45:55 +0100</pubDate>
-      <guid>https://luomai.github.io/post/21-cameo-accept-news/</guid>
-      <description>&lt;p&gt;Our Paper &amp;ldquo;Move Fast and Meet Deadlines: Fine-grained Real-time Stream Processing with Cameo&amp;rdquo; is accepted by USENIX Symposium on Networked Systems Design and Implementation (NSDI) 2021.&lt;/p&gt;
-&lt;p&gt;NSDI focuses on the design principles, implementation, and practical evaluation of networked and distributed systems. Its goal is to bring together researchers from across the networking and systems community to foster a broad approach to addressing overlapping research challenges.&lt;/p&gt;
-&lt;p&gt;NSDI provides a high-quality forum for presenting results and discussing ideas that further the knowledge and understanding of the networked systems community as a whole, continue a significant research dialog, or push the architectural boundaries of network services.&lt;/p&gt;
 </description>
     </item>
     
