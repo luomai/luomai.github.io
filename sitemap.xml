@@ -33,23 +33,26 @@
   </url><url>
     <loc>https://luomai.github.io/author/xuan-sun/</loc>
   </url><url>
+    <loc>https://luomai.github.io/post/24-aria-award/</loc>
+    <lastmod>2024-10-26T13:35:37+01:00</lastmod>
+  </url><url>
     <loc>https://luomai.github.io/</loc>
-    <lastmod>2024-10-20T13:35:37+01:00</lastmod>
+    <lastmod>2024-10-26T13:35:37+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/post/</loc>
-    <lastmod>2024-10-20T13:35:37+01:00</lastmod>
+    <lastmod>2024-10-26T13:35:37+01:00</lastmod>
   </url><url>
-    <loc>https://luomai.github.io/post/24-aria-award/</loc>
-    <lastmod>2024-10-20T13:35:37+01:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/post/24-risingstar-yao/</loc>
-    <lastmod>2024-10-10T13:35:37+01:00</lastmod>
+    <loc>https://luomai.github.io/post/24-tenplex-sosp/</loc>
+    <lastmod>2024-10-25T13:35:37+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/project/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/project/serverlessllm/</loc>
     <lastmod>2024-10-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://luomai.github.io/post/24-risingstar-yao/</loc>
+    <lastmod>2024-08-10T13:35:37+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/publication-type/1/</loc>
     <lastmod>2024-07-26T00:00:00+00:00</lastmod>
@@ -87,7 +90,7 @@
     <loc>https://luomai.github.io/publication/2024-sosp-tenplex/</loc>
     <lastmod>2024-07-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://luomai.github.io/post/24-tenplex-sosp/</loc>
+    <loc>https://luomai.github.io/post/24-serverlessllm-osdi/</loc>
     <lastmod>2024-07-10T13:35:37+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/post/24-startrack-microsoft/</loc>
@@ -105,6 +108,9 @@
     <loc>https://luomai.github.io/author/yuvraj-patel/</loc>
     <lastmod>2024-01-26T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://luomai.github.io/post/24-mlsyscdt-award/</loc>
+    <lastmod>2024-01-20T13:35:37+01:00</lastmod>
+  </url><url>
     <loc>https://luomai.github.io/author/bo-liu/</loc>
     <lastmod>2023-12-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -119,9 +125,6 @@
   </url><url>
     <loc>https://luomai.github.io/author/yaodong-yang/</loc>
     <lastmod>2023-12-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://luomai.github.io/post/24-serverlessllm-osdi/</loc>
-    <lastmod>2023-12-10T13:35:37+01:00</lastmod>
   </url><url>
     <loc>https://luomai.github.io/post/23-torchopt-jmlr/</loc>
     <lastmod>2023-12-10T13:35:37+01:00</lastmod>
