@@ -5,12 +5,21 @@
     <link>https://luomai.github.io/project/</link>
       <atom:link href="https://luomai.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 31 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Projects</title>
       <link>https://luomai.github.io/project/</link>
     </image>
+    
+    <item>
+      <title>ServerlessLLM</title>
+      <link>https://luomai.github.io/project/serverlessllm/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/project/serverlessllm/</guid>
+      <description>&lt;p&gt;ServerlessLLM is an open-source framework dedicated to making custom LLM deployment easy, fast, and affordable. As models grow in size and complexity, deploying them on distributed GPUs has become increasingly costly and technically challenging, limiting the benefits of custom LLM deployment to only a select few. ServerlessLLM tackles these challenges by a full-stack, LLM-centric serverless system design, integrating multiple LLM-optimized layers—from checkpoint formats and inference runtimes to the storage layer and cluster scheduler.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>MegBA</title>

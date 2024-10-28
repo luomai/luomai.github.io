@@ -5,12 +5,46 @@
     <link>https://luomai.github.io/</link>
       <atom:link href="https://luomai.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Luo Mai</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 26 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 20 Oct 2024 13:35:37 +0100</lastBuildDate>
     <image>
       <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Luo Mai</title>
       <link>https://luomai.github.io/</link>
     </image>
+    
+    <item>
+      <title>Win an ARIA grant (£4.5M) co-led by Imperial, Edinburgh and Cambridge to scale AI compute by 1000X.</title>
+      <link>https://luomai.github.io/post/24-aria-award/</link>
+      <pubDate>Sun, 20 Oct 2024 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/24-aria-award/</guid>
+      <description>&lt;p&gt;I am deeply honoured to receive a prestigious grant from Advanced Research + Invention Agency (ARIA) to develop a scalable and modular performance simulation framework for emerging AI models, systems and hardware. This project will be co-led by Imperial (Aaron Zhao), Edinburgh (Luo Mai), and Cambridge (Robert Mullins), bringing together over 10 world-leading experts across the entire system stack. With this funding (£4.5M), we can build a critical mass of talents and skills to incubate game-changing technology, making a 1000X improvement in AI&amp;rsquo;s efficiency possible.&lt;/p&gt;
+&lt;p&gt;See the 
+&lt;a href=&#34;https://www.aria.org.uk/scaling-compute/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;official annoucement&lt;/a&gt; from ARIA.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Congratulations on my student Yao Fu for winning 2024 Rising Star in ML and Systems. Great achievement!</title>
+      <link>https://luomai.github.io/post/24-risingstar-yao/</link>
+      <pubDate>Thu, 10 Oct 2024 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/24-risingstar-yao/</guid>
+      <description>&lt;p&gt;See the coverage from 
+&lt;a href=&#34;https://informatics.ed.ac.uk/news-events/news/latest-news/informatics-student-among-machine-learning-and-systems-rising-stars&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;our school&lt;/a&gt; and the 
+&lt;a href=&#34;https://mlcommons.org/2024/06/2024-mlc-rising-stars/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;annoucement from MLCommon&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This year’s Rising Stars cohort includes 41 junior researchers from 33 institutions globally. Selected from over 170 applicants, Yao is the sole recipient from the UK and one of three from Europe, the other two European students coming from ETH, Zurich.&lt;/p&gt;
+&lt;p&gt;The 2024 Rising Start workshop was held in the NVIDIA HQ in Santa Clara, CA in July, where Yao presented his research.&lt;/p&gt;
+&lt;p&gt;Yao is a third-year PhD student in Computer Science at The University of Edinburgh, supervised by Dr Luo Mai. His research lies at the intersection of machine learning and systems, focusing on performance and affordability. Recently, his work has centred on efficient serving systems for large language models, leading to two main projects: ServerlessLLM and the MoESys Leaderboard.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ServerlessLLM</title>
+      <link>https://luomai.github.io/project/serverlessllm/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/project/serverlessllm/</guid>
+      <description>&lt;p&gt;ServerlessLLM is an open-source framework dedicated to making custom LLM deployment easy, fast, and affordable. As models grow in size and complexity, deploying them on distributed GPUs has become increasingly costly and technically challenging, limiting the benefits of custom LLM deployment to only a select few. ServerlessLLM tackles these challenges by a full-stack, LLM-centric serverless system design, integrating multiple LLM-optimized layers—from checkpoint formats and inference runtimes to the storage layer and cluster scheduler.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Tenplex: Dynamic Parallelism for Deep Learning using Parallelizable Tensor Collections</title>
