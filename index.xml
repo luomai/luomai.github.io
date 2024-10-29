@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>[Grant] Secured £4.5M ARIA Grant with Imperial, Edinburgh &amp; Cambridge.</title>
+      <title>[10/24, Grant] Secured a prestigious ARIA grant with Imperial College &amp; Cambridge University.</title>
       <link>https://luomai.github.io/post/24-aria-award/</link>
       <pubDate>Sat, 26 Oct 2024 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/24-aria-award/</guid>
@@ -24,7 +24,7 @@
     </item>
     
     <item>
-      <title>[Paper] Tenplex, the first elastic LLM system, accepted to SOSP 2024.</title>
+      <title>[10/24, Paper] Tenplex, the first elastic LLM system, accepted to SOSP 2024.</title>
       <link>https://luomai.github.io/post/24-tenplex-sosp/</link>
       <pubDate>Fri, 25 Oct 2024 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/24-tenplex-sosp/</guid>
@@ -42,7 +42,7 @@
     </item>
     
     <item>
-      <title>[Student Achievement] Congrats to Yao Fu on Winning 2024 Rising Star in ML &amp; Systems!</title>
+      <title>[07/24, Student Achievement] Congrats to Yao Fu on Winning 2024 Rising Star in ML &amp; Systems.</title>
       <link>https://luomai.github.io/post/24-risingstar-yao/</link>
       <pubDate>Sat, 10 Aug 2024 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/24-risingstar-yao/</guid>
@@ -64,7 +64,7 @@
     </item>
     
     <item>
-      <title>[Paper] ServerlessLLM, the first serverless LLM system, accepted to OSDI 2024.</title>
+      <title>[07/24, Paper] ServerlessLLM, the first serverless LLM system, accepted to OSDI 2024.</title>
       <link>https://luomai.github.io/post/24-serverlessllm-osdi/</link>
       <pubDate>Wed, 10 Jul 2024 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/24-serverlessllm-osdi/</guid>
@@ -74,7 +74,7 @@
     </item>
     
     <item>
-      <title>[Award] Win a Microsoft Research Startrack Scholar Award.</title>
+      <title>[05/24, Award] Win a Microsoft Research Startrack Scholar Award.</title>
       <link>https://luomai.github.io/post/24-startrack-microsoft/</link>
       <pubDate>Fri, 10 May 2024 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/24-startrack-microsoft/</guid>
@@ -91,11 +91,11 @@
     </item>
     
     <item>
-      <title>[Grant] Secured £18M from EPSRC to Estabslish a CDT for ML Systems!</title>
+      <title>[03/24, Grant] Secured funds from EPSRC and industry partners to build a CDT for ML Systems.</title>
       <link>https://luomai.github.io/post/24-mlsyscdt-award/</link>
       <pubDate>Sat, 20 Jan 2024 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/24-mlsyscdt-award/</guid>
-      <description>&lt;p&gt;I am deeply thrilled to have secured an EPSRC grant (£18M) to establish a Centre for Doctoral Training (CDT) in ML Systems. This grant is co-led by Amos Storkey (PI), Mike O&amp;rsquo;Boyle (co-I), Ajitha Rajan (co-I), and myself (co-I). With this CDT, we are one of the few places in the world capable of creating the critical mass of talent, skills, and resources needed to incubate game-changing technologies for ML systems.&lt;/p&gt;
+      <description>&lt;p&gt;I am deeply thrilled to have secured an EPSRC grant (£8.7M) matched with £9.2M from industry partners to establish a Centre for Doctoral Training (CDT) in ML Systems. This grant is co-led by Amos Storkey (PI), Mike O&amp;rsquo;Boyle (co-I), Ajitha Rajan (co-I), and myself (co-I). With this CDT, we are one of the few places in the world capable of creating the critical mass of talent, skills, and resources needed to incubate game-changing technologies for ML systems.&lt;/p&gt;
 &lt;p&gt;Through this CDT, PhD students will have the opportunity to build expertise across the entire AI system stack—spanning models, algorithms, software, hardware, and large-scale clusters. The CDT is supported by UK EPSRC and over 20 industry partners, with that number still growing.&lt;/p&gt;
 &lt;p&gt;See the 
 &lt;a href=&#34;https://www.ukri.org/what-we-do/developing-people-and-skills/epsrc/studentships/centres-for-doctoral-training/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;announcement 1&lt;/a&gt; and 
@@ -112,7 +112,7 @@
     </item>
     
     <item>
-      <title>[Paper &amp; Award] TorchOpt is accepted by JMLR and becomes a PyTorch Ecosystem Project.</title>
+      <title>[12/23, Paper &amp; Award] TorchOpt is accepted by JMLR and becomes a PyTorch Ecosystem Project.</title>
       <link>https://luomai.github.io/post/23-torchopt-jmlr/</link>
       <pubDate>Sun, 10 Dec 2023 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/23-torchopt-jmlr/</guid>
@@ -123,7 +123,7 @@
     </item>
     
     <item>
-      <title>[Award] Finalist for the Chancellor&#39;s Rising Star in Research.</title>
+      <title>[10/23, Award] Finalist for the Chancellor&#39;s Rising Star in Research.</title>
       <link>https://luomai.github.io/post/23-rising-star/</link>
       <pubDate>Fri, 10 Nov 2023 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/23-rising-star/</guid>
@@ -132,7 +132,7 @@
     </item>
     
     <item>
-      <title>[Paper] Gear, a new training system for briding RL and LLMs, accepted to ICML 2023.</title>
+      <title>[09/23, Paper] GEAR, a new training system for bridging RL and LLMs, accepted to ICML 2023.</title>
       <link>https://luomai.github.io/post/23-gear-icml/</link>
       <pubDate>Sun, 10 Sep 2023 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/23-gear-icml/</guid>
@@ -149,7 +149,7 @@
     </item>
     
     <item>
-      <title>[Paper] Ekko, the first system unifying training and inference, accepted to OSDI 2022</title>
+      <title>[07/22, Paper] Ekko, the first system unifying training and inference, accepted to OSDI 2022</title>
       <link>https://luomai.github.io/post/22-ekko-osdi/</link>
       <pubDate>Sun, 18 Dec 2022 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/22-ekko-osdi/</guid>
