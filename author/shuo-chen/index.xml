@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shuo Chen | Luo Mai</title>
+    <link>https://luomai.github.io/author/shuo-chen/</link>
+      <atom:link href="https://luomai.github.io/author/shuo-chen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Shuo Chen</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Shuo Chen</title>
+      <link>https://luomai.github.io/author/shuo-chen/</link>
+    </image>
+    
+    <item>
+      <title>Learning high-frequency functions made easy with sinusoidal positional encoding</title>
+      <link>https://luomai.github.io/publication/2024-icml-spe/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/publication/2024-icml-spe/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

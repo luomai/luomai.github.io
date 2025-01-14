@@ -5,20 +5,12 @@
     <link>https://luomai.github.io/author/zhan-lu/</link>
       <atom:link href="https://luomai.github.io/author/zhan-lu/index.xml" rel="self" type="application/rss+xml" />
     <description>Zhan Lu</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 26 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
     <image>
       <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Zhan Lu</title>
       <link>https://luomai.github.io/author/zhan-lu/</link>
     </image>
-    
-    <item>
-      <title>MoE-Infinity: Activation-Aware Expert Offloading for Efficient MoE Serving</title>
-      <link>https://luomai.github.io/publication/2024-arxiv-moe-infinity/</link>
-      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://luomai.github.io/publication/2024-arxiv-moe-infinity/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
