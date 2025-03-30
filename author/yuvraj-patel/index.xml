@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>ServerlessLLM: Locality-Enhanced Serverless Inference for Large Language Models</title>
+      <title>ServerlessLLM: Low-Latency Serverless Inference for Large Language Models</title>
       <link>https://luomai.github.io/publication/2024-osdi-serverlessllm/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://luomai.github.io/publication/2024-osdi-serverlessllm/</guid>

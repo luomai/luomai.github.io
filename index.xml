@@ -5,12 +5,40 @@
     <link>https://luomai.github.io/</link>
       <atom:link href="https://luomai.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Luo Mai</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 26 Oct 2024 13:35:37 +0100</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 26 Mar 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Luo Mai</title>
       <link>https://luomai.github.io/</link>
     </image>
+    
+    <item>
+      <title>WaferLLM: A Wafer-Scale LLM Inference System</title>
+      <link>https://luomai.github.io/publication/2025-osdi-waferllm/</link>
+      <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/publication/2025-osdi-waferllm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[03/25, Achievement] Starting August 2025, I’ll be Reader (Associate Professor).</title>
+      <link>https://luomai.github.io/post/25-reader-promotion/</link>
+      <pubDate>Tue, 25 Mar 2025 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/25-reader-promotion/</guid>
+      <description>&lt;p&gt;After nearly five years at Edinburgh, I’m delighted to share that my promotion has been approved, and I will take up the role of Reader (Associate Professor) in August 2025. Sincere thanks to all my students and postdocs, my collaborators around the world, and my colleagues at the School of Informatics, EPCC, and the University for their support along the way.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[03/25, Paper] WaferLLM, the world fatest LLM inference system, has been accepted to OSDI 2025.</title>
+      <link>https://luomai.github.io/post/25-waferllm-osdi/</link>
+      <pubDate>Tue, 25 Mar 2025 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/25-waferllm-osdi/</guid>
+      <description>&lt;p&gt;Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh-based architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s). However, current LLM inference systems, optimized for shared memory architectures like GPUs, fail to fully exploit these accelerators.&lt;/p&gt;
+&lt;p&gt;We introduce WaferLLM, the first wafer-scale LLM inference system. WaferLLM is guided by a novel PLMR model (pronounced as &amp;ldquo;Plummer&amp;rdquo;) that captures the unique hardware characteristics of wafer-scale architectures. Leveraging this model, WaferLLM pioneers wafer-scale LLM parallelism, optimizing the utilization of hundreds of thousands of on-chip cores. It also introduces MeshGEMM and MeshGEMV, the first GEMM and GEMV implementations designed to scale effectively on wafer-scale accelerators.&lt;/p&gt;
+&lt;p&gt;Evaluations show that WaferLLM achieves 200× better wafer-scale accelerator utilization than state-of-the-art systems. On a commodity wafer-scale accelerator, WaferLLM delivers 606× faster and 22× more energy-efficient GEMV compared to an advanced GPU. For LLMs, based on 16-bit data type, WaferLLM achieves 2700 toks/sec/req decode speed on Llama3-8B model and 840 toks/sec/req decode speed on Qwen2-72B model, which enables 39× faster decoding with 1.7× better energy efficiency. We anticipate these numbers will grow significantly as wafer-scale AI models, software, and hardware continue to mature.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[10/24, Grant] Secured a prestigious ARIA grant with Imperial College &amp; Cambridge University.</title>
@@ -91,7 +119,7 @@
     </item>
     
     <item>
-      <title>ServerlessLLM: Locality-Enhanced Serverless Inference for Large Language Models</title>
+      <title>ServerlessLLM: Low-Latency Serverless Inference for Large Language Models</title>
       <link>https://luomai.github.io/publication/2024-osdi-serverlessllm/</link>
       <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://luomai.github.io/publication/2024-osdi-serverlessllm/</guid>
