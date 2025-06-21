@@ -13,7 +13,7 @@
     </image>
     
     <item>
-      <title>WaferLLM: A Wafer-Scale LLM Inference System</title>
+      <title>WaferLLM: Large Language Model Inference at Wafer Scale</title>
       <link>https://luomai.github.io/publication/2025-osdi-waferllm/</link>
       <pubDate>Wed, 26 Mar 2025 00:00:00 +0000</pubDate>
       <guid>https://luomai.github.io/publication/2025-osdi-waferllm/</guid>

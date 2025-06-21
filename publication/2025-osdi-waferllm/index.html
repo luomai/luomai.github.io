@@ -27,9 +27,7 @@
   
     
   
-  <meta name="description" content="Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh-based architecture with large distributed on-chip memory (tens of GB) and ultra-high on-chip memory bandwidth (tens of PB/s). However, current LLM inference systems—optimized for shared-memory architectures like GPUs—fail to fully exploit these accelerators.
-We introduce WaferLLM, the first wafer-scale LLM inference system. WaferLLM is guided by a novel PLMR model (pronounced Plummer), which captures the unique hardware characteristics of wafer-scale architectures. Leveraging this model, WaferLLM pioneers wafer-scale LLM parallelism, optimizing utilization of hundreds of thousands of on-chip cores. It also introduces MeshGEMM and MeshGEMV, the first GEMM and GEMV implementations designed to scale effectively on wafer-scale accelerators.
-Evaluations show that WaferLLM achieves 200× better wafer-scale accelerator utilization than state-of-the-art systems. On a commodity wafer-scale accelerator, WaferLLM delivers 606× faster and 22× more energy-efficient GEMV compared to an advanced GPU. For LLMs using 16-bit data types, WaferLLM achieves 2700 toks/sec/req on the LLaMA3-8B model and 840 toks/sec/req on the Qwen2-72B model—enabling 39× faster decoding with 1.7× better energy efficiency.">
+  <meta name="description" content="Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s). However, current LLM inference systems, optimized for shared memory architectures like GPUs, fail to exploit these accelerators fully. We introduce WaferLLM, the first wafer-scale LLM inference system. WaferLLM is guided by a novel PLMR model (pronounced as Plummer) that captures the unique hardware characteristics of wafer-scale architectures. Leveraging this model, WaferLLM pioneers wafer-scale LLM parallelism, optimizing the utilization of hundreds of thousands of on-chip cores. It also introduces MeshGEMM and MeshGEMV, the first GEMM and GEMV implementations designed to scale effectively on wafer-scale accelerators.Evaluations show that WaferLLM achieves up to 200× higher accelerator utilization than state-of-the-art methods. Leveraging a wafer-scale accelerator (Cerebras WSE2), WaferLLM delivers GEMV operations 606× faster and 16× more energy-efficient than on an NVIDIA A100 GPU. For full LLM inference, WaferLLM achieves 10-20× speedups over A100 GPU clusters running SGLang and vLLM. These advantages are expected to grow as wafer-scale AI models, software, and hardware continue to mature. WaferLLM is open-sourced on GitHub.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/publication/2025-osdi-waferllm/">
@@ -274,10 +272,8 @@ Evaluations show that WaferLLM achieves 200× better wafer-scale accelerator uti
   
   <meta property="og:site_name" content="Luo Mai">
   <meta property="og:url" content="https://luomai.github.io/publication/2025-osdi-waferllm/">
-  <meta property="og:title" content="WaferLLM: A Wafer-Scale LLM Inference System | Luo Mai">
-  <meta property="og:description" content="Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh-based architecture with large distributed on-chip memory (tens of GB) and ultra-high on-chip memory bandwidth (tens of PB/s). However, current LLM inference systems—optimized for shared-memory architectures like GPUs—fail to fully exploit these accelerators.
-We introduce WaferLLM, the first wafer-scale LLM inference system. WaferLLM is guided by a novel PLMR model (pronounced Plummer), which captures the unique hardware characteristics of wafer-scale architectures. Leveraging this model, WaferLLM pioneers wafer-scale LLM parallelism, optimizing utilization of hundreds of thousands of on-chip cores. It also introduces MeshGEMM and MeshGEMV, the first GEMM and GEMV implementations designed to scale effectively on wafer-scale accelerators.
-Evaluations show that WaferLLM achieves 200× better wafer-scale accelerator utilization than state-of-the-art systems. On a commodity wafer-scale accelerator, WaferLLM delivers 606× faster and 22× more energy-efficient GEMV compared to an advanced GPU. For LLMs using 16-bit data types, WaferLLM achieves 2700 toks/sec/req on the LLaMA3-8B model and 840 toks/sec/req on the Qwen2-72B model—enabling 39× faster decoding with 1.7× better energy efficiency."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="og:title" content="WaferLLM: Large Language Model Inference at Wafer Scale | Luo Mai">
+  <meta property="og:description" content="Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s). However, current LLM inference systems, optimized for shared memory architectures like GPUs, fail to exploit these accelerators fully. We introduce WaferLLM, the first wafer-scale LLM inference system. WaferLLM is guided by a novel PLMR model (pronounced as Plummer) that captures the unique hardware characteristics of wafer-scale architectures. Leveraging this model, WaferLLM pioneers wafer-scale LLM parallelism, optimizing the utilization of hundreds of thousands of on-chip cores. It also introduces MeshGEMM and MeshGEMV, the first GEMM and GEMV implementations designed to scale effectively on wafer-scale accelerators.Evaluations show that WaferLLM achieves up to 200× higher accelerator utilization than state-of-the-art methods. Leveraging a wafer-scale accelerator (Cerebras WSE2), WaferLLM delivers GEMV operations 606× faster and 16× more energy-efficient than on an NVIDIA A100 GPU. For full LLM inference, WaferLLM achieves 10-20× speedups over A100 GPU clusters running SGLang and vLLM. These advantages are expected to grow as wafer-scale AI models, software, and hardware continue to mature. WaferLLM is open-sourced on GitHub."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
@@ -307,7 +303,7 @@ Evaluations show that WaferLLM achieves 200× better wafer-scale accelerator uti
     "@type": "WebPage",
     "@id": "https://luomai.github.io/publication/2025-osdi-waferllm/"
   },
-  "headline": "WaferLLM: A Wafer-Scale LLM Inference System",
+  "headline": "WaferLLM: Large Language Model Inference at Wafer Scale",
   
   "datePublished": "2025-03-26T00:00:00Z",
   "dateModified": "2025-03-26T00:00:00Z",
@@ -325,7 +321,7 @@ Evaluations show that WaferLLM achieves 200× better wafer-scale accelerator uti
       "url": "https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh-based architecture with large distributed on-chip memory (tens of GB) and ultra-high on-chip memory bandwidth (tens of PB/s). However, current LLM inference systems—optimized for shared-memory architectures like GPUs—fail to fully exploit these accelerators.\nWe introduce WaferLLM, the first wafer-scale LLM inference system. WaferLLM is guided by a novel PLMR model (pronounced Plummer), which captures the unique hardware characteristics of wafer-scale architectures. Leveraging this model, WaferLLM pioneers wafer-scale LLM parallelism, optimizing utilization of hundreds of thousands of on-chip cores. It also introduces MeshGEMM and MeshGEMV, the first GEMM and GEMV implementations designed to scale effectively on wafer-scale accelerators.\nEvaluations show that WaferLLM achieves 200× better wafer-scale accelerator utilization than state-of-the-art systems. On a commodity wafer-scale accelerator, WaferLLM delivers 606× faster and 22× more energy-efficient GEMV compared to an advanced GPU. For LLMs using 16-bit data types, WaferLLM achieves 2700 toks/sec/req on the LLaMA3-8B model and 840 toks/sec/req on the Qwen2-72B model—enabling 39× faster decoding with 1.7× better energy efficiency."
+  "description": "Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s). However, current LLM inference systems, optimized for shared memory architectures like GPUs, fail to exploit these accelerators fully. We introduce WaferLLM, the first wafer-scale LLM inference system. WaferLLM is guided by a novel PLMR model (pronounced as Plummer) that captures the unique hardware characteristics of wafer-scale architectures. Leveraging this model, WaferLLM pioneers wafer-scale LLM parallelism, optimizing the utilization of hundreds of thousands of on-chip cores. It also introduces MeshGEMM and MeshGEMV, the first GEMM and GEMV implementations designed to scale effectively on wafer-scale accelerators.Evaluations show that WaferLLM achieves up to 200× higher accelerator utilization than state-of-the-art methods. Leveraging a wafer-scale accelerator (Cerebras WSE2), WaferLLM delivers GEMV operations 606× faster and 16× more energy-efficient than on an NVIDIA A100 GPU. For full LLM inference, WaferLLM achieves 10-20× speedups over A100 GPU clusters running SGLang and vLLM. These advantages are expected to grow as wafer-scale AI models, software, and hardware continue to mature. WaferLLM is open-sourced on GitHub."
 }
 </script>
 
@@ -343,7 +339,7 @@ Evaluations show that WaferLLM achieves 200× better wafer-scale accelerator uti
 
 
 
-  <title>WaferLLM: A Wafer-Scale LLM Inference System | Luo Mai</title>
+  <title>WaferLLM: Large Language Model Inference at Wafer Scale | Luo Mai</title>
 
 </head>
 
@@ -712,7 +708,7 @@ Evaluations show that WaferLLM achieves 200× better wafer-scale accelerator uti
   
   
 <div class="article-container pt-3">
-  <h1>WaferLLM: A Wafer-Scale LLM Inference System</h1>
+  <h1>WaferLLM: Large Language Model Inference at Wafer Scale</h1>
 
   
 
@@ -821,9 +817,7 @@ Evaluations show that WaferLLM achieves 200× better wafer-scale accelerator uti
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh-based architecture with large distributed on-chip memory (tens of GB) and ultra-high on-chip memory bandwidth (tens of PB/s). However, current LLM inference systems—optimized for shared-memory architectures like GPUs—fail to fully exploit these accelerators.
-We introduce WaferLLM, the first wafer-scale LLM inference system. WaferLLM is guided by a novel PLMR model (pronounced Plummer), which captures the unique hardware characteristics of wafer-scale architectures. Leveraging this model, WaferLLM pioneers wafer-scale LLM parallelism, optimizing utilization of hundreds of thousands of on-chip cores. It also introduces MeshGEMM and MeshGEMV, the first GEMM and GEMV implementations designed to scale effectively on wafer-scale accelerators.
-Evaluations show that WaferLLM achieves 200× better wafer-scale accelerator utilization than state-of-the-art systems. On a commodity wafer-scale accelerator, WaferLLM delivers 606× faster and 22× more energy-efficient GEMV compared to an advanced GPU. For LLMs using 16-bit data types, WaferLLM achieves 2700 toks/sec/req on the LLaMA3-8B model and 840 toks/sec/req on the Qwen2-72B model—enabling 39× faster decoding with 1.7× better energy efficiency.</p>
+    <p class="pub-abstract">Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s). However, current LLM inference systems, optimized for shared memory architectures like GPUs, fail to exploit these accelerators fully. We introduce WaferLLM, the first wafer-scale LLM inference system. WaferLLM is guided by a novel PLMR model (pronounced as Plummer) that captures the unique hardware characteristics of wafer-scale architectures. Leveraging this model, WaferLLM pioneers wafer-scale LLM parallelism, optimizing the utilization of hundreds of thousands of on-chip cores. It also introduces MeshGEMM and MeshGEMV, the first GEMM and GEMV implementations designed to scale effectively on wafer-scale accelerators.Evaluations show that WaferLLM achieves up to 200× higher accelerator utilization than state-of-the-art methods. Leveraging a wafer-scale accelerator (Cerebras WSE2), WaferLLM delivers GEMV operations 606× faster and 16× more energy-efficient than on an NVIDIA A100 GPU. For full LLM inference, WaferLLM achieves 10-20× speedups over A100 GPU clusters running SGLang and vLLM. These advantages are expected to grow as wafer-scale AI models, software, and hardware continue to mature. WaferLLM is open-sourced on GitHub.</p>
     
 
     
