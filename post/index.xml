@@ -13,23 +13,11 @@
     </image>
     
     <item>
-      <title>[09/25, Paper] MoE-CAP accepted to NeurIPS 2025.</title>
-      <link>https://luomai.github.io/post/25-waferllm-osdi/</link>
-      <pubDate>Thu, 25 Sep 2025 13:35:37 +0100</pubDate>
-      <guid>https://luomai.github.io/post/25-waferllm-osdi/</guid>
-      <description>&lt;p&gt;The sparse Mixture-of-Experts (MoE) architecture is increasingly favored for scaling Large Language Models (LLMs) efficiently, but it depends on heterogeneous compute and memory resources. These factors jointly affect system Cost, Accuracy, and Performance (CAP), making trade-offs inevitable. Existing benchmarks often fail to capture these trade-offs accurately, complicating practical deployment decisions. To address this, we introduce MoE-CAP, a benchmark specifically designed for MoE systems. Our analysis reveals that achieving an optimal balance across CAP is difficult with current hardware; MoE systems typically optimize two of the three dimensions at the expense of the third-a dynamic we term the MoE-CAP trade-off. To visualize this, we propose the CAP Radar Diagram. We further introduce sparsity-aware performance metrics-Sparse Memory Bandwidth Utilization (S-MBU) and Sparse Model FLOPS Utilization (S-MFU)-to enable accurate performance benchmarking of MoE systems across diverse hardware platforms and deployment scenarios.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>[08/25, Grant] Awarded a prestigious grant to build efficient systems for challenging AI4Math missions.</title>
+      <title>[09/25, Paper] MoE-CAP accepted to NeurIPS 2025 (Dataset and Benchmark Track).</title>
       <link>https://luomai.github.io/post/25-moecap-neurips/</link>
-      <pubDate>Mon, 25 Aug 2025 13:35:37 +0100</pubDate>
+      <pubDate>Thu, 25 Sep 2025 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/25-moecap-neurips/</guid>
-      <description>&lt;p&gt;Excited to share that our SketchPad project has been selected by the AI4Math fund to advance breakthroughs in mathematics!&lt;/p&gt;
-&lt;p&gt;I’ll contribute my expertise in building large-scale, efficient, and reliable AI systems. The project is led by Wenda Li, together with Huajian Xin, Lawrence C. Paulson, and me.&lt;/p&gt;
-&lt;p&gt;Thanks to this generous support, we will be hiring several fully funded PhD students and Postdoctoral researchers. If you are passionate about pushing AI to tackle high-impact mathematical problems and other game-changing scientific discovery challenges, we’d love to hear from you.&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
@@ -39,6 +27,18 @@
       <guid>https://luomai.github.io/post/25-ai4math/</guid>
       <description>&lt;p&gt;Excited to share that our SketchPad project has been selected by the AI4Math fund to advance breakthroughs in mathematics! I’ll contribute my expertise in building large-scale, efficient, and reliable AI systems. The project is led by Wenda Li, together with Huajian Xin, Lawrence C. Paulson, and me.&lt;/p&gt;
 &lt;p&gt;Thanks to this generous support, we will be hiring several fully funded PhD students and Postdoctoral researchers. If you are passionate about pushing AI to tackle high-impact mathematical problems and other game-changing scientific discovery challenges, we’d love to hear from you.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[07/01, Paper] WaferLLM, the world fastest LLM inference system, accepted to OSDI 2025.</title>
+      <link>https://luomai.github.io/post/25-waferllm-osdi/</link>
+      <pubDate>Tue, 01 Jul 2025 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/25-waferllm-osdi/</guid>
+      <description>&lt;p&gt;Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s). However, current LLM inference systems, optimized for shared memory architectures like GPUs, fail to exploit these accelerators fully.&lt;/p&gt;
+&lt;p&gt;We introduce WaferLLM, the first wafer-scale LLM inference system. WaferLLM is guided by a novel PLMR model (pronounced as &amp;ldquo;Plummer&amp;rdquo;) that captures the unique hardware characteristics of wafer-scale architectures. Leveraging this model, WaferLLM pioneers wafer-scale LLM parallelism, optimizing the utilization of hundreds of thousands of on-chip cores. It also introduces MeshGEMM and MeshGEMV, the first GEMM and GEMV implementations designed to scale effectively on wafer-scale accelerators.&lt;/p&gt;
+&lt;p&gt;Evaluations show that WaferLLM achieves up to 200× higher accelerator utilization than state-of-the-art methods. Leveraging a wafer-scale accelerator (Cerebras WSE2), WaferLLM delivers GEMV operations 606× faster and 16× more energy-efficient than on an NVIDIA A100 GPU. For full LLM inference, WaferLLM achieves 10-20× speedups over A100 GPU clusters running SGLang and vLLM. These advantages are expected to grow as wafer-scale AI models, software, and hardware continue to mature. WaferLLM is open-sourced at: 
+&lt;a href=&#34;https://github.com/MeshInfra/WaferLLM&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/MeshInfra/WaferLLM&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
