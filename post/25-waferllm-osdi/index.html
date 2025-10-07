@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh-based architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s).">
+  <meta name="description" content="The sparse Mixture-of-Experts (MoE) architecture is increasingly favored for scaling Large Language Models (LLMs) efficiently, but it depends on heterogeneous compute and memory resources. These factors jointly affect system Cost, Accuracy, and Performance (CAP), making trade-offs inevitable.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/post/25-waferllm-osdi/">
@@ -272,14 +272,14 @@
   
   <meta property="og:site_name" content="Luo Mai">
   <meta property="og:url" content="https://luomai.github.io/post/25-waferllm-osdi/">
-  <meta property="og:title" content="[03/25, Paper] WaferLLM, the world fatest LLM inference system, has been accepted to OSDI 2025. | Luo Mai">
-  <meta property="og:description" content="Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh-based architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s)."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="og:title" content="[09/25, Paper] MoE-CAP accepted to NeurIPS 2025. | Luo Mai">
+  <meta property="og:description" content="The sparse Mixture-of-Experts (MoE) architecture is increasingly favored for scaling Large Language Models (LLMs) efficiently, but it depends on heterogeneous compute and memory resources. These factors jointly affect system Cost, Accuracy, and Performance (CAP), making trade-offs inevitable."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2025-03-25T13:35:37&#43;01:00">
+      <meta property="article:published_time" content="2025-09-25T13:35:37&#43;01:00">
     
-    <meta property="article:modified_time" content="2025-03-25T13:35:37&#43;01:00">
+    <meta property="article:modified_time" content="2025-09-25T13:35:37&#43;01:00">
   
 
   
@@ -305,10 +305,10 @@
     "@type": "WebPage",
     "@id": "https://luomai.github.io/post/25-waferllm-osdi/"
   },
-  "headline": "[03/25, Paper] WaferLLM, the world fatest LLM inference system, has been accepted to OSDI 2025.",
+  "headline": "[09/25, Paper] MoE-CAP accepted to NeurIPS 2025.",
   
-  "datePublished": "2025-03-25T13:35:37+01:00",
-  "dateModified": "2025-03-25T13:35:37+01:00",
+  "datePublished": "2025-09-25T13:35:37+01:00",
+  "dateModified": "2025-09-25T13:35:37+01:00",
   
   "author": {
     "@type": "Person",
@@ -323,7 +323,7 @@
       "url": "https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh-based architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s)."
+  "description": "The sparse Mixture-of-Experts (MoE) architecture is increasingly favored for scaling Large Language Models (LLMs) efficiently, but it depends on heterogeneous compute and memory resources. These factors jointly affect system Cost, Accuracy, and Performance (CAP), making trade-offs inevitable."
 }
 </script>
 
@@ -341,7 +341,7 @@
 
 
 
-  <title>[03/25, Paper] WaferLLM, the world fatest LLM inference system, has been accepted to OSDI 2025. | Luo Mai</title>
+  <title>[09/25, Paper] MoE-CAP accepted to NeurIPS 2025. | Luo Mai</title>
 
 </head>
 
@@ -710,7 +710,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>[03/25, Paper] WaferLLM, the world fatest LLM inference system, has been accepted to OSDI 2025.</h1>
+  <h1>[09/25, Paper] MoE-CAP accepted to NeurIPS 2025.</h1>
 
   
 
@@ -729,7 +729,7 @@
     
       
     
-    Mar 25, 2025
+    Sep 25, 2025
   </span>
   
 
@@ -769,9 +769,7 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh-based architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s). However, current LLM inference systems, optimized for shared memory architectures like GPUs, fail to fully exploit these accelerators.</p>
-<p>We introduce WaferLLM, the first wafer-scale LLM inference system. WaferLLM is guided by a novel PLMR model (pronounced as &ldquo;Plummer&rdquo;) that captures the unique hardware characteristics of wafer-scale architectures. Leveraging this model, WaferLLM pioneers wafer-scale LLM parallelism, optimizing the utilization of hundreds of thousands of on-chip cores. It also introduces MeshGEMM and MeshGEMV, the first GEMM and GEMV implementations designed to scale effectively on wafer-scale accelerators.</p>
-<p>Evaluations show that WaferLLM achieves 200× better wafer-scale accelerator utilization than state-of-the-art systems. On a commodity wafer-scale accelerator, WaferLLM delivers 606× faster and 22× more energy-efficient GEMV compared to an advanced GPU. For LLMs, based on 16-bit data type, WaferLLM achieves 2700 toks/sec/req decode speed on Llama3-8B model and 840 toks/sec/req decode speed on Qwen2-72B model, which enables 39× faster decoding with 1.7× better energy efficiency. We anticipate these numbers will grow significantly as wafer-scale AI models, software, and hardware continue to mature.</p>
+      <p>The sparse Mixture-of-Experts (MoE) architecture is increasingly favored for scaling Large Language Models (LLMs) efficiently, but it depends on heterogeneous compute and memory resources. These factors jointly affect system Cost, Accuracy, and Performance (CAP), making trade-offs inevitable. Existing benchmarks often fail to capture these trade-offs accurately, complicating practical deployment decisions. To address this, we introduce MoE-CAP, a benchmark specifically designed for MoE systems. Our analysis reveals that achieving an optimal balance across CAP is difficult with current hardware; MoE systems typically optimize two of the three dimensions at the expense of the third-a dynamic we term the MoE-CAP trade-off. To visualize this, we propose the CAP Radar Diagram. We further introduce sparsity-aware performance metrics-Sparse Memory Bandwidth Utilization (S-MBU) and Sparse Model FLOPS Utilization (S-MFU)-to enable accurate performance benchmarking of MoE systems across diverse hardware platforms and deployment scenarios.</p>
 
     </div>
 
@@ -818,7 +816,7 @@
 
       <div class="media-body">
         <h5 class="card-title"><a href="https://luomai.github.io">Luo Mai</a></h5>
-        <h6 class="card-subtitle">Assistant Professor</h6>
+        <h6 class="card-subtitle">Associate Professor</h6>
         <p class="card-text">My research interests include computer systems, machine learning systems and data management.</p>
         <ul class="network-icon" aria-hidden="true">
   

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kai Zou | Luo Mai</title>
+    <link>https://luomai.github.io/author/kai-zou/</link>
+      <atom:link href="https://luomai.github.io/author/kai-zou/index.xml" rel="self" type="application/rss+xml" />
+    <description>Kai Zou</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 26 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Kai Zou</title>
+      <link>https://luomai.github.io/author/kai-zou/</link>
+    </image>
+    
+    <item>
+      <title>MoE-CAP: Benchmarking Cost, Accuracy and Performance of Sparse Mixture-of-Experts Systems</title>
+      <link>https://luomai.github.io/publication/2025-neurips-moecap/</link>
+      <pubDate>Fri, 26 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/publication/2025-neurips-moecap/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
