@@ -27,7 +27,8 @@
   
     
   
-  <meta name="description" content="AI applications increasingly depend on long-context inference, where LLMs consume substantial context to support stronger reasoning. Common examples include retrieval-augmented generation, agent memory layers, and multi-agent orchestration. As input contexts get longer, prefill latency becomes the main bottleneck.">
+  <meta name="description" content="Excited to share that our paper ContextPilot has been accepted to MLSys 2026! 🎉
+The Challenge: As LLMs handle increasingly long contexts (think RAG, agent memory, multi-turn conversations), prefill latency becomes the bottleneck.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/post/26-contxtpilot-mlsys/">
@@ -273,7 +274,8 @@
   <meta property="og:site_name" content="Luo Mai">
   <meta property="og:url" content="https://luomai.github.io/post/26-contxtpilot-mlsys/">
   <meta property="og:title" content="[02/26, Paper] ContextPilot accepted to MLSys 2026. | Luo Mai">
-  <meta property="og:description" content="AI applications increasingly depend on long-context inference, where LLMs consume substantial context to support stronger reasoning. Common examples include retrieval-augmented generation, agent memory layers, and multi-agent orchestration. As input contexts get longer, prefill latency becomes the main bottleneck."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="og:description" content="Excited to share that our paper ContextPilot has been accepted to MLSys 2026! 🎉
+The Challenge: As LLMs handle increasingly long contexts (think RAG, agent memory, multi-turn conversations), prefill latency becomes the bottleneck."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
@@ -323,7 +325,7 @@
       "url": "https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "AI applications increasingly depend on long-context inference, where LLMs consume substantial context to support stronger reasoning. Common examples include retrieval-augmented generation, agent memory layers, and multi-agent orchestration. As input contexts get longer, prefill latency becomes the main bottleneck."
+  "description": "Excited to share that our paper ContextPilot has been accepted to MLSys 2026! 🎉\nThe Challenge: As LLMs handle increasingly long contexts (think RAG, agent memory, multi-turn conversations), prefill latency becomes the bottleneck."
 }
 </script>
 
@@ -769,10 +771,18 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>AI applications increasingly depend on long-context inference, where LLMs consume substantial context to support stronger reasoning. Common examples include retrieval-augmented generation, agent memory layers, and multi-agent orchestration. As input contexts get longer, prefill latency becomes the main bottleneck. Yet today&rsquo;s prefill acceleration techniques face a trade-off: they either preserve reasoning quality but deliver little KV-cache reuse, or improve reuse at the cost of degraded reasoning quality.</p>
-<p>We present <strong>ContextPilot</strong>, a system that accelerates prefill by introducing <em>context reuse</em> as a new mechanism for faster long-context inference. ContextPilot introduces a context index to identify overlapping <em>context blocks</em> across LLM interactions (e.g., across users and turns). It further proposes context ordering and de-duplication techniques to maximize KV-cache reuse. To preserve reasoning quality under reuse, it introduces succinct context annotations that prevent quality degradation. Finally, ContextPilot is built around a modular architecture with a clean interface that integrates with existing inference engines.</p>
-<p>Extensive evaluation shows that ContextPilot reduces LLM prefill latency by up to 3× compared to state-of-the-art methods while preserving reasoning quality. At longer context lengths, it can even improve reasoning quality. ContextPilot is open-sourced at: 
+      <p>Excited to share that our paper <strong>ContextPilot</strong> has been accepted to MLSys 2026! 🎉</p>
+<p><strong>The Challenge:</strong> As LLMs handle increasingly long contexts (think RAG, agent memory, multi-turn conversations), prefill latency becomes the bottleneck. Current acceleration methods face a tough trade-off: preserve reasoning quality OR improve efficiency—but not both.</p>
+<p><strong>Our Solution:</strong> ContextPilot introduces <em>context reuse</em> as a new mechanism for faster long-context inference. The system intelligently identifies and reuses overlapping context blocks across different LLM interactions, maximizing KV-cache efficiency without sacrificing quality.</p>
+<p><strong>The Results:</strong></p>
+<ul>
+<li>Up to <strong>3× faster</strong> prefill compared to state-of-the-art methods</li>
+<li>Quality preserved (or even improved!) at longer context lengths</li>
+<li>Modular architecture that integrates with existing inference engines</li>
+</ul>
+<p>Open-sourced and ready to use: 
 <a href="https://github.com/EfficientContext/ContextPilot" target="_blank" rel="noopener">https://github.com/EfficientContext/ContextPilot</a></p>
+<p>Looking forward to presenting this work at MLSys 2026!</p>
 
     </div>
 

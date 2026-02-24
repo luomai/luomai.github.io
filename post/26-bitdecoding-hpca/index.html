@@ -27,7 +27,8 @@
   
     
   
-  <meta name="description" content="The rise of long-context Large Language Models (LLMs) amplifies memory and bandwidth demands during autoregressive decoding, as the Key-Value (KV) cache grows with each generated token. Low-bit KV-cache quantization (e.g., 4-bit or 2-bit) can reduce memory footprint while preserving accuracy, but existing systems suffer from slow decoding due to their exclusive reliance on CUDA cores, neglecting Tensor Cores (the primary source of compute on modern GPUs).">
+  <meta name="description" content="Thrilled to announce that our paper BitDecoding has been accepted to HPCA 2026! 🚀
+The Problem: Long-context LLMs are memory-hungry. While low-bit KV-cache quantization (2-bit, 4-bit) can dramatically reduce memory footprint, existing systems are painfully slow—they only use CUDA cores and completely ignore Tensor Cores, the GPU&rsquo;s main computational powerhouse.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/post/26-bitdecoding-hpca/">
@@ -273,7 +274,8 @@
   <meta property="og:site_name" content="Luo Mai">
   <meta property="og:url" content="https://luomai.github.io/post/26-bitdecoding-hpca/">
   <meta property="og:title" content="[11/25, Paper] BitDecoding accepted to HPCA 2026. | Luo Mai">
-  <meta property="og:description" content="The rise of long-context Large Language Models (LLMs) amplifies memory and bandwidth demands during autoregressive decoding, as the Key-Value (KV) cache grows with each generated token. Low-bit KV-cache quantization (e.g., 4-bit or 2-bit) can reduce memory footprint while preserving accuracy, but existing systems suffer from slow decoding due to their exclusive reliance on CUDA cores, neglecting Tensor Cores (the primary source of compute on modern GPUs)."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="og:description" content="Thrilled to announce that our paper BitDecoding has been accepted to HPCA 2026! 🚀
+The Problem: Long-context LLMs are memory-hungry. While low-bit KV-cache quantization (2-bit, 4-bit) can dramatically reduce memory footprint, existing systems are painfully slow—they only use CUDA cores and completely ignore Tensor Cores, the GPU&rsquo;s main computational powerhouse."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
@@ -323,7 +325,7 @@
       "url": "https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "The rise of long-context Large Language Models (LLMs) amplifies memory and bandwidth demands during autoregressive decoding, as the Key-Value (KV) cache grows with each generated token. Low-bit KV-cache quantization (e.g., 4-bit or 2-bit) can reduce memory footprint while preserving accuracy, but existing systems suffer from slow decoding due to their exclusive reliance on CUDA cores, neglecting Tensor Cores (the primary source of compute on modern GPUs)."
+  "description": "Thrilled to announce that our paper BitDecoding has been accepted to HPCA 2026! 🚀\nThe Problem: Long-context LLMs are memory-hungry. While low-bit KV-cache quantization (2-bit, 4-bit) can dramatically reduce memory footprint, existing systems are painfully slow—they only use CUDA cores and completely ignore Tensor Cores, the GPU\u0026rsquo;s main computational powerhouse."
 }
 </script>
 
@@ -769,9 +771,17 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>The rise of long-context Large Language Models (LLMs) amplifies memory and bandwidth demands during autoregressive decoding, as the Key-Value (KV) cache grows with each generated token. Low-bit KV-cache quantization (e.g., 4-bit or 2-bit) can reduce memory footprint while preserving accuracy, but existing systems suffer from slow decoding due to their exclusive reliance on CUDA cores, neglecting Tensor Cores (the primary source of compute on modern GPUs).</p>
-<p>We present <strong>BitDecoding</strong>, a new long-context LLM inference system with a low-bit KV cache. BitDecoding enables efficient low-bit KV-cache decoding by cooperatively leveraging CUDA cores and Tensor Cores. It introduces methods for automatically inducing optimized layouts to exploit Tensor Cores, along with warp-level parallelization strategies for dequantization. For unified system support, BitDecoding includes a query transformation module supporting diverse attention variants, a quantization kernel that supports both tensor-wise and channel-wise scaling used in various quantization algorithms with high performance, and a dequantization kernel with a software-defined pipeline to coordinate CUDA and Tensor Cores execution for mixed-precision operations.</p>
-<p>Evaluated on RTX 4090, A100, and H100, BitDecoding accelerates decoding by up to 7.5×, 4.8×, and 8.9×, respectively, over FP16 FlashDecoding-v2, and surpasses the state-of-the-art low-bit system QServe by up to 4.3×. On LLaMA-3.1-8B with a 128K context, BitDecoding reduces single-batch decoding latency by 3×, showing substantial improvements for long-context generation.</p>
+      <p>Thrilled to announce that our paper <strong>BitDecoding</strong> has been accepted to HPCA 2026! 🚀</p>
+<p><strong>The Problem:</strong> Long-context LLMs are memory-hungry. While low-bit KV-cache quantization (2-bit, 4-bit) can dramatically reduce memory footprint, existing systems are painfully slow—they only use CUDA cores and completely ignore Tensor Cores, the GPU&rsquo;s main computational powerhouse.</p>
+<p><strong>Our Innovation:</strong> BitDecoding unlocks Tensor Cores for low-bit KV-cache inference. By cooperatively leveraging both CUDA cores and Tensor Cores with optimized layouts and smart parallelization, we achieve the best of both worlds: small memory footprint AND blazing-fast decoding.</p>
+<p><strong>The Impact:</strong></p>
+<ul>
+<li><strong>Up to 8.9× faster</strong> than FP16 FlashDecoding-v2 on H100</li>
+<li><strong>4.3× faster</strong> than state-of-the-art low-bit system QServe</li>
+<li><strong>3× lower latency</strong> on LLaMA-3.1-8B with 128K context</li>
+<li>Works across RTX 4090, A100, and H100 GPUs</li>
+</ul>
+<p>This opens the door for efficient long-context inference at scale. Looking forward to presenting at HPCA 2026!</p>
 
     </div>
 

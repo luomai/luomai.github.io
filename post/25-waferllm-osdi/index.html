@@ -27,7 +27,8 @@
   
     
   
-  <meta name="description" content="Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s).">
+  <meta name="description" content="Thrilled to announce that WaferLLM, the world&rsquo;s fastest LLM inference system, has been accepted to OSDI 2025! 🎉
+The Opportunity: Wafer-scale accelerators pack hundreds of thousands of AI cores with massive on-chip memory (tens of GB) and incredible bandwidth (tens of PB/s).">
 
   
   <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/post/25-waferllm-osdi/">
@@ -273,7 +274,8 @@
   <meta property="og:site_name" content="Luo Mai">
   <meta property="og:url" content="https://luomai.github.io/post/25-waferllm-osdi/">
   <meta property="og:title" content="[07/25, Paper] WaferLLM, the world fastest LLM inference system, accepted to OSDI 2025. | Luo Mai">
-  <meta property="og:description" content="Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s)."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="og:description" content="Thrilled to announce that WaferLLM, the world&rsquo;s fastest LLM inference system, has been accepted to OSDI 2025! 🎉
+The Opportunity: Wafer-scale accelerators pack hundreds of thousands of AI cores with massive on-chip memory (tens of GB) and incredible bandwidth (tens of PB/s)."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
     
@@ -323,7 +325,7 @@
       "url": "https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s)."
+  "description": "Thrilled to announce that WaferLLM, the world\u0026rsquo;s fastest LLM inference system, has been accepted to OSDI 2025! 🎉\nThe Opportunity: Wafer-scale accelerators pack hundreds of thousands of AI cores with massive on-chip memory (tens of GB) and incredible bandwidth (tens of PB/s)."
 }
 </script>
 
@@ -769,10 +771,24 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s). However, current LLM inference systems, optimized for shared memory architectures like GPUs, fail to exploit these accelerators fully.</p>
-<p>We introduce WaferLLM, the first wafer-scale LLM inference system. WaferLLM is guided by a novel PLMR model (pronounced as &ldquo;Plummer&rdquo;) that captures the unique hardware characteristics of wafer-scale architectures. Leveraging this model, WaferLLM pioneers wafer-scale LLM parallelism, optimizing the utilization of hundreds of thousands of on-chip cores. It also introduces MeshGEMM and MeshGEMV, the first GEMM and GEMV implementations designed to scale effectively on wafer-scale accelerators.</p>
-<p>Evaluations show that WaferLLM achieves up to 200× higher accelerator utilization than state-of-the-art methods. Leveraging a wafer-scale accelerator (Cerebras WSE2), WaferLLM delivers GEMV operations 606× faster and 16× more energy-efficient than on an NVIDIA A100 GPU. For full LLM inference, WaferLLM achieves 10-20× speedups over A100 GPU clusters running SGLang and vLLM. These advantages are expected to grow as wafer-scale AI models, software, and hardware continue to mature. WaferLLM is open-sourced at: 
+      <p>Thrilled to announce that <strong>WaferLLM</strong>, the world&rsquo;s fastest LLM inference system, has been accepted to OSDI 2025! 🎉</p>
+<p><strong>The Opportunity:</strong> Wafer-scale accelerators pack hundreds of thousands of AI cores with massive on-chip memory (tens of GB) and incredible bandwidth (tens of PB/s). But current LLM systems, built for GPUs, can&rsquo;t harness this power—leaving most of the hardware idle.</p>
+<p><strong>Our Breakthrough:</strong> WaferLLM is the <em>first</em> LLM inference system purpose-built for wafer-scale architectures. We introduce:</p>
+<ul>
+<li>Novel PLMR model capturing wafer-scale hardware characteristics</li>
+<li>Wafer-scale LLM parallelism across hundreds of thousands of cores</li>
+<li>MeshGEMM &amp; MeshGEMV—the first scalable implementations for wafer architectures</li>
+</ul>
+<p><strong>The Results:</strong></p>
+<ul>
+<li><strong>200× higher</strong> accelerator utilization vs. state-of-the-art</li>
+<li><strong>606× faster</strong> GEMV operations than NVIDIA A100</li>
+<li><strong>16× more energy-efficient</strong> than A100</li>
+<li><strong>10-20× speedups</strong> for full LLM inference vs. A100 clusters (SGLang, vLLM)</li>
+</ul>
+<p>This opens a new frontier for LLM inference at unprecedented scale and efficiency. Open-sourced at: 
 <a href="https://github.com/MeshInfra/WaferLLM" target="_blank" rel="noopener">https://github.com/MeshInfra/WaferLLM</a></p>
+<p>Looking forward to presenting at OSDI 2025!</p>
 
     </div>
 

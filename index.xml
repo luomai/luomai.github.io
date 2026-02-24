@@ -25,10 +25,18 @@
       <link>https://luomai.github.io/post/26-contxtpilot-mlsys/</link>
       <pubDate>Fri, 20 Feb 2026 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/26-contxtpilot-mlsys/</guid>
-      <description>&lt;p&gt;AI applications increasingly depend on long-context inference, where LLMs consume substantial context to support stronger reasoning. Common examples include retrieval-augmented generation, agent memory layers, and multi-agent orchestration. As input contexts get longer, prefill latency becomes the main bottleneck. Yet today&amp;rsquo;s prefill acceleration techniques face a trade-off: they either preserve reasoning quality but deliver little KV-cache reuse, or improve reuse at the cost of degraded reasoning quality.&lt;/p&gt;
-&lt;p&gt;We present &lt;strong&gt;ContextPilot&lt;/strong&gt;, a system that accelerates prefill by introducing &lt;em&gt;context reuse&lt;/em&gt; as a new mechanism for faster long-context inference. ContextPilot introduces a context index to identify overlapping &lt;em&gt;context blocks&lt;/em&gt; across LLM interactions (e.g., across users and turns). It further proposes context ordering and de-duplication techniques to maximize KV-cache reuse. To preserve reasoning quality under reuse, it introduces succinct context annotations that prevent quality degradation. Finally, ContextPilot is built around a modular architecture with a clean interface that integrates with existing inference engines.&lt;/p&gt;
-&lt;p&gt;Extensive evaluation shows that ContextPilot reduces LLM prefill latency by up to 3× compared to state-of-the-art methods while preserving reasoning quality. At longer context lengths, it can even improve reasoning quality. ContextPilot is open-sourced at: 
+      <description>&lt;p&gt;Excited to share that our paper &lt;strong&gt;ContextPilot&lt;/strong&gt; has been accepted to MLSys 2026! 🎉&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Challenge:&lt;/strong&gt; As LLMs handle increasingly long contexts (think RAG, agent memory, multi-turn conversations), prefill latency becomes the bottleneck. Current acceleration methods face a tough trade-off: preserve reasoning quality OR improve efficiency—but not both.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Our Solution:&lt;/strong&gt; ContextPilot introduces &lt;em&gt;context reuse&lt;/em&gt; as a new mechanism for faster long-context inference. The system intelligently identifies and reuses overlapping context blocks across different LLM interactions, maximizing KV-cache efficiency without sacrificing quality.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Results:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Up to &lt;strong&gt;3× faster&lt;/strong&gt; prefill compared to state-of-the-art methods&lt;/li&gt;
+&lt;li&gt;Quality preserved (or even improved!) at longer context lengths&lt;/li&gt;
+&lt;li&gt;Modular architecture that integrates with existing inference engines&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Open-sourced and ready to use: 
 &lt;a href=&#34;https://github.com/EfficientContext/ContextPilot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/EfficientContext/ContextPilot&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Looking forward to presenting this work at MLSys 2026!&lt;/p&gt;
 </description>
     </item>
     
@@ -41,21 +49,21 @@
     </item>
     
     <item>
-      <title>MoE-Infinity: Activation-Aware Expert Offloading for Efficient MoE Serving</title>
-      <link>https://luomai.github.io/publication/2024-arxiv-moe-infinity/</link>
-      <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://luomai.github.io/publication/2024-arxiv-moe-infinity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>[11/25, Paper] BitDecoding accepted to HPCA 2026.</title>
       <link>https://luomai.github.io/post/26-bitdecoding-hpca/</link>
       <pubDate>Tue, 25 Nov 2025 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/26-bitdecoding-hpca/</guid>
-      <description>&lt;p&gt;The rise of long-context Large Language Models (LLMs) amplifies memory and bandwidth demands during autoregressive decoding, as the Key-Value (KV) cache grows with each generated token. Low-bit KV-cache quantization (e.g., 4-bit or 2-bit) can reduce memory footprint while preserving accuracy, but existing systems suffer from slow decoding due to their exclusive reliance on CUDA cores, neglecting Tensor Cores (the primary source of compute on modern GPUs).&lt;/p&gt;
-&lt;p&gt;We present &lt;strong&gt;BitDecoding&lt;/strong&gt;, a new long-context LLM inference system with a low-bit KV cache. BitDecoding enables efficient low-bit KV-cache decoding by cooperatively leveraging CUDA cores and Tensor Cores. It introduces methods for automatically inducing optimized layouts to exploit Tensor Cores, along with warp-level parallelization strategies for dequantization. For unified system support, BitDecoding includes a query transformation module supporting diverse attention variants, a quantization kernel that supports both tensor-wise and channel-wise scaling used in various quantization algorithms with high performance, and a dequantization kernel with a software-defined pipeline to coordinate CUDA and Tensor Cores execution for mixed-precision operations.&lt;/p&gt;
-&lt;p&gt;Evaluated on RTX 4090, A100, and H100, BitDecoding accelerates decoding by up to 7.5×, 4.8×, and 8.9×, respectively, over FP16 FlashDecoding-v2, and surpasses the state-of-the-art low-bit system QServe by up to 4.3×. On LLaMA-3.1-8B with a 128K context, BitDecoding reduces single-batch decoding latency by 3×, showing substantial improvements for long-context generation.&lt;/p&gt;
+      <description>&lt;p&gt;Thrilled to announce that our paper &lt;strong&gt;BitDecoding&lt;/strong&gt; has been accepted to HPCA 2026! 🚀&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Problem:&lt;/strong&gt; Long-context LLMs are memory-hungry. While low-bit KV-cache quantization (2-bit, 4-bit) can dramatically reduce memory footprint, existing systems are painfully slow—they only use CUDA cores and completely ignore Tensor Cores, the GPU&amp;rsquo;s main computational powerhouse.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Our Innovation:&lt;/strong&gt; BitDecoding unlocks Tensor Cores for low-bit KV-cache inference. By cooperatively leveraging both CUDA cores and Tensor Cores with optimized layouts and smart parallelization, we achieve the best of both worlds: small memory footprint AND blazing-fast decoding.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Impact:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Up to 8.9× faster&lt;/strong&gt; than FP16 FlashDecoding-v2 on H100&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;4.3× faster&lt;/strong&gt; than state-of-the-art low-bit system QServe&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;3× lower latency&lt;/strong&gt; on LLaMA-3.1-8B with 128K context&lt;/li&gt;
+&lt;li&gt;Works across RTX 4090, A100, and H100 GPUs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This opens the door for efficient long-context inference at scale. Looking forward to presenting at HPCA 2026!&lt;/p&gt;
 </description>
     </item>
     
@@ -90,10 +98,24 @@
       <link>https://luomai.github.io/post/25-waferllm-osdi/</link>
       <pubDate>Tue, 01 Jul 2025 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/25-waferllm-osdi/</guid>
-      <description>&lt;p&gt;Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s). However, current LLM inference systems, optimized for shared memory architectures like GPUs, fail to exploit these accelerators fully.&lt;/p&gt;
-&lt;p&gt;We introduce WaferLLM, the first wafer-scale LLM inference system. WaferLLM is guided by a novel PLMR model (pronounced as &amp;ldquo;Plummer&amp;rdquo;) that captures the unique hardware characteristics of wafer-scale architectures. Leveraging this model, WaferLLM pioneers wafer-scale LLM parallelism, optimizing the utilization of hundreds of thousands of on-chip cores. It also introduces MeshGEMM and MeshGEMV, the first GEMM and GEMV implementations designed to scale effectively on wafer-scale accelerators.&lt;/p&gt;
-&lt;p&gt;Evaluations show that WaferLLM achieves up to 200× higher accelerator utilization than state-of-the-art methods. Leveraging a wafer-scale accelerator (Cerebras WSE2), WaferLLM delivers GEMV operations 606× faster and 16× more energy-efficient than on an NVIDIA A100 GPU. For full LLM inference, WaferLLM achieves 10-20× speedups over A100 GPU clusters running SGLang and vLLM. These advantages are expected to grow as wafer-scale AI models, software, and hardware continue to mature. WaferLLM is open-sourced at: 
+      <description>&lt;p&gt;Thrilled to announce that &lt;strong&gt;WaferLLM&lt;/strong&gt;, the world&amp;rsquo;s fastest LLM inference system, has been accepted to OSDI 2025! 🎉&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Opportunity:&lt;/strong&gt; Wafer-scale accelerators pack hundreds of thousands of AI cores with massive on-chip memory (tens of GB) and incredible bandwidth (tens of PB/s). But current LLM systems, built for GPUs, can&amp;rsquo;t harness this power—leaving most of the hardware idle.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Our Breakthrough:&lt;/strong&gt; WaferLLM is the &lt;em&gt;first&lt;/em&gt; LLM inference system purpose-built for wafer-scale architectures. We introduce:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Novel PLMR model capturing wafer-scale hardware characteristics&lt;/li&gt;
+&lt;li&gt;Wafer-scale LLM parallelism across hundreds of thousands of cores&lt;/li&gt;
+&lt;li&gt;MeshGEMM &amp;amp; MeshGEMV—the first scalable implementations for wafer architectures&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;The Results:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;200× higher&lt;/strong&gt; accelerator utilization vs. state-of-the-art&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;606× faster&lt;/strong&gt; GEMV operations than NVIDIA A100&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;16× more energy-efficient&lt;/strong&gt; than A100&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;10-20× speedups&lt;/strong&gt; for full LLM inference vs. A100 clusters (SGLang, vLLM)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This opens a new frontier for LLM inference at unprecedented scale and efficiency. Open-sourced at: 
 &lt;a href=&#34;https://github.com/MeshInfra/WaferLLM&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/MeshInfra/WaferLLM&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Looking forward to presenting at OSDI 2025!&lt;/p&gt;
 </description>
     </item>
     
@@ -190,6 +212,14 @@
       <guid>https://luomai.github.io/post/24-startrack-microsoft/</guid>
       <description>&lt;p&gt;I am thrilled to receive the Microsoft Research Startrack Scholar Award, a prestigious honor for young faculty in the field of computer science.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>MoE-Infinity: Activation-Aware Expert Offloading for Efficient MoE Serving</title>
+      <link>https://luomai.github.io/publication/2024-arxiv-moe-infinity/</link>
+      <pubDate>Fri, 26 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://luomai.github.io/publication/2024-arxiv-moe-infinity/</guid>
+      <description></description>
     </item>
     
     <item>
