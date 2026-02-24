@@ -42,10 +42,10 @@
 &lt;p&gt;&lt;strong&gt;Our Innovation:&lt;/strong&gt; BitDecoding unlocks Tensor Cores for low-bit KV-cache inference. By cooperatively leveraging both CUDA cores and Tensor Cores with optimized layouts and smart parallelization, we achieve the best of both worlds: small memory footprint AND blazing-fast decoding.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;The Impact:&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Up to 8.9× faster&lt;/strong&gt; than FP16 FlashDecoding-v2 on H100&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;4.3× faster&lt;/strong&gt; than state-of-the-art low-bit system QServe&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Up to 8.9× faster&lt;/strong&gt; than FP16 FlashDecoding on Hopper and Blackwell&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;4.3× faster&lt;/strong&gt; than state-of-the-art low-bit system&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;3× lower latency&lt;/strong&gt; on LLaMA-3.1-8B with 128K context&lt;/li&gt;
-&lt;li&gt;Works across RTX 4090, A100, and H100 GPUs&lt;/li&gt;
+&lt;li&gt;Works across Blackwell, Hopper and Ampere GPUs&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;This opens the door for efficient long-context inference at scale. Looking forward to presenting at HPCA 2026!&lt;/p&gt;
 </description>
@@ -56,7 +56,20 @@
       <link>https://luomai.github.io/post/25-moecap-neurips/</link>
       <pubDate>Thu, 25 Sep 2025 13:35:37 +0100</pubDate>
       <guid>https://luomai.github.io/post/25-moecap-neurips/</guid>
-      <description></description>
+      <description>&lt;p&gt;Excited to share that &lt;strong&gt;MoE-CAP&lt;/strong&gt; has been accepted to NeurIPS 2025 (Datasets and Benchmarks Track)! 🎉&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The Problem:&lt;/strong&gt; Sparse Mixture-of-Experts (MoE) models are the go-to architecture for scaling LLMs efficiently—but deploying them is hard. They depend on heterogeneous compute and memory, making three-way trade-offs between &lt;strong&gt;Cost&lt;/strong&gt;, &lt;strong&gt;Accuracy&lt;/strong&gt;, and &lt;strong&gt;Performance (CAP)&lt;/strong&gt; inevitable. Yet no benchmark captures these trade-offs well.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Our Contribution:&lt;/strong&gt; MoE-CAP is the first benchmark purpose-built for MoE systems. Our key finding: achieving an optimal balance across all three CAP dimensions is fundamentally difficult—MoE systems typically optimize two at the expense of the third. We call this the &lt;strong&gt;MoE-CAP trade-off&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What we introduce:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;📊 &lt;strong&gt;CAP Radar Diagram&lt;/strong&gt; — a new visualization tool to intuitively map Cost-Accuracy-Performance trade-offs&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;S-MBU&lt;/strong&gt; (Sparse Memory Bandwidth Utilization) — a sparsity-aware memory metric&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;S-MFU&lt;/strong&gt; (Sparse Model FLOPS Utilization) — a sparsity-aware compute metric&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These metrics enable accurate, apples-to-apples benchmarking of MoE systems across diverse hardware and deployment scenarios.&lt;/p&gt;
+&lt;p&gt;Paper: 
+&lt;a href=&#34;https://arxiv.org/abs/2412.07067&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://arxiv.org/abs/2412.07067&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Looking forward to presenting at NeurIPS 2025!&lt;/p&gt;
+</description>
     </item>
     
     <item>

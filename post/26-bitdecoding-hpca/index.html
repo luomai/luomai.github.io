@@ -776,10 +776,10 @@ The Problem: Long-context LLMs are memory-hungry. While low-bit KV-cache quantiz
 <p><strong>Our Innovation:</strong> BitDecoding unlocks Tensor Cores for low-bit KV-cache inference. By cooperatively leveraging both CUDA cores and Tensor Cores with optimized layouts and smart parallelization, we achieve the best of both worlds: small memory footprint AND blazing-fast decoding.</p>
 <p><strong>The Impact:</strong></p>
 <ul>
-<li><strong>Up to 8.9× faster</strong> than FP16 FlashDecoding-v2 on H100</li>
-<li><strong>4.3× faster</strong> than state-of-the-art low-bit system QServe</li>
+<li><strong>Up to 8.9× faster</strong> than FP16 FlashDecoding on Hopper and Blackwell</li>
+<li><strong>4.3× faster</strong> than state-of-the-art low-bit system</li>
 <li><strong>3× lower latency</strong> on LLaMA-3.1-8B with 128K context</li>
-<li>Works across RTX 4090, A100, and H100 GPUs</li>
+<li>Works across Blackwell, Hopper and Ampere GPUs</li>
 </ul>
 <p>This opens the door for efficient long-context inference at scale. Looking forward to presenting at HPCA 2026!</p>
 
