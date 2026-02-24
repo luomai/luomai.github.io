@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="Luo Mai - University of Edinburgh">
+  <meta name="description" content="The rise of long-context Large Language Models (LLMs) amplifies memory and bandwidth demands during autoregressive decoding, as the Key-Value (KV) cache grows with each generated token. Low-bit KV-cache quantization (e.g., 4-bit or 2-bit) can reduce memory footprint while preserving accuracy, but existing systems suffer from slow decoding due to their exclusive reliance on CUDA cores, neglecting Tensor Cores (the primary source of compute on modern GPUs).">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/authors/">
+  <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/post/26-bitdecoding-hpca/">
 
   
 
@@ -250,14 +250,12 @@
   
 
   
-  <link rel="alternate" href="/authors/index.xml" type="application/rss+xml" title="Luo Mai">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
 
-  <link rel="canonical" href="https://luomai.github.io/authors/">
+  <link rel="canonical" href="https://luomai.github.io/post/26-bitdecoding-hpca/">
 
   
   
@@ -273,18 +271,63 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Luo Mai">
-  <meta property="og:url" content="https://luomai.github.io/authors/">
-  <meta property="og:title" content="Authors | Luo Mai">
-  <meta property="og:description" content="Luo Mai - University of Edinburgh"><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="og:url" content="https://luomai.github.io/post/26-bitdecoding-hpca/">
+  <meta property="og:title" content="[11/25, Paper] BitDecoding accepted to HPCA 2026. | Luo Mai">
+  <meta property="og:description" content="The rise of long-context Large Language Models (LLMs) amplifies memory and bandwidth demands during autoregressive decoding, as the Key-Value (KV) cache grows with each generated token. Low-bit KV-cache quantization (e.g., 4-bit or 2-bit) can reduce memory footprint while preserving accuracy, but existing systems suffer from slow decoding due to their exclusive reliance on CUDA cores, neglecting Tensor Cores (the primary source of compute on modern GPUs)."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2026-05-23T00:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2025-11-25T13:35:37&#43;01:00">
+    
+    <meta property="article:modified_time" content="2025-11-25T13:35:37&#43;01:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://luomai.github.io/post/26-bitdecoding-hpca/"
+  },
+  "headline": "[11/25, Paper] BitDecoding accepted to HPCA 2026.",
+  
+  "datePublished": "2025-11-25T13:35:37+01:00",
+  "dateModified": "2025-11-25T13:35:37+01:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Luo Mai"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Luo Mai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "The rise of long-context Large Language Models (LLMs) amplifies memory and bandwidth demands during autoregressive decoding, as the Key-Value (KV) cache grows with each generated token. Low-bit KV-cache quantization (e.g., 4-bit or 2-bit) can reduce memory footprint while preserving accuracy, but existing systems suffer from slow decoding due to their exclusive reliance on CUDA cores, neglecting Tensor Cores (the primary source of compute on modern GPUs)."
+}
+</script>
+
+  
 
   
 
@@ -292,10 +335,13 @@
   
 
 
+  
 
 
 
-  <title>Authors | Luo Mai</title>
+
+
+  <title>[11/25, Paper] BitDecoding accepted to HPCA 2026. | Luo Mai</title>
 
 </head>
 
@@ -643,90 +689,231 @@
 </nav>
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <article class="article">
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+  
+
   
   
+  
+<div class="article-container pt-3">
+  <h1>[11/25, Paper] BitDecoding accepted to HPCA 2026.</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1>Authors</h1>
+
+
+<div class="article-metadata">
 
   
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Nov 25, 2025
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
+  <div class="article-container">
 
-  <ul>
+    <div class="article-style">
+      <p>The rise of long-context Large Language Models (LLMs) amplifies memory and bandwidth demands during autoregressive decoding, as the Key-Value (KV) cache grows with each generated token. Low-bit KV-cache quantization (e.g., 4-bit or 2-bit) can reduce memory footprint while preserving accuracy, but existing systems suffer from slow decoding due to their exclusive reliance on CUDA cores, neglecting Tensor Cores (the primary source of compute on modern GPUs).</p>
+<p>We present <strong>BitDecoding</strong>, a new long-context LLM inference system with a low-bit KV cache. BitDecoding enables efficient low-bit KV-cache decoding by cooperatively leveraging CUDA cores and Tensor Cores. It introduces methods for automatically inducing optimized layouts to exploit Tensor Cores, along with warp-level parallelization strategies for dequantization. For unified system support, BitDecoding includes a query transformation module supporting diverse attention variants, a quantization kernel that supports both tensor-wise and channel-wise scaling used in various quantization algorithms with high performance, and a dequantization kernel with a software-defined pipeline to coordinate CUDA and Tensor Cores execution for mixed-precision operations.</p>
+<p>Evaluated on RTX 4090, A100, and H100, BitDecoding accelerates decoding by up to 7.5×, 4.8×, and 8.9×, respectively, over FP16 FlashDecoding-v2, and surpasses the state-of-the-art low-bit system QServe by up to 4.3×. On LLaMA-3.1-8B with a 128K context, BitDecoding reduces single-batch decoding latency by 3×, showing substantial improvements for long-context generation.</p>
+
+    </div>
+
     
-    
-      
-      <li><a href="https://luomai.github.io/author/bo-zhao/">Bo Zhao</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/guo-li/">Guo Li</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/marcel-wagenlander/">Marcel Wagenlander</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/peter-pietzuch/">Peter Pietzuch</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/chuanhao-sun/">Chuanhao Sun</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/kai-xu/">Kai Xu</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/mahesh-k-marina/">Mahesh K Marina</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/n-siddharth/">N Siddharth</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/shuo-chen/">Shuo Chen</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/zhihang-yuan/">Zhihang Yuan</a></li>
-    
-  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
-<nav>
-  <ul class="pagination justify-content-center">
-    
-    <li class="page-item"><a class="page-link" href="/authors/page/4/">&laquo;</a></li>
-    
-    
-    <li class="page-item"><a class="page-link" href="/authors/page/6/">&raquo;</a></li>
-    
-  </ul>
-</nav>
+  
 
 
-</div>
+
+
+
+  
+    
+    
+    
+      
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-square" src="/author/luo-mai/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_231267_270x270_fill_q90_lanczos_center.jpg" alt="Luo Mai">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="https://luomai.github.io">Luo Mai</a></h5>
+        <h6 class="card-subtitle">Associate Professor</h6>
+        <p class="card-text">My research interests include computer systems, machine learning systems and data management.</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:luo.mai@ed.ac.uk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=I6GYccIAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/luomai" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/luo-mai-72253242/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  </div>
+</article>
 
       
 

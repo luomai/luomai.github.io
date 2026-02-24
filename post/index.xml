@@ -5,12 +5,35 @@
     <link>https://luomai.github.io/post/</link>
       <atom:link href="https://luomai.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 25 Sep 2025 13:35:37 +0100</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 20 Feb 2026 13:35:37 +0100</lastBuildDate>
     <image>
       <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
       <link>https://luomai.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>[02/26, Paper] ContextPilot accepted to MLSys 2026.</title>
+      <link>https://luomai.github.io/post/26-contxtpilot-mlsys/</link>
+      <pubDate>Fri, 20 Feb 2026 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/26-contxtpilot-mlsys/</guid>
+      <description>&lt;p&gt;AI applications increasingly depend on long-context inference, where LLMs consume substantial context to support stronger reasoning. Common examples include retrieval-augmented generation, agent memory layers, and multi-agent orchestration. As input contexts get longer, prefill latency becomes the main bottleneck. Yet today&amp;rsquo;s prefill acceleration techniques face a trade-off: they either preserve reasoning quality but deliver little KV-cache reuse, or improve reuse at the cost of degraded reasoning quality.&lt;/p&gt;
+&lt;p&gt;We present &lt;strong&gt;ContextPilot&lt;/strong&gt;, a system that accelerates prefill by introducing &lt;em&gt;context reuse&lt;/em&gt; as a new mechanism for faster long-context inference. ContextPilot introduces a context index to identify overlapping &lt;em&gt;context blocks&lt;/em&gt; across LLM interactions (e.g., across users and turns). It further proposes context ordering and de-duplication techniques to maximize KV-cache reuse. To preserve reasoning quality under reuse, it introduces succinct context annotations that prevent quality degradation. Finally, ContextPilot is built around a modular architecture with a clean interface that integrates with existing inference engines.&lt;/p&gt;
+&lt;p&gt;Extensive evaluation shows that ContextPilot reduces LLM prefill latency by up to 3× compared to state-of-the-art methods while preserving reasoning quality. At longer context lengths, it can even improve reasoning quality. ContextPilot is open-sourced at: 
+&lt;a href=&#34;https://github.com/EfficientContext/ContextPilot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/EfficientContext/ContextPilot&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>[11/25, Paper] BitDecoding accepted to HPCA 2026.</title>
+      <link>https://luomai.github.io/post/26-bitdecoding-hpca/</link>
+      <pubDate>Tue, 25 Nov 2025 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/26-bitdecoding-hpca/</guid>
+      <description>&lt;p&gt;The rise of long-context Large Language Models (LLMs) amplifies memory and bandwidth demands during autoregressive decoding, as the Key-Value (KV) cache grows with each generated token. Low-bit KV-cache quantization (e.g., 4-bit or 2-bit) can reduce memory footprint while preserving accuracy, but existing systems suffer from slow decoding due to their exclusive reliance on CUDA cores, neglecting Tensor Cores (the primary source of compute on modern GPUs).&lt;/p&gt;
+&lt;p&gt;We present &lt;strong&gt;BitDecoding&lt;/strong&gt;, a new long-context LLM inference system with a low-bit KV cache. BitDecoding enables efficient low-bit KV-cache decoding by cooperatively leveraging CUDA cores and Tensor Cores. It introduces methods for automatically inducing optimized layouts to exploit Tensor Cores, along with warp-level parallelization strategies for dequantization. For unified system support, BitDecoding includes a query transformation module supporting diverse attention variants, a quantization kernel that supports both tensor-wise and channel-wise scaling used in various quantization algorithms with high performance, and a dequantization kernel with a software-defined pipeline to coordinate CUDA and Tensor Cores execution for mixed-precision operations.&lt;/p&gt;
+&lt;p&gt;Evaluated on RTX 4090, A100, and H100, BitDecoding accelerates decoding by up to 7.5×, 4.8×, and 8.9×, respectively, over FP16 FlashDecoding-v2, and surpasses the state-of-the-art low-bit system QServe by up to 4.3×. On LLaMA-3.1-8B with a 128K context, BitDecoding reduces single-batch decoding latency by 3×, showing substantial improvements for long-context generation.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[09/25, Paper] MoE-CAP accepted to NeurIPS 2025 (Dataset and Benchmark Track).</title>

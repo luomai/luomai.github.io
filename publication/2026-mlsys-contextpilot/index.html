@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="Luo Mai - University of Edinburgh">
+  <meta name="description" content="AI applications increasingly depend on long-context inference, where LLMs consume substantial context to support stronger reasoning. Common examples include retrieval-augmented generation, agent memory layers, and multi-agent orchestration. As input contexts get longer, prefill latency becomes the main bottleneck. Yet today&#39;s prefill acceleration techniques face a trade-off: they either preserve reasoning quality but deliver little KV-cache reuse, or improve reuse at the cost of degraded reasoning quality. We present **ContextPilot**, a system that accelerates prefill by introducing *context reuse* as a new mechanism for faster long-context inference. **ContextPilot** introduces a context index to identify overlapping *context blocks* across LLM interactions (e.g., across users and turns). It further proposes context ordering and de-duplication techniques to maximize KV-cache reuse. To preserve reasoning quality under reuse, it introduces succinct context annotations that prevent quality degradation. Finally, **ContextPilot** is built around a modular architecture with a clean interface that integrates with existing inference engines. Extensive evaluation shows that **ContextPilot** reduces LLM prefill latency by up to 3× compared to state-of-the-art methods while preserving reasoning quality. At longer context lengths, it can even improve reasoning quality.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/authors/">
+  <link rel="alternate" hreflang="en-us" href="https://luomai.github.io/publication/2026-mlsys-contextpilot/">
 
   
 
@@ -250,14 +250,12 @@
   
 
   
-  <link rel="alternate" href="/authors/index.xml" type="application/rss+xml" title="Luo Mai">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png">
 
-  <link rel="canonical" href="https://luomai.github.io/authors/">
+  <link rel="canonical" href="https://luomai.github.io/publication/2026-mlsys-contextpilot/">
 
   
   
@@ -273,18 +271,61 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Luo Mai">
-  <meta property="og:url" content="https://luomai.github.io/authors/">
-  <meta property="og:title" content="Authors | Luo Mai">
-  <meta property="og:description" content="Luo Mai - University of Edinburgh"><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
+  <meta property="og:url" content="https://luomai.github.io/publication/2026-mlsys-contextpilot/">
+  <meta property="og:title" content="ContextPilot: Fast Long-Context Inference via Context Reuse | Luo Mai">
+  <meta property="og:description" content="AI applications increasingly depend on long-context inference, where LLMs consume substantial context to support stronger reasoning. Common examples include retrieval-augmented generation, agent memory layers, and multi-agent orchestration. As input contexts get longer, prefill latency becomes the main bottleneck. Yet today&#39;s prefill acceleration techniques face a trade-off: they either preserve reasoning quality but deliver little KV-cache reuse, or improve reuse at the cost of degraded reasoning quality. We present **ContextPilot**, a system that accelerates prefill by introducing *context reuse* as a new mechanism for faster long-context inference. **ContextPilot** introduces a context index to identify overlapping *context blocks* across LLM interactions (e.g., across users and turns). It further proposes context ordering and de-duplication techniques to maximize KV-cache reuse. To preserve reasoning quality under reuse, it introduces succinct context annotations that prevent quality degradation. Finally, **ContextPilot** is built around a modular architecture with a clean interface that integrates with existing inference engines. Extensive evaluation shows that **ContextPilot** reduces LLM prefill latency by up to 3× compared to state-of-the-art methods while preserving reasoning quality. At longer context lengths, it can even improve reasoning quality."><meta property="og:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png">
   <meta property="twitter:image" content="https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2026-05-23T00:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2026-02-20T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2026-05-23T00:00:00&#43;00:00">
   
 
   
 
 
+    
 
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://luomai.github.io/publication/2026-mlsys-contextpilot/"
+  },
+  "headline": "ContextPilot: Fast Long-Context Inference via Context Reuse",
+  
+  "datePublished": "2026-02-20T00:00:00Z",
+  "dateModified": "2026-05-23T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Yinsicheng Jiang"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Luo Mai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "AI applications increasingly depend on long-context inference, where LLMs consume substantial context to support stronger reasoning. Common examples include retrieval-augmented generation, agent memory layers, and multi-agent orchestration. As input contexts get longer, prefill latency becomes the main bottleneck. Yet today's prefill acceleration techniques face a trade-off: they either preserve reasoning quality but deliver little KV-cache reuse, or improve reuse at the cost of degraded reasoning quality. We present **ContextPilot**, a system that accelerates prefill by introducing *context reuse* as a new mechanism for faster long-context inference. **ContextPilot** introduces a context index to identify overlapping *context blocks* across LLM interactions (e.g., across users and turns). It further proposes context ordering and de-duplication techniques to maximize KV-cache reuse. To preserve reasoning quality under reuse, it introduces succinct context annotations that prevent quality degradation. Finally, **ContextPilot** is built around a modular architecture with a clean interface that integrates with existing inference engines. Extensive evaluation shows that **ContextPilot** reduces LLM prefill latency by up to 3× compared to state-of-the-art methods while preserving reasoning quality. At longer context lengths, it can even improve reasoning quality."
+}
+</script>
+
+  
 
   
 
@@ -292,10 +333,13 @@
   
 
 
+  
 
 
 
-  <title>Authors | Luo Mai</title>
+
+
+  <title>ContextPilot: Fast Long-Context Inference via Context Reuse | Luo Mai</title>
 
 </head>
 
@@ -643,6 +687,91 @@
 </nav>
 
 
+  <div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>ContextPilot: Fast Long-Context Inference via Context Reuse</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span >Yinsicheng Jiang *</span>, <span >Yeqi Huang *</span>, <span >Liang Cheng</span>, <span >Cheng Deng</span>, <span >Xuan Sun</span>, <span ><a href="/author/luo-mai/">Luo Mai</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    May 2026
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
   
 
 
@@ -652,80 +781,450 @@
 
 
 
-
-
-
-
-
-
   
 
-  
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="/publication/2026-mlsys-contextpilot/2026-mlsys-contextpilot.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
   
   
     
   
-<div class="universal-wrapper pt-3">
-  <h1>Authors</h1>
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/EfficientContext/ContextPilot" target="_blank" rel="noopener">
+  Code
+</a>
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
 
   
 </div>
 
 
 
-<div class="universal-wrapper">
+  <div class="article-container">
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract">AI applications increasingly depend on long-context inference, where LLMs consume substantial context to support stronger reasoning. Common examples include retrieval-augmented generation, agent memory layers, and multi-agent orchestration. As input contexts get longer, prefill latency becomes the main bottleneck. Yet today&rsquo;s prefill acceleration techniques face a trade-off: they either preserve reasoning quality but deliver little KV-cache reuse, or improve reuse at the cost of degraded reasoning quality. We present <strong>ContextPilot</strong>, a system that accelerates prefill by introducing <em>context reuse</em> as a new mechanism for faster long-context inference. <strong>ContextPilot</strong> introduces a context index to identify overlapping <em>context blocks</em> across LLM interactions (e.g., across users and turns). It further proposes context ordering and de-duplication techniques to maximize KV-cache reuse. To preserve reasoning quality under reuse, it introduces succinct context annotations that prevent quality degradation. Finally, <strong>ContextPilot</strong> is built around a modular architecture with a clean interface that integrates with existing inference engines. Extensive evaluation shows that <strong>ContextPilot</strong> reduces LLM prefill latency by up to 3× compared to state-of-the-art methods while preserving reasoning quality. At longer context lengths, it can even improve reasoning quality.</p>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">In <em>9th Annual Conference on Machine Learning and Systems (MLSys 2026)</em></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/machine-learning-systems/">Machine Learning Systems</a>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/author/yinsicheng-jiang/">Yinsicheng Jiang</a></h5>
+        <h6 class="card-subtitle">PhD Student</h6>
+        
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:yinsicheng.jiang@ed.ac.uk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
   
 
-  <ul>
-    
-    
-      
-      <li><a href="https://luomai.github.io/author/bo-zhao/">Bo Zhao</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/guo-li/">Guo Li</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/marcel-wagenlander/">Marcel Wagenlander</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/peter-pietzuch/">Peter Pietzuch</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/chuanhao-sun/">Chuanhao Sun</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/kai-xu/">Kai Xu</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/mahesh-k-marina/">Mahesh K Marina</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/n-siddharth/">N Siddharth</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/shuo-chen/">Shuo Chen</a></li>
-    
-      
-      <li><a href="https://luomai.github.io/author/zhihang-yuan/">Zhihang Yuan</a></li>
-    
-  </ul>
 
   
-<nav>
-  <ul class="pagination justify-content-center">
-    
-    <li class="page-item"><a class="page-link" href="/authors/page/4/">&laquo;</a></li>
     
     
-    <li class="page-item"><a class="page-link" href="/authors/page/6/">&raquo;</a></li>
-    
-  </ul>
-</nav>
 
 
+
+
+
+  
+    
+    
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/author/yeqi-huang/">Yeqi Huang</a></h5>
+        <h6 class="card-subtitle">PhD Student</h6>
+        
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:yeqi.huang@ed.ac.uk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/author/cheng-deng/">Cheng Deng</a></h5>
+        <h6 class="card-subtitle">Research Fellow</h6>
+        
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/author/xuan-sun/">Xuan Sun</a></h5>
+        <h6 class="card-subtitle">Research Associate</h6>
+        
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+    
+      
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-square" src="/author/luo-mai/avatar_hua0d4d4b24f4da3a102e4452ac738b95f_231267_270x270_fill_q90_lanczos_center.jpg" alt="Luo Mai">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="https://luomai.github.io">Luo Mai</a></h5>
+        <h6 class="card-subtitle">Associate Professor</h6>
+        <p class="card-text">My research interests include computer systems, machine learning systems and data management.</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    <li>
+      <a href="mailto:luo.mai@ed.ac.uk" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=I6GYccIAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/luomai" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/luo-mai-72253242/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/2025-neurips-moecap/">MoE-CAP: Benchmarking Cost, Accuracy and Performance of Sparse Mixture-of-Experts Systems</a></li>
+      
+      <li><a href="/publication/2024-arxiv-moe-infinity/">MoE-Infinity: Activation-Aware Expert Offloading for Efficient MoE Serving</a></li>
+      
+      <li><a href="/publication/2026-hpca-bitdecoding/">BitDecoding: Unlocking Tensor Cores for Long-Context LLMs with Low-Bit KV Cache</a></li>
+      
+      <li><a href="/publication/2025-osdi-waferllm/">WaferLLM: Large Language Model Inference at Wafer Scale</a></li>
+      
+      <li><a href="/publication/2024-sosp-tenplex/">Tenplex: Dynamic Parallelism for Deep Learning using Parallelizable Tensor Collections</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
 </div>
 
       
