@@ -5,12 +5,22 @@
     <link>https://luomai.github.io/post/</link>
       <atom:link href="https://luomai.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 20 Feb 2026 13:35:37 +0100</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 20 Mar 2026 13:35:37 +0100</lastBuildDate>
     <image>
       <url>https://luomai.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
       <link>https://luomai.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>[03/26, Paper] BatchGen, the first batch-native infernece engine, accepted to OSDI 2026.</title>
+      <link>https://luomai.github.io/post/26-batchgen-osdi/</link>
+      <pubDate>Fri, 20 Mar 2026 13:35:37 +0100</pubDate>
+      <guid>https://luomai.github.io/post/26-batchgen-osdi/</guid>
+      <description>&lt;p&gt;Excited to share that our paper BatchGen has been accepted to OSDI 2026! 🎉&lt;/p&gt;
+&lt;p&gt;BatchGen is the first batch-native inference engine designed to accommodate extremely large MoE-style models, including DeepSeek-R1, GLM 5.1, and MiniMax 2.5/2.7, while optimizing for batch-first time-to-completion rather than latency-first metrics. Compared with today’s state-of-the-art industry solutions, it improves system throughput by 3–4× on large GPU clusters and by up to 31× on memory-constrained GPUs.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>[02/26, Paper] ContextPilot accepted to MLSys 2026.</title>
