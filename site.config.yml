@@ -1,0 +1,72 @@
+# Luo Mai — Lumina prototype site configuration
+site:
+  title: Luo Mai
+  description: Reader (Associate Professor) in Large-Scale Machine Learning Systems
+    at the University of Edinburgh
+  url: https://luomai.github.io
+  language: en
+profile:
+  name: Luo Mai
+  position: Reader (Associate Professor)
+  affiliation: Large-Scale Machine Learning Systems Group
+  university: University of Edinburgh
+  email: luo.mai@ed.ac.uk
+  avatar: /images/avatar.jpg
+  bio: I work across the full stack of machine learning systems — from models and data
+    to runtimes, systems software, and AI hardware — pursuing co-designs for a 1000X
+    leap in AI efficiency, scalability, and reliability.
+  bio_short: Machine learning systems, computer systems, and data management.
+social:
+  google_scholar: https://scholar.google.com/citations?user=I6GYccIAAAAJ&hl=en
+  github: https://github.com/luomai
+  twitter: ''
+  linkedin: https://www.linkedin.com/in/luo-mai-72253242/
+  orcid: ''
+  semantic_scholar: ''
+  dblp: ''
+  email: luo.mai@ed.ac.uk
+pages:
+  about: true
+  publications: true
+  cv: false
+  projects: true
+  team: true
+  news: true
+  teaching: true
+  talks: false
+  awards: true
+  positions: false
+  collaborators: false
+  service: true
+  repositories: false
+  blog: false
+  gallery: false
+  books: false
+  media: false
+  travel: false
+theme:
+  cursor_spotlight: false
+  style: modern
+  palette: indigo
+  random_theme: false
+  avatars:
+  - /images/avatar.jpg
+cv:
+  hide_pdf_download: true
+publications:
+  author_name: Luo Mai
+  bibtex_file: papers.bib
+  group_by_year: true
+  show_badges: true
+analytics:
+  google_analytics: ''
+blog:
+  posts_per_page: 10
+  show_reading_time: true
+  show_table_of_contents: true
+  comments:
+    enabled: false
+    repo: ''
+    repo_id: ''
+    category: ''
+    category_id: ''

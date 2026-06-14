@@ -1,0 +1,262 @@
+@inproceedings{2026osdibatchgen,
+  title = {BatchGen: An Architecture for Scalable and Efficient Batch Inference},
+  author = {Tairan Xu and Leyang Xue and Zhan Lu and Jinfu Deng and Hongyang Xiao and Yinsicheng Jiang and Congjie He and Matej Sandor and Le Xu and Luo Mai},
+  booktitle = {OSDI},
+  year = {2026},
+  selected = {true}
+}
+
+@inproceedings{2026mlsyscontextpilot,
+  title = {ContextPilot: Fast Long-Context Inference via Context Reuse},
+  author = {Yinsicheng Jiang and Yeqi Huang and Liang Cheng and Cheng Deng and Xuan Sun and Luo Mai},
+  booktitle = {MLSys},
+  year = {2026},
+  abstract = {AI applications increasingly depend on long-context inference, where LLMs consume substantial context to support stronger reasoning. Common examples include retrieval-augmented generation, agent memory layers, and multi-agent orchestration. As input contexts get longer, prefill latency becomes the main bottleneck. Yet today's prefill acceleration techniques face a trade-off: they either preserve reasoning quality but deliver little KV-cache reuse, or improve reuse at the cost of degraded reasoning quality. We present ContextPilot, a system that accelerates prefill by introducing context reuse as a new mechanism for faster long-context inference. ContextPilot introduces a context index to identify overlapping context blocks across LLM interactions (e.g., across users and turns). It further proposes context ordering and de-duplication techniques to maximize KV-cache reuse. To preserve reasoning quality under reuse, it introduces succinct context annotations that prevent quality degradation. Finally, ContextPilot is built around a modular architecture with a clean interface that integrates with existing inference engines. Extensive evaluation shows that ContextPilot reduces LLM prefill latency by up to 3× compared to state-of-the-art methods while preserving reasoning quality. At longer context lengths, it can even improve reasoning quality.},
+  code = {https://github.com/EfficientContext/ContextPilot},
+}
+
+@inproceedings{2026hpcabitdecoding,
+  title = {BitDecoding: Unlocking Tensor Cores for Long-Context LLMs with Low-Bit KV Cache},
+  author = {Dayou Du and Shijie Cao and Jianyi Cheng and Luo Mai and Ting Cao and Mao Yang},
+  booktitle = {HPCA},
+  year = {2026},
+  abstract = {The rise of long-context Large Language Models (LLMs) amplifies memory and bandwidth demands during autoregressive decoding, as the Key-Value (KV) cache grows with each generated token. Low-bit KV-cache quantization (e.g., 4-bit or 2-bit) can reduce memory footprint while preserving accuracy, but existing systems suffer from slow decoding due to their exclusive reliance on CUDA cores, neglecting Tensor Cores (the primary source of compute on modern GPUs). We present BitDecoding, a new long-context LLM inference system with a low-bit KV cache. BitDecoding enables efficient low-bit KV-cache decoding by cooperatively leveraging CUDA cores and Tensor Cores. It introduces methods for automatically inducing optimized layouts to exploit Tensor Cores, along with warp-level parallelization strategies for dequantization. For unified system support, BitDecoding includes a query transformation module supporting diverse attention variants, a quantization kernel that supports both tensor-wise and channel-wise scaling used in various quantization algorithms with high performance, and a dequantization kernel with a software-defined pipeline to coordinate CUDA and Tensor Cores execution for mixed-precision operations. Evaluated on RTX 4090, A100, and H100, BitDecoding accelerates decoding by up to 7.5x, 4.8x, and 8.9x, respectively, over FP16 FlashDecoding-v2, and surpasses the state-of-the-art low-bit system QServe by up to 4.3x. On LLaMA-3.1-8B with a 128K context, BitDecoding reduces single-batch decoding latency by 3x, showing substantial improvements for long-context generation. The code is available on GitHub.},
+  pdf = {https://arxiv.org/abs/2503.18773},
+}
+
+@inproceedings{2025neuripsmoecap,
+  title = {MoE-CAP: Benchmarking Cost, Accuracy and Performance of Sparse Mixture-of-Experts Systems},
+  author = {Yinsicheng Jiang and Yao Fu and Yeqi Huang and Ping Nie and Zhan Lu and Leyang Xue and Congjie He and Man-Kit Sit and Jilong Xue and Li Dong and Ziming Miao and Dayou Du and Tairan Xu and Kai Zou and Edoardo Ponti and Luo Mai},
+  booktitle = {NeurIPS},
+  year = {2025},
+  abstract = {The sparse Mixture-of-Experts (MoE) architecture is increasingly favored for scaling Large Language Models (LLMs) efficiently, but it depends on heterogeneous compute and memory resources. These factors jointly affect system Cost, Accuracy, and Performance (CAP), making trade-offs inevitable. Existing benchmarks often fail to capture these trade-offs accurately, complicating practical deployment decisions. To address this, we introduce MoE-CAP, a benchmark specifically designed for MoE systems. Our analysis reveals that achieving an optimal balance across CAP is difficult with current hardware; MoE systems typically optimize two of the three dimensions at the expense of the third-a dynamic we term the MoE-CAP trade-off. To visualize this, we propose the CAP Radar Diagram. We further introduce sparsity-aware performance metrics-Sparse Memory Bandwidth Utilization (S-MBU) and Sparse Model FLOPS Utilization (S-MFU)-to enable accurate performance benchmarking of MoE systems across diverse hardware platforms and deployment scenarios.},
+  pdf = {https://arxiv.org/abs/2412.07067},
+}
+
+@inproceedings{2025osdiwaferllm,
+  title = {WaferLLM: Large Language Model Inference at Wafer Scale},
+  author = {Congjie He and Yeqi Huang and Pei Mu and Ziming Miao and Jilong Xue and Lingxiao Ma and Fan Yang and Luo Mai},
+  booktitle = {OSDI},
+  year = {2025},
+  abstract = {Emerging AI accelerators increasingly adopt wafer-scale manufacturing technologies, integrating hundreds of thousands of AI cores in a mesh architecture with large distributed on-chip memory (tens of GB in total) and ultra-high on-chip memory bandwidth (tens of PB/s). However, current LLM inference systems, optimized for shared memory architectures like GPUs, fail to exploit these accelerators fully. We introduce WaferLLM, the first wafer-scale LLM inference system. WaferLLM is guided by a novel PLMR model (pronounced as Plummer) that captures the unique hardware characteristics of wafer-scale architectures. Leveraging this model, WaferLLM pioneers wafer-scale LLM parallelism, optimizing the utilization of hundreds of thousands of on-chip cores. It also introduces MeshGEMM and MeshGEMV, the first GEMM and GEMV implementations designed to scale effectively on wafer-scale accelerators.Evaluations show that WaferLLM achieves up to 200× higher accelerator utilization than state-of-the-art methods. Leveraging a wafer-scale accelerator (Cerebras WSE2), WaferLLM delivers GEMV operations 606× faster and 16× more energy-efficient than on an NVIDIA A100 GPU. For full LLM inference, WaferLLM achieves 10-20× speedups over A100 GPU clusters running SGLang and vLLM. These advantages are expected to grow as wafer-scale AI models, software, and hardware continue to mature. WaferLLM is open-sourced on GitHub.},
+  pdf = {https://arxiv.org/abs/2502.04563},
+  url = {https://www.usenix.org/publications/loginonline/wafer-scale-ai-compute-system-software-perspective},
+  selected = {true}
+}
+
+@inproceedings{2024sosptenplex,
+  title = {Tenplex: Dynamic Parallelism for Deep Learning using Parallelizable Tensor Collections},
+  author = {Marcel Wagenländer and Guo Li and Bo Zhao and Luo Mai and Peter Pietzuch},
+  booktitle = {SOSP},
+  year = {2024},
+  abstract = {Deep learning (DL) jobs use multi-dimensional parallelism, i.e. combining data, model, and pipeline parallelism, to use large GPU clusters efficiently. Long-running jobs may experience changes to their GPU allocation: (i) resource elasticity during training adds or removes GPUs; (ii) hardware maintenance may require redeployment on different GPUs; and (iii) GPU failures force jobs to run with fewer devices. Current DL frameworks tie jobs to a set of GPUs and thus lack support for these scenarios. In particular, they cannot change the multi-dimensional parallelism of an already-running job in an efficient and model-independent way. We describe Scalai, a state management library for DL systems that enables jobs to change their parallelism dynamically after the GPU allocation is updated at runtime. Scalai achieves this through a new abstraction, a parallelizable tensor collection (PTC), that externalizes the job state during training. After a GPU change, Scalai uses the PTC to transform the job state: the PTC repartitions the dataset state under data parallelism and exposes it to DL workers through a virtual file system; and the PTC obtains the model state as partitioned checkpoints and transforms them to reflect the new parallelization configuration. For efficiency, Scalai executes PTC transformations in parallel with minimum data movement between workers. Our experiments show that Scalai enables DL jobs to support dynamic parallelization with low overhead.},
+  pdf = {https://arxiv.org/abs/2312.05181}
+}
+
+@inproceedings{2024icmlspe,
+  title = {Learning high-frequency functions made easy with sinusoidal positional encoding},
+  author = {Chuanhao Sun and Zhihang Yuan and Kai Xu and Luo Mai and N Siddharth and Shuo Chen and Mahesh K Marina},
+  booktitle = {ICML},
+  year = {2024},
+  abstract = {Fourier features based positional encoding (PE) is commonly used in machine learning tasks that involve learning high-frequency features from low-dimensional inputs, such as 3D view synthesis and time series regression with neural tangent kernels. Despite their effectiveness, existing PEs require manual, empirical adjustment of crucial hyperparameters, specifically the Fourier features, tailored to each unique task. Further, PEs face challenges in efficiently learning high-frequency functions, particularly in tasks with limited data. In this paper, we introduce sinusoidal PE (SPE), designed to efficiently learn adaptive frequency features closely aligned with the true underlying function. Our experiments demonstrate that SPE, without hyperparameter tuning, consistently achieves enhanced fidelity and faster training across various tasks, including 3D view synthesis, Text-to-Speech generation, and 1D regression. SPE is implemented as a direct replacement for existing PEs. Its plug-and-play nature lets numerous tasks easily adopt and benefit from SPE.},
+  code = {https://github.com/zhyuan11/SPE}
+}
+
+@inproceedings{2024osdiserverlessllm,
+  title = {ServerlessLLM: Low-Latency Serverless Inference for Large Language Models},
+  author = {Yao Fu and Leyang Xue and Yeqi Huang and Andrei-Octavian Brabete and Dmitrii Ustiugov and Yuvraj Patel and Luo Mai},
+  booktitle = {OSDI},
+  year = {2024},
+  abstract = {This paper presents ServerlessLLM, a locality-enhanced serverless inference system for Large Language Models (LLMs). ServerlessLLM exploits the substantial capacity and bandwidth of storage and memory devices available on GPU servers, thereby reducing costly remote checkpoint downloads and achieving efficient checkpoint loading. ServerlessLLM achieves this through three main contributions: (i) fast LLM checkpoint loading via a novel loading-optimized checkpoint format design, coupled with an efficient multi-tier checkpoint loading system; (ii) locality-driven LLM inference with live migration, which allows ServerlessLLM to effectively achieve locality-driven server allocation while preserving the low latency of ongoing LLM inference; and (iii) locality-aware server allocation, enabling ServerlessLLM to evaluate the status of each server in a cluster and effectively schedule model startup time to capitalize on local checkpoint placement. Our comprehensive experiments, which include microbenchmarks and real-world traces, show that ServerlessLLM surpasses state-of-the-art systems by 10 - 200X in latency performance when running various LLM inference workloads.},
+  pdf = {https://www.usenix.org/conference/osdi24/presentation/fu},
+  code = {https://github.com/ServerlessLLM/ServerlessLLM},
+  url = {https://www.sigops.org/2025/ai-goes-serverless-are-systems-ready/},
+  selected = {true}
+}
+
+@misc{2024arxivmoeinfinity,
+  title = {MoE-Infinity: Activation-Aware Expert Offloading for Efficient MoE Serving},
+  author = {Leyang Xue and Yao Fu and Zhan Lu and Luo Mai and Mahesh Marina},
+  journal = {Arxiv},
+  year = {2024},
+  abstract = {This paper presents MoE-Infinity, a cost-efficient mixture-of-expert (MoE) serving system that realizes activation-aware expert offloading. MoE-Infinity features sequence-level expert activation tracing, a new approach adept at identifying sparse activations and capturing the temporal locality of MoE inference. By analyzing these traces, MoE-Infinity performs novel activation-aware expert prefetching and caching, substantially reducing the latency overheads usually associated with offloading experts for improved cost performance. Extensive experiments in a cluster show that MoE-Infinity outperforms numerous existing systems and approaches, reducing latency by 4 - 20X and decreasing deployment costs by over 8X for various MoEs. MoE-Infinity’s source code is publicly available at https://github.com/TorchMoE/MoE-Infinity.},
+  pdf = {https://arxiv.org/abs/2401.14361},
+  code = {https://github.com/TorchMoE/MoE-Infinity}
+}
+
+@inproceedings{2023jmlrtorchopt,
+  title = {TorchOpt: An Efficient Library for Differentiable Optimization},
+  author = {Jie Ren and Xidong Feng and Bo Liu and Xuehai Pan and Yao Fu and Luo Mai and Yaodong Yang},
+  booktitle = {JMLR},
+  year = {2023},
+  abstract = {Differentiable optimization algorithms often involve expensive computations of various meta-gradients. To address this, we design and implement TorchOpt, a new PyTorch-based differentiable optimization library. TorchOpt provides an expressive and unified program- ming interface that simplifies the implementation of explicit, implicit, and zero-order gradients. Moreover, TorchOpt has a distributed execution runtime capable of parallelizing diverse operations linked to differentiable optimization tasks across CPU and GPU devices. Experimental results demonstrate that TorchOpt achieves a 5.2× training time speedup in a cluster. TorchOpt is open-sourced at https://github.com/metaopt/torchopt and has become a PyTorch Ecosystem project.},
+  code = {https://github.com/metaopt/torchopt}
+}
+
+@inproceedings{2023icmlgear,
+  title = {GEAR: A GPU-Centric Experience Replay System for Large Reinforcement Learning Models},
+  author = {Hanjing Wang and Man-Kit Sit and Congjie He and Ying Wen and Weinan Zhang and Jun Wang and Yaodong Yang and Luo Mai},
+  booktitle = {ICML},
+  year = {2023},
+  abstract = {This paper introduces a distributed, GPU-centric experience replay system, GEAR, designed to perform scalable reinforcement learning (RL) with large sequence models (such as transformers). With such models, existing systems such as Reverb face considerable bottlenecks in mem- ory, computation, and communication. GEAR, however, optimizes memory efficiency by enabling the memory resources on GPU servers (including host memory and device memory) to manage trajectory data. Furthermore, it facilitates decentralized GPU devices to expedite vari- ous trajectory selection strategies, circumventing computational bottlenecks. GEAR is equipped with GPU kernels capable of collecting trajec- tories using zero-copy access to host memory, along with remote-directed-memory access over InfiniBand, improving communication efficiency. Cluster experiments have shown that GEAR can achieve performance levels up to 6× greater than Reverb when training state-of-the-art large RL models. GEAR is open-sourced at https:// github.com/bigrl-team/gear.},
+  code = {https:// github.com/bigrl-team/gear}
+}
+
+@inproceedings{2022osdiekko,
+  title = {Ekko: A Large-Scale Deep Learning Recommender System with Low-Latency Model Update},
+  author = {Chijun Sima and Yao Fu and Man-Kit Sit and Liyi Guo and Xuri Gong and Feng Lin and Junyu Wu and Yongsheng Li and Haidong Rong and Pierre-Louis Aublin and Luo Mai},
+  booktitle = {USENIX OSDI},
+  year = {2022},
+  abstract = {Deep Learning Recommender Systems (DLRSs) need to update models at low latency, thus promptly serving new users and content. Existing DLRSs, however, fail to do so. They train/validate models offline and broadcast entire models to global inference clusters. They thus incur significant model update latency (e.g. dozens of minutes), which adversely affects Service-Level Objectives (SLOs). This paper describes Ekko, a novel DLRS that enables low-latency model updates. Its design idea is to allow model updates to be immediately disseminated to all inference clusters, thus bypassing long-latency model checkpoint, validation and broadcast. To realise this idea, we first design an efficient peer-to-peer model update dissemination algorithm. This algorithm exploits the sparsity and temporal locality in updating DLRS models to improve the throughput and latency of updating models. Further, Ekko has a model update scheduler that can prioritise, over busy networks, the sending of model updates that can largely affect SLOs. Finally, Ekko has an inference model state manager which monitors the SLOs of inference models and rollbacks the models if SLO-detrimental biased updates are detected. Evaluation results show that Ekko is orders of magnitude faster than state-of-the-art DLRS systems. Ekko has been deployed in production for more than one year, serves over a billion users daily and reduces the model update latency compared to state-of-the-art systems from dozens of minutes to 2.4 seconds.}
+}
+
+@inproceedings{2022neuripssettling,
+  title = {A Theoretical Understanding of Gradient Bias in Meta-Reinforcement Learning},
+  author = {Bo Liu and Xidong Feng and Jie Ren and Luo Mai and Rui Zhu and Haifeng Zhang and Jun Wang and Yaodong Yang},
+  booktitle = {NeurIPS},
+  year = {2022},
+  abstract = {Gradient-based Meta-RL (GMRL) refers to methods that maintain two-level optimisation procedures wherein the outer-loop meta-learner guides the inner-loop gradient-based reinforcement learner to achieve fast adaptations. In this paper, we develop a unified framework that describes variations of GMRL algorithms and points out that existing stochastic meta-gradient estimators adopted by GMRL are actually extbfbiased. Such meta-gradient bias comes from two sources: 1) the compositional bias incurred by the two-level problem structure, which has an upper bound of (KαKσ̂ In|τ|−0.5) mphw.r.t. inner-loop update step K, learning rate α, estimate variance σ̂ 2In and sample size |τ|, and 2) the multi-step Hessian estimation bias Δ̂ H due to the use of autodiff, which has a polynomial impact ((K−1)(Δ̂ H)K−1) on the meta-gradient bias. We study tabular MDPs empirically and offer quantitative evidence that testifies our theoretical findings on existing stochastic meta-gradient estimators. Furthermore, we conduct experiments on Iterated Prisoner's Dilemma and Atari games to show how other methods such as off-policy learning and low-bias estimator can help fix the gradient bias for GMRL algorithms in general.}
+}
+
+@inproceedings{2022eccvmegba,
+  title = {MegBA: A GPU-Based Distributed Library for Large-Scale Bundle Adjustment},
+  author = {Jie Ren and Wenteng Liang and Ran Yan and Luo Mai and Shiwen Liu and Xiao Liu},
+  booktitle = {ECCV},
+  year = {2022},
+  abstract = {Large-scale Bundle Adjustment (BA) requires massive memory and computation resources which are difficult to be fulfilled by existing BA libraries. In this paper, we propose MegBA, a GPU-based distributed BA library. MegBA can provide massive aggregated memory by automatically partitioning large BA problems, and assigning the solvers of sub-problems to parallel nodes. The parallel solvers adopt distributed Precondition Conjugate Gradient and distributed Schur Elimination, so that an effective solution, which can match the precision of those computed by a single node, can be efficiently computed. To accelerate BA computation, we implement end-to-end BA computation using high-performance primitives available on commodity GPUs. MegBA exposes easy-to-use APIs that are compatible with existing popular BA libraries. Experiments show that MegBA can significantly outperform state-of-the-art BA libraries: Ceres (41.45×), RootBA (64.576×) and DeepLM (6.769×) in several large-scale BA benchmarks. The code of MegBA is available at: https://github.com/MegviiRobot/MegBA.},
+  code = {https://github.com/MegviiRobot/MegBA}
+}
+
+@inproceedings{2021nsdicameo,
+  title = {Move Fast and Meet Deadlines: Fine-grained Real-time Stream Processing with Cameo},
+  author = {Le Xu and Shivaram Venkataraman and Indranil Gupta and Luo Mai and Rahul Potharaju},
+  booktitle = {USENIX NSDI},
+  year = {2021},
+  abstract = {Resource provisioning in multi-tenant stream processing systems faces the dual challenges of keeping resource utilization high (without over-provisioning), and ensuring performance isolation. In our common production use cases, where stream-ing workloads have to meet latency targets and avoid breach-ing service-level agreements, existing solutions are in capable of handling the wide variability of user needs. Our framework called Cameo uses fine-grained stream processing (inspired by actor computation models), and is able to provide high resource utilization while meeting latency targets. Cameo dynamically calculates and propagates priorities of events based on user latency targets and query semantics. Experiments on Microsoft Azure show that compared to state-of-the-art,the Cameo framework: i) reduces query latency by 2.7× in single tenant settings, ii) reduces query latency by 4.6× in multi-tenant scenarios, and iii) weathers transient spikes of workload.}
+}
+
+@inproceedings{2021multimediahyperpose,
+  title = {Fast and Flexible Human Pose Estimation with HyperPose},
+  author = {Yixiao Guo and Jiawei Liu and Guo Li and Luo Mai and Hao Dong},
+  booktitle = {ACM Multimedia (Open-source Software Competition)},
+  year = {2021},
+  abstract = {Estimating human pose is an important yet challenging task in multimedia applications. Existing pose estimation libraries target reproducing standard pose estimation algorithms. When it comes to customising these algorithms for real-world applications, none of the existing libraries can offer both the flexibility of developing custom pose estimation algorithms and the high-performance of executing these algorithms on commodity devices. In this paper, we introduce HyperPose, a novel flexible and high-performance pose estimation library. HyperPose provides expressive Python APIs that enable developers to easily customise pose estimation algorithms for their applications. It further provides a model inference engine highly optimised for real-time pose estimation. This engine can dynamically dispatch carefully designed pose estimation tasks to CPUs and GPUs, thus automatically achieving high utilisation of hardware resources irrespective of deployment environments. Extensive evaluation results show that HyperPose can achieve up to 3.1x∼7.3x higher pose estimation throughput compared to state-of-the-art pose estimation libraries without compromising es- timation accuracy. By 2021, HyperPose has received over 1000 stars on GitHub and attracted users from both industry and academy.},
+  code = {https://github.com/tensorlayer/hyperpose}
+}
+
+@inproceedings{2021multimediarlzoo,
+  title = {Efficient Reinforcement Learning Development with RLzoo},
+  author = {Zihan Ding and Tianyang Yu and Yanhua Huang and Hongming Zhang and Guo Li and Quancheng Guo and Luo Mai and Hao Dong},
+  booktitle = {ACM Multimedia (Open-source Software Competition)},
+  year = {2021},
+  abstract = {Many multimedia developers are exploring for adopting Deep Re- inforcement Learning (DRL) techniques in their applications. They however often find such an adoption challenging. Existing DRL libraries provide poor support for prototyping DRL agents (i.e., models), customising the agents, and comparing the performance of DRL agents. As a result, the developers often report low efficiency in developing DRL agents. In this paper, we introduce RLzoo, a new DRL library that aims to make the development of DRL agents efficient. RLzoo provides developers with (i) high-level yet flexible APIs for prototyping DRL agents, and further customising the agents for best performance, (ii) a model zoo where users can import a wide range of DRL agents and easily compare their performance, and (iii) an algorithm that can automatically construct DRL agents with custom components (which are critical to improve agent’s perfor- mance in custom applications). Evaluation results show that RLzoo can effectively reduce the development cost of DRL agents, while achieving comparable performance with existing DRL libraries.},
+  code = {https://github.com/tensorlayer/RLzoo}
+}
+
+@inproceedings{2020osdikungfu,
+  title = {KungFu: Making Training in Distributed Machine Learning Adaptive},
+  author = {Luo Mai and Guo Li and Marcel Wagenlander and Konstantinos Fertakis and Andrei-Octavian Brabete and Peter Pietzuch},
+  booktitle = {USENIX OSDI},
+  year = {2020},
+  abstract = {When using distributed machine learning (ML) systems to train models on a cluster of worker machines, users must configure a large number of parameters: hyper-parameters (e.g. the batch size and the learning rate) affect model convergence; system parameters (e.g. the number of workers and their communication topology) impact training performance. In current systems, adapting such parameters during training is ill-supported. Users must set system parameters at deployment time, and provide fixed adaptation schedules for hyper-parameters in the training program. We describe KungFu, a distributed ML library for Tensor- Flow that is designed to enable adaptive training. KungFu allows user to express high-level Adaptation Policies (APs) that describe how to change hyper- and system parameters during training. APs take real-time monitored metrics (e.g. signal-to-noise ratios and noise scale) as input and trigger control actions (e.g. cluster rescaling or updating the synchronisation strategy). For execution, APs are translated into monitoring and control operators, which are embedded in the dataflow graph. APs exploit an efficient asynchronous collective communication layer, which ensures concurrency and consistency of monitoring and adaptation operations.},
+  code = {https://github.com/lsds/KungFu}
+}
+
+@inproceedings{2020hotcloudspotnik,
+  title = {Spotnik: Designing Distributed Machine Learning for Transient Cloud Resources},
+  author = {Marcel Wagenlander and Luo Mai and Guo Li and Peter Pietzuch},
+  booktitle = {USENIX HotCloud},
+  year = {2020},
+  abstract = {To achieve higher utilisation, cloud providers offer VMs with GPUs as lower-cost transient cloud resources. Transient VMs can be revoked at short notice and vary in their availability. This poses challenges to distributed machine learning (ML) jobs, which perform long-running stateful computation in which many workers maintain and synchronise model replicas. With transient VMs, existing systems either require a fixed number of reserved VMs or degrade performance when recovering from revoked transient VMs. We believe that future distributed ML systems must be de- signed from the ground up for transient cloud resources. This paper describes SPOTNIK, a system for training ML models that features a more adaptive design to accommodate transient VMs: (i) SPOTNIK uses an adaptive implementation of the all-reduce collective communication operation. As workers on transient VMs are revoked, SPOTNIK updates its membership and uses the all-reduce ring to recover; and (ii) SPOTNIK supports the adaptation of the synchronisation strategy between workers. This allows a training job to switch between different strategies in response to the revocation of transient VMs. Our experiments show that, after VM revocation, SPOTNIK recovers training within 300 ms for ResNet/ImageNet.}
+}
+
+@article{2019osrreview,
+  title = {Taming Hyper-parameters in Deep Learning Systems},
+  author = {Luo Mai and Alexandros Koliousis and Guo Li and Andrei-Octavian Brabete and Peter Pietzuch},
+  journal = {ACM SIGOPS Operating Systems Review (Invited Paper)},
+  year = {2019},
+  abstract = {Deep learning (DL) systems expose many tuning parameters (“hyper-parameters”) that affect the performance and accuracy of trained models. Increasingly users struggle to configure hyper-parameters, and a substantial portion of time is spent tuning them empirically. We argue that future DL systems should be designed to help manage hyper-parameters. We describe how a distributed DL system can (i) remove the impact of hyper-parameters on both performance and accuracy, thus making it easier to decide on a good setting, and (ii) support more powerful dynamic policies for adapting hyper-parameters, which take monitored training metrics into account. We report results from prototype implementations that show the practicality of DL system designs that are hyper-parameter-friendly.}
+}
+
+@inproceedings{2019vldbcrossbow,
+  title = {CrossBow: Scaling Deep Learning with Small Batch Sizes on Multi-GPU Servers},
+  author = {Alexandros Koliousis and Pijika Watcharapichat and Matthias Weidlich and Luo Mai and Paolo Costa and Peter Pietzuch},
+  booktitle = {VLDB},
+  year = {2019},
+  abstract = {Deep learning models are trained on servers with many GPUs, and training must scale with the number of GPUs. Systems such as TensorFlow and Caffe2 train models with parallel synchronous stochastic gradient descent: they process a batch of training data at a time, partitioned across GPUs, and average the resulting partial gradients to obtain an updated global model. To fully utilise all GPUs, systems must increase the batch size, which hinders statistical efficiency. Users tune hyper-parameters such as the learning rate to compensate for this, which is complex and model-specific. We describe Crossbow, a new single-server multi-GPU system for training deep learning models that enables users to freely choose their preferred batch size---however small---while scaling to multiple GPUs. Crossbow uses many parallel model replicas and avoids reduced statistical efficiency through a new synchronous training method. We introduce SMA, a synchronous variant of model averaging in which replicas independently explore the solution space with gradient descent, but adjust their search synchronously based on the trajectory of a globally-consistent average model. Crossbow achieves high hardware efficiency with small batch sizes by potentially training multiple model replicas per GPU, automatically tuning the number of replicas to maximise throughput. our experiments show that Crossbow improves the training time of deep learning models on an 8-GPU server by 1.3--4X compared to TensorFlow.},
+  pdf = {https://github.com/luomai/research-homepage/blob/master/articles/p1140-koliousis.pdf},
+  code = {https://github.com/lsds/Crossbow}
+}
+
+@inproceedings{2018vldbchi,
+  title = {Chi: A Scalable and Programmable Control Plane for Distributed Stream Processing Systems},
+  author = {Luo Mai and Kai Zeng and Rahul Potharaju and Le Xu and Shivaram Venkataraman and Paolo Costa and Terry Kim and Saravanan Muthukrishnan and Vamsi Kuppa and Sudheer Dhulipalla and Sriram Rao},
+  booktitle = {VLDB},
+  year = {2018},
+  abstract = {Stream-processing workloads and modern shared cluster environments exhibit high variability and unpredictability. Combined with the large parameter space and the diverse set of user SLOs, this makes modern streaming systems very challenging to statically configure and tune. To address these issues, in this paper we investigate a novel control-plane design, Chi, which supports continuous monitoring and feedback, and enables dynamic re-configuration. Chi leverages the key insight of embedding control-plane messages in the data-plane channels to achieve a low-latency and flexible control plane for stream-processing systems. Chi introduces a new reactive programming model and design mechanisms to asynchronously execute control policies, thus avoiding global synchronization. We show how this allows us to easily implement a wide spectrum of control policies targeting different use cases observed in production. Large-scale experiments using production workloads from a popular cloud provider demonstrate the flexibility and efficiency of our approach.}
+}
+
+@inproceedings{2017atcemu,
+  title = {Emu: Rapid Prototyping of Networking Services},
+  author = {Nik Sultana and Salvator Galea and David Greaves and Marcin Wojcik and Jonny Shipton and Richard Clegg and Luo Mai and Pietro Bressana and Robert Soule and Richard Mortier and Paolo Costa and Peter Pietzuch and Jon Crowcroft and Andrew W Moore and Noa Zilberman},
+  booktitle = {USENIX ATC},
+  year = {2017},
+  abstract = {Due to their performance and flexibility, FPGAs are an attractive platform for the execution of network functions. It has been a challenge for a long time though to make FPGA programming accessible to a large audience of developers. An appealing solution is to compile code from a general-purpose language to hardware using high-level synthesis. Unfortunately, current approaches to implement rich network functionality are insufficient because they lack: (i) libraries with abstractions for common network operations and data structures, (ii) bindings to the underlying “substrate” on the FPGA, and (iii) debugging and profiling support. This paper describes Emu, a new standard library for an FPGA hardware compiler that enables developers to rapidly create and deploy network functionality. Emu allows for high-performance designs without being bound to particular packet processing paradigms. Furthermore, it supports running the same programs on CPUs, in Mininet, and on FPGAs, providing a better development environment that includes advanced debugging capabilities. We demonstrate that network functions implemented using Emu have only negligible resource and performance overheads compared with natively-written hardware versions.}
+}
+
+@inproceedings{2017multimediatensorlayer,
+  title = {TensorLayer: A Versatile Library for Efficient Deep Learning Development},
+  author = {Hao Dong and Akara Supratak and Luo Mai and Fangde Liu and Axel Oehmichen and Simiao Yu and Yike Guo},
+  booktitle = {ACM Multimedia (Best Open-source Software Award)},
+  year = {2017},
+  abstract = {Recently we have observed emerging uses of deep learning techniques in multimedia systems. Developing a practical deep learning system is arduous and complex. It involves labor-intensive tasks for constructing sophisticated neural networks, coordinating multiple network models, and managing a large amount of training-related data. To facilitate such a development process, we propose TensorLayer which is a Python-based versatile deep learning library. TensorLayer provides high-level modules that abstract sophisticated operations towards neuron layers, network models, training data and dependent training jobs. In spite of offering simplicity, it has transparent module interfaces that allows developers to flexibly embed low-level controls within a backend engine, with the aim of supporting fine-grain tuning towards training. Real-world cluster experiment results show that TensorLayeris able to achieve competitive performance and scalability in critical deep learning tasks. TensorLayer was released in September 2016 on GitHub. Since after, it soon become one of the most popular open-sourced deep learning library used by researchers and practitioners.},
+  code = {https://github.com/tensorlayer/tensorlayer}
+}
+
+@inproceedings{2016atcflick,
+  title = {Flick: Developing and Running Application-specific Network Services},
+  author = {Abdul Alim and Richard G. Clegg and Luo Mai and Lukas Rupprecht and Eric Seckler and Paolo Costa and Peter Pietzuch and Alexander L. Wolf and Nik Sultana and Jon Crowcroft and Anil Madhavapeddy and Andrew Moore and Richard Mortier and Luis Oviedo and Masoud Koleni and Derek McAuley and Matteo Migliavacca},
+  booktitle = {USENIX ATC},
+  year = {2016},
+  abstract = {Data centre networks are increasingly programmable, with application-specific network services proliferating, from custom load-balancers to middleboxes providing caching and aggregation. Developers must currently implement these services using traditional low-level APIs, which neither support natural operations on application data nor provide efficient performance isolation. We describe FLICK, a framework for the programming and execution of application-specific network services on multi-core CPUs. Developers write network services in the FLICK language, which offers high-level processing constructs and application-relevant data types. FLICK programs are translated automatically to efficient, parallel task graphs, implemented in C++ on top of a user-space TCP stack. Task graphs have bounded resource usage at runtime, which means that the graphs of multiple services can execute concurrently without interference using cooperative scheduling. We evaluate FLICK with several services (an HTTP load-balancer, a Memcached router and a Hadoop data aggregator), showing that it achieves good performance while reducing development effort.}
+}
+
+@inproceedings{2016hotcloudnetex,
+  title = {Towards a Network Marketplace in a Cloud},
+  author = {Da Yu and Luo Mai and Somaya Arianfar and Rodrigo Fonseca and Orran Krieger and David Oran},
+  booktitle = {USENIX HotCloud},
+  year = {2016},
+  abstract = {Virtually all public clouds today are run by single providers, and this creates near-monopolies, inefficient markets, and hinders innovation at the infrastructure level. There are current proposals to change this, by creating open architectures that allow providers of computing and storage resources to compete for tenant services at multiple levels, all the way down to the bare metal. Networking, however, is not part of this, and is viewed as a commodity much like power or cooling. In this paper we borrow ideas from the Internet architecture, and propose to structure the cloud datacenter network as a marketplace where multiple service providers can offer connectivity services to tenants. Our marketplace, NetEx, divides the network into independently managed pods of resources, interconnected with multiple providers through special programmable switches that play a role analogous to that of an IXP. We demonstrate the feasibility of such an architecture by a prototype in Mininet, and argue that this can be a way to provide innovation, competition, and efficiency in future cloud datacenter networks.}
+}
+
+@inproceedings{2015hotcloudmlnet,
+  title = {Optimizing Network Performance in Distributed Machine Learning},
+  author = {Luo Mai and Chuntao Hong and Paolo Costa},
+  booktitle = {USENIX HotCloud},
+  year = {2015},
+  abstract = {To cope with the ever growing availability of training data, there have been several proposals to scale machine learning computation beyond a single server and distribute it across a cluster. While this enables reducing the training time, the observed speed up is often limited by network bottlenecks. To address this, we design MLNET, a host-based communication layer that aims to improve the network performance of distributed machine learning systems. This is achieved through a combination of traffic reduction techniques (to diminish network load in the core and at the edges) and traffic management (to reduce average training time). A key feature of MLNET is its compatibility with existing hardware and software infrastructure so it can be immediately deployed. We describe the main techniques underpinning ML- NET and show through simulation that the overall training time can be reduced by up to 78%. While preliminary, our results indicate the critical role played by the network and the benefits of introducing a new communication layer to increase the performance of distributed machine learning systems.}
+}
+
+@inproceedings{2014conextnetagg,
+  title = {NetAgg: Using Middleboxes for Application-specific On-path Aggregation in Data Centres},
+  author = {Luo Mai and Lukas Rupprecht and Abdul Alim and Paolo Costa and Matteo Migliavacca and Peter Pietzuch and Alexander L. Wolf},
+  booktitle = {ACM CoNEXT (Best Paper Finalist)},
+  year = {2014},
+  abstract = {Data centre applications for batch processing (e.g. map/reduce frameworks) and online services (e.g. search engines) scale by distributing data and computation across many servers. They typically follow a partition/aggregation pattern: tasks are first partitioned across servers that process data locally, and then those partial results are aggregated. This data aggregation step, however, shifts the performance bottleneck to the network, which typically struggles to support many-to-few, high-bandwidth traffic between servers. Instead of performing data aggregation at edge servers, we show that it can be done more efficiently along network paths. We describe NETAGG, a software platform that supports on-path aggregation for network-bound partition/aggregation applications. NET-AGG exploits a middlebox-like design, in which dedicated servers (agg boxes) are connected by high-bandwidth links to network switches. Agg boxes execute aggregation functions provided by ap- plications, which alleviates network hotspots because only a fraction of the incoming traffic is forwarded at each hop. NETAGG requires only minimal application changes: it uses shim layers on edge servers to redirect application traffic transparently to the agg boxes. Our experimental results show that NETAGG improves substantially the throughput of two sample applications, the Solr distributed search engine and the Hadoop batch processing framework. Its design allows for incremental deployment in existing data centres and incurs only a modest investment cost.}
+}
+
+@inproceedings{2013ladismai,
+  title = {Exploiting Time-malleability in Cloud-based Batch Processing Systems},
+  author = {Luo Mai and Evangelia Kalyvianaki and Paolo Costa},
+  booktitle = {ACM LADIS},
+  year = {2013},
+  abstract = {Existing cloud provisioning schemes allocate re- sources to batch processing systems at deployment time and only change this allocation at run-time due to unexpected events such as server failures. We observe that MapReduce-like jobs are time- malleable, i.e., at runtime it is possible to dynamically vary the number of resources allocated to a job and, hence, its completion time. In this paper, we propose a novel approach based on time-malleability to opportunistically update job resources in order to increase overall utilization and revenue. To set the right incentives for both providers and tenants, we introduce a novel pricing model that charges tenants according to job completion times. Using this model, we formulate an optimization problem for revenue maximization. Preliminary results show that compared to today’s practices our solution can increase revenue by up to 69.7% and can accept up to 57% more jobs.}
+}
+
+@inproceedings{2011massmai,
+  title = {Load Balanced Rendezvous Data Collection in Wireless Sensor Networks},
+  author = {Luo Mai and Longfei Shangguan and Chao Lang and Junzhao Du and Zhenjiang Li and Mo Li},
+  booktitle = {IEEE MASS (Best Paper Finalist)},
+  year = {2011},
+  abstract = {We study the rendezvous data collection problem for the mobile sink in wireless sensor networks. We introduce to jointly optimize trajectory planning for the mobile sink and workload balancing for the network. By doing so, the mobile sink is able to efficiently collect network-wide data within a given delay bound and the network can eliminate the energy bottleneck to dramatically prolong its lifetime. Such a joint optimization problem is shown to be NP-hard and we propose an approximation algorithm, named RPS-LB, to approach the optimal solution. In RPS-LB, according to observed properties of the median reference structure in the network, a series of Rendezvous Points (RPs) are selected to construct the trajectory for the mobile sink and the derived approximation ratio of RPS- LB guarantees that the formed trajectory is comparable with the optimal solution. The workload allocated to each RP is proven to be balanced mathematically. We then relax the assumption that mobile sink knows the location of each sensor node and present a localized, fully distributed version, RPS-LB-D, which largely improves the system applicability in practice. We verify the effectiveness of our proposals via extensive experiments.}
+}

@@ -1,0 +1,54 @@
+---
+import { formatDate } from '@lib/utils';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const newsDir = path.resolve(process.cwd(), 'src/content/news');
+let newsItems: { title: string; date: Date; content: string; pinned: boolean }[] = [];
+
+try {
+  const files = fs.readdirSync(newsDir).filter(f => f.endsWith('.md'));
+  for (const file of files) {
+    const raw = fs.readFileSync(path.join(newsDir, file), 'utf-8');
+    const frontmatterMatch = raw.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+    if (frontmatterMatch) {
+      const fm = frontmatterMatch[1];
+      const content = frontmatterMatch[2].trim();
+      const title = fm.match(/title:\s*"(.+?)"/)?.[1] || '';
+      const dateStr = fm.match(/date:\s*(.+)/)?.[1]?.trim() || '';
+      const pinned = fm.includes('pinned: true');
+      newsItems.push({ title, date: new Date(dateStr), content, pinned });
+    }
+  }
+} catch {}
+
+newsItems.sort((a, b) => {
+  if (a.pinned !== b.pinned) return a.pinned ? -1 : 1;
+  return b.date.getTime() - a.date.getTime();
+});
+
+newsItems = newsItems.slice(0, 5);
+---
+
+<section id="news" class="mt-10 scroll-mt-24 animate-on-scroll">
+  <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-4">
+    <div>
+      <p class="text-sm font-semibold text-[var(--color-accent)] mb-1">Updates</p>
+      <h2 class="text-2xl font-semibold">Latest News</h2>
+    </div>
+    <a href="/news" class="text-sm text-[var(--color-accent)] hover:underline shrink-0">All news &rarr;</a>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-2.5">
+    {newsItems.map(item => (
+      <article class="rounded-2xl border border-[var(--color-border)] bg-[var(--color-card-bg)]/85 p-3 min-h-[8rem]">
+        <p class="text-xs font-mono text-[var(--color-text-secondary)]">{formatDate(item.date)}</p>
+        <h3 class="mt-2 font-semibold leading-snug text-sm">
+          {item.pinned && <span class="text-[var(--color-accent)] mr-1">&#9679;</span>}
+          {item.title}
+        </h3>
+        {item.content && <p class="text-xs text-[var(--color-text-secondary)] mt-1.5 leading-snug">{item.content}</p>}
+      </article>
+    ))}
+  </div>
+</section>

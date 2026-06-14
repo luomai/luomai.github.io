@@ -1,0 +1,44 @@
+repositories:
+- name: HyperPose
+  description: Real-time Visual Computing Library [](https://github.com/tensorlayer/hyperpose/stargazers/)
+  url: https://github.com/tensorlayer/hyperpose
+  language: ''
+  stars: 0
+- name: KungFu
+  description: Adaptive Large-scale Deep Learning [](https://github.com/lsds/kungfu/stargazers/)
+  url: https://github.com/lsds/KungFu
+  language: ''
+  stars: 0
+- name: MegBA
+  description: A GPU-Based Distributed Library for Large-Scale Bundle Adjustment.
+    [](https://github.com/MegviiRobot/MegBA/stargazers/)
+  url: https://github.com/MegviiRobot/MegBA
+  language: ''
+  stars: 0
+- name: Quiver
+  description: PyTorch Library for Low-Latency, High-Throughput Graph Learning on
+    GPUs. [](https://github.com/quiver-team/torch-quiver/stargazers/)
+  url: https://github.com/quiver-team/torch-quiver
+  language: ''
+  stars: 0
+- name: RLzoo
+  description: Reinforcement Learning Model Zoo [](https://github.com/tensorlayer/rlzoo/stargazers/)
+  url: https://github.com/tensorlayer/RLzoo
+  language: ''
+  stars: 0
+- name: ServerlessLLM
+  description: Serverless LLM serving for everyone. [](https://github.com/ServerlessLLM/ServerlessLLM/stargazers/)
+  url: https://github.com/ServerlessLLM/ServerlessLLM
+  language: ''
+  stars: 0
+- name: TensorLayer
+  description: Easy-to-use Deep Learning Library [](https://github.com/tensorlayer/tensorlayer/stargazers/)
+  url: https://github.com/tensorlayer/tensorlayer
+  language: ''
+  stars: 0
+- name: TorchOpt
+  description: An efficient library for differentiable optimization built upon PyTorch.
+    [](https://github.com/metaopt/torchopt/stargazers/)
+  url: https://github.com/metaopt/torchopt
+  language: ''
+  stars: 0

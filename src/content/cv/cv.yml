@@ -1,0 +1,77 @@
+education:
+- degree: PhD in Computer Science
+  institution: Imperial College London, UK
+  year: '2018'
+  description: ''
+- degree: MRes in Advanced Computing
+  institution: Imperial College London, UK
+  year: '2012'
+  description: ''
+experience: []
+skills:
+- category: Research
+  items:
+  - Computer Systems
+  - Machine Learning Systems
+  - Data Management
+  - LLM Inference
+  - Large-Scale AI Systems
+awards:
+- title: AI for Math Fund award
+  organization: Renaissance Philanthropy
+  year: 2025
+- title: "ARIA project: Benchmarking AI Evolution"
+  organization: ARIA
+  year: 2025
+- title: "ARIA project: Scaling AI Compute"
+  organization: ARIA
+  year: 2024
+- title: Microsoft Research Asia StarTrack Scholar Award
+  organization: Microsoft Research Asia
+  year: 2024
+- title: EPSRC Centre for Doctoral Training in Machine Learning Systems
+  organization: EPSRC
+  year: 2024
+- title: Chancellor's Rising Star in Research finalist
+  organization: University of Edinburgh
+  year: 2023
+- title: Tencent Research Award
+  organization: Tencent
+  year: 2022
+- title: Alibaba Innovative Research Award
+  organization: Alibaba
+  year: 2020
+- title: Microsoft Azure Research Award
+  organization: Microsoft
+  year: 2018
+- title: ACM Multimedia Best Open-Source Software Award
+  organization: ACM Multimedia
+  year: 2017
+- title: Google PhD Fellowship in Cloud Computing
+  organization: Google
+  year: 2012–2016
+service:
+- role: General Co-Chair
+  organization: EuroSys 2026
+  years: '2026'
+- role: General Co-Chair
+  organization: International Workshop on Efficient Generative AI
+  years: '2024'
+- role: Program committee member
+  organization: ISCA
+  years: '2026'
+- role: Program committee member
+  organization: ASPLOS
+  years: '2026'
+- role: Program committee member
+  organization: EuroSys
+  years: '2025'
+- role: Program committee member
+  organization: ICDE
+  years: 2021–2025
+- role: Program committee member
+  organization: SoCC
+  years: 2023–2025
+- role: Program committee member
+  organization: MICRO
+  years: '2022'

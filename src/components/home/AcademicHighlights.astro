@@ -1,0 +1,86 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import yaml from 'yaml';
+
+let courses: any[] = [];
+let awards: any[] = [];
+let service: any[] = [];
+
+try {
+  const coursesPath = path.resolve(process.cwd(), 'src/content/teaching/courses.yml');
+  courses = (yaml.parse(fs.readFileSync(coursesPath, 'utf-8')).courses || []).slice(0, 3);
+} catch {}
+
+try {
+  const cvPath = path.resolve(process.cwd(), 'src/content/cv/cv.yml');
+  const cv = yaml.parse(fs.readFileSync(cvPath, 'utf-8')) || {};
+  awards = (cv.awards || []).slice(0, 4);
+  service = (cv.service || []).slice(0, 4);
+} catch {}
+---
+
+<section id="awards" class="mt-12 scroll-mt-24 animate-on-scroll">
+  <div class="mb-4">
+    <p class="text-sm font-semibold text-[var(--color-accent)] mb-1">Academic activity</p>
+    <h2 class="text-2xl font-semibold">Awards, Teaching &amp; Service</h2>
+    <p class="text-[var(--color-text-secondary)] mt-1 max-w-2xl">
+      Selected recognitions, courses, and community roles supporting machine learning systems research.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
+    <div class="rounded-xl bg-[var(--color-card-bg)] border border-[var(--color-border)] p-4">
+      <div class="mb-3 flex items-center justify-between gap-3">
+        <h3 class="font-semibold">Awards &amp; Grants</h3>
+        <a href="/awards" class="text-xs text-[var(--color-accent)] hover:underline shrink-0">All awards &rarr;</a>
+      </div>
+      <div class="space-y-3">
+        {awards.map(award => (
+          <div class="flex gap-3">
+            <span class="text-xs font-mono text-[var(--color-text-secondary)] w-10 shrink-0">{award.year}</span>
+            <div>
+              <p class="font-medium text-sm leading-snug">{award.title}</p>
+              <p class="text-xs text-[var(--color-text-secondary)] mt-1">{award.organization}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="rounded-xl bg-[var(--color-card-bg)] border border-[var(--color-border)] p-4">
+      <div class="mb-3 flex items-center justify-between gap-3">
+        <h3 class="font-semibold">Teaching</h3>
+        <a href="/teaching" class="text-xs text-[var(--color-accent)] hover:underline shrink-0">All teaching &rarr;</a>
+      </div>
+      <div class="space-y-3">
+        {courses.map(course => (
+          <div>
+            <p class="font-medium text-sm leading-snug">
+              {course.url ? <a href={course.url} target="_blank" rel="noopener noreferrer" class="hover:text-[var(--color-accent)]">{course.title}</a> : course.title}
+            </p>
+            <p class="text-xs text-[var(--color-text-secondary)] mt-1">{course.course_id} · {course.year} · {course.role}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="rounded-xl bg-[var(--color-card-bg)] border border-[var(--color-border)] p-4">
+      <div class="mb-3 flex items-center justify-between gap-3">
+        <h3 class="font-semibold">Professional Service</h3>
+        <a href="/service" class="text-xs text-[var(--color-accent)] hover:underline shrink-0">All service &rarr;</a>
+      </div>
+      <div class="space-y-3">
+        {service.map(item => (
+          <div class="flex gap-3">
+            <span class="text-xs font-mono text-[var(--color-text-secondary)] w-14 shrink-0">{item.years}</span>
+            <div>
+              <p class="font-medium text-sm leading-snug">{item.role}</p>
+              <p class="text-xs text-[var(--color-text-secondary)] mt-1">{item.organization}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

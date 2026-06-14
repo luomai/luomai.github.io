@@ -1,0 +1,94 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import yaml from 'yaml';
+
+let allMembers: any[] = [];
+try {
+  const teamPath = path.resolve(process.cwd(), 'src/content/team.yml');
+  const data = yaml.parse(fs.readFileSync(teamPath, 'utf-8'));
+  allMembers = (data.members || []).filter((m: any) => m.hidden !== true && m.display !== false);
+} catch {}
+
+const isAlumni = (m: any) =>
+  m.alumni || m.group === 'alumni_collaborators' || /visitor|alumn|former|collaborator/i.test(m.role || '');
+
+const currentMembers = allMembers.filter((m: any) => !isAlumni(m));
+const alumni = allMembers.filter(isAlumni);
+const postdocs = currentMembers.filter((m: any) => m.group === 'postdocs');
+const phdStudents = currentMembers.filter((m: any) => m.group === 'phd_students');
+
+const sections = [
+  { title: 'Postdocs & Research Staff', members: postdocs },
+  { title: 'PhD Students', members: phdStudents },
+  { title: 'Alumni', members: alumni },
+].filter(section => section.members.length > 0);
+
+---
+
+<section id="group" class="mt-12 scroll-mt-24 animate-on-scroll">
+  <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-4">
+    <div>
+      <p class="text-sm font-semibold text-[var(--color-accent)] mb-1">People</p>
+      <h2 class="text-2xl font-semibold leading-tight">Large-Scale Machine Learning Systems Group</h2>
+      <p class="text-[var(--color-text-secondary)] mt-1 max-w-2xl">
+        Current researchers, PhD students, and alumni building efficient machine learning systems.
+      </p>
+    </div>
+
+    <div class="shrink-0 text-right">
+      <div class="flex gap-2 text-center mb-2">
+        <div class="rounded-2xl border border-[var(--color-border)] bg-[var(--color-card-bg)] px-4 py-2">
+          <p class="text-lg font-semibold leading-none">{postdocs.length}</p>
+          <p class="text-xs text-[var(--color-text-secondary)] mt-1">staff</p>
+        </div>
+        <div class="rounded-2xl border border-[var(--color-border)] bg-[var(--color-card-bg)] px-4 py-2">
+          <p class="text-lg font-semibold leading-none">{phdStudents.length}</p>
+          <p class="text-xs text-[var(--color-text-secondary)] mt-1">PhDs</p>
+        </div>
+        <div class="rounded-2xl border border-[var(--color-border)] bg-[var(--color-card-bg)] px-4 py-2">
+          <p class="text-lg font-semibold leading-none">{alumni.length}</p>
+          <p class="text-xs text-[var(--color-text-secondary)] mt-1">alumni</p>
+        </div>
+      </div>
+      <a href="/team" class="text-sm text-[var(--color-accent)] hover:underline">Full group &rarr;</a>
+    </div>
+  </div>
+
+  <div class="space-y-3">
+    {sections.map(section => (
+      <article class="rounded-2xl border border-[var(--color-border)] bg-[var(--color-card-bg)]/85 p-3.5">
+        <div class="mb-2 flex items-center justify-between gap-3">
+          <h3 class="text-sm font-semibold uppercase tracking-wide text-[var(--color-text-secondary)]">{section.title}</h3>
+          <span class="shrink-0 rounded-full border border-[var(--color-border)] px-2.5 py-0.5 text-xs text-[var(--color-text-secondary)]">{section.members.length}</span>
+        </div>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2.5">
+          {section.members.map((m: any) => (
+            <li class="flex items-start gap-2.5 rounded-xl border border-[var(--color-border)]/80 bg-[var(--color-bg)]/45 px-3 py-2.5 min-w-0" title={`${m.name} — ${m.role}`} aria-label={`${m.name}, ${m.role}`}>
+              <div class="w-8 h-8 shrink-0 rounded-full bg-[var(--color-border)] overflow-hidden">
+                {m.image ? <img src={m.image} alt={m.name} class="w-full h-full object-cover" /> : <div class="w-full h-full flex items-center justify-center text-xs text-[var(--color-text-secondary)]">{m.name[0]}</div>}
+              </div>
+              <div class="min-w-0">
+                <p class="text-sm font-medium leading-tight truncate">
+                  {m.url ? <a href={m.url} target="_blank" rel="noopener noreferrer" class="hover:text-[var(--color-accent)]">{m.name}</a> : m.name}
+                </p>
+                <p class="member-chip-meta mt-1 text-[11px] leading-snug text-[var(--color-text-secondary)]">{m.role}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </article>
+    ))}
+  </div>
+</section>
+
+<style>
+  .member-chip-meta {
+    display: -webkit-box;
+    overflow: hidden;
+    max-height: 2.75em;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+</style>

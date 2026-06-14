@@ -1,0 +1,95 @@
+---
+import { parseBibTeX } from '@lib/bibtex';
+import { getConfig } from '@lib/config';
+import fs from 'node:fs';
+import path from 'node:path';
+
+const config = getConfig();
+
+let recentPubs: any[] = [];
+try {
+  const bibPath = path.resolve(process.cwd(), 'src/content/publications', config.publications.bibtex_file);
+  const bibContent = fs.readFileSync(bibPath, 'utf-8');
+  recentPubs = parseBibTeX(bibContent).slice(0, 10);
+} catch {}
+
+function boldAuthorName(authors: string[], authorName: string): string {
+  const parts = authorName.trim().split(/\s+/);
+  const firstName = parts[0] || '';
+  const lastName = parts[parts.length - 1] || '';
+  return authors.map(a => {
+    const aParts = a.trim().split(/\s+/);
+    const aFirst = aParts[0] || '';
+    const aLast = aParts[aParts.length - 1] || '';
+    const lastMatch = aLast === lastName;
+    const firstMatch = aFirst === firstName || (aFirst.length <= 2 && aFirst[0] === firstName[0]);
+    return (lastMatch && firstMatch) ? `<strong>${a}</strong>` : a;
+  }).join(', ');
+}
+
+const venueStyles: Record<string, { bg: string; text: string; dot: string }> = {
+  conference: { bg: 'rgba(59, 130, 246, 0.12)', text: '#2563eb', dot: '#3b82f6' },
+  journal: { bg: 'rgba(34, 197, 94, 0.12)', text: '#16a34a', dot: '#22c55e' },
+  workshop: { bg: 'rgba(245, 158, 11, 0.12)', text: '#d97706', dot: '#f59e0b' },
+  preprint: { bg: 'rgba(156, 163, 175, 0.15)', text: '#6b7280', dot: '#9ca3af' },
+  thesis: { bg: 'rgba(168, 85, 247, 0.12)', text: '#7c3aed', dot: '#a855f7' },
+  other: { bg: 'rgba(156, 163, 175, 0.15)', text: '#6b7280', dot: '#9ca3af' },
+};
+---
+
+<section class="animate-on-scroll">
+  <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-4">
+    <div>
+      <p class="text-sm font-semibold text-[var(--color-accent)] mb-1">Research</p>
+      <h2 class="text-2xl font-semibold">Recent Publications</h2>
+      <p class="text-[var(--color-text-secondary)] mt-1">Recent work on ML systems, AI compute, efficient inference, and large-scale learning.</p>
+    </div>
+    {config.pages.publications && (
+      <a href="/publications" class="text-sm text-[var(--color-accent)] hover:underline shrink-0">All publications &rarr;</a>
+    )}
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+    {recentPubs.map((pub, index) => {
+      const style = venueStyles[pub.venueType] || venueStyles.other;
+      const href = pub.pdf || pub.url;
+      return (
+        <article class="group rounded-2xl border border-[var(--color-border)] bg-[var(--color-card-bg)]/85 p-3 transition-colors hover:border-[var(--color-accent)]/40 hover:bg-[var(--color-card-bg)]">
+          <div class="flex gap-2.5">
+            <div class="shrink-0 w-7 pt-0.5 text-xs font-mono text-[var(--color-text-secondary)]">
+              {String(index + 1).padStart(2, '0')}
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="font-semibold text-[0.95rem] leading-snug">
+                {href ? (
+                  <a href={href} target="_blank" rel="noopener noreferrer" class="hover:text-[var(--color-accent)] transition-colors">
+                    {pub.title}
+                  </a>
+                ) : pub.title}
+              </h3>
+              <p class="mt-1 text-xs leading-snug text-[var(--color-text-secondary)]" set:html={boldAuthorName(pub.authors, config.publications.author_name)} />
+              <div class="mt-2 flex flex-wrap items-center gap-2">
+                <span
+                  class="inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-xs font-medium"
+                  style={`background: ${style.bg}; color: ${style.text};`}
+                >
+                  <span style={`width: 6px; height: 6px; border-radius: 50%; background: ${style.dot}; flex-shrink: 0;`}></span>
+                  {pub.venue} {pub.year}
+                </span>
+                {pub.pdf && (
+                  <a href={pub.pdf} target="_blank" rel="noopener noreferrer" class="text-xs text-[var(--color-text-secondary)] hover:text-[var(--color-accent)]">PDF</a>
+                )}
+                {pub.code && (
+                  <a href={pub.code} target="_blank" rel="noopener noreferrer" class="text-xs text-[var(--color-text-secondary)] hover:text-[var(--color-accent)]">Code</a>
+                )}
+                {pub.video && (
+                  <a href={pub.video} target="_blank" rel="noopener noreferrer" class="text-xs text-[var(--color-text-secondary)] hover:text-[var(--color-accent)]">Video</a>
+                )}
+              </div>
+            </div>
+          </div>
+        </article>
+      );
+    })}
+  </div>
+</section>

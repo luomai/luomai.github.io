@@ -1,0 +1,189 @@
+members:
+  - name: Xuan Sun
+    role: Research Associate
+    alumni: false
+    group: postdocs
+    url: https://scholar.google.com/citations?user=KbEYCoUAAAAJ&hl=en
+    image: /images/team/photos/xuan-sun.webp
+  - name: Le Xu
+    role: Research Fellow
+    alumni: false
+    group: postdocs
+    url: https://lexu.space/
+    image: /images/team/photos/le-xu.webp
+  - name: Haocheng Xiao
+    role: Research Associate
+    alumni: false
+    group: postdocs
+    url: https://fxpigaao.github.io/#/
+    image: /images/team/photos/haocheng-xiao.webp
+  - name: Cheng Deng
+    role: Research Fellow
+    alumni: false
+    group: postdocs
+    url: https://www.cdeng.net/
+    image: /images/team/photos/cheng-deng.webp
+  - name: Liang Cheng
+    role: Postdoctoral Researcher
+    alumni: false
+    group: postdocs
+    url: https://openreview.net/profile?id=~Liang_Cheng3
+    image: /images/team/photos/liang-cheng.webp
+  - name: Congjie He
+    role: PhD Student
+    alumni: false
+    group: phd_students
+    url: https://www.linkedin.com/in/congjiehe/
+    image: /images/team/photos/congjie-he.webp
+  - name: Yeqi Huang
+    role: PhD Student
+    alumni: false
+    group: phd_students
+    url: https://yeqi-huang.com/
+    image: /images/team/photos/yeqi-huang.webp
+  - name: Man-Kit Sit
+    role: PhD Student
+    alumni: false
+    group: phd_students
+    url: https://www.linkedin.com/in/man-kit-sit-163972126/
+    image: /images/team/photos/man-kit-sit.webp
+  - name: Matej Sandor
+    role: PhD Student
+    alumni: false
+    group: phd_students
+    url: https://sk.linkedin.com/in/matej-sandor-4182161a9
+    image: /images/team/photos/matej-sandor.webp
+  - name: Yi-Chieh Wang
+    role: PhD Student
+    alumni: false
+    group: phd_students
+    url: https://tw.linkedin.com/in/yichieh-wang-a3b60817b
+    image: /images/team/placeholders/yi-chieh-wang.svg
+  - name: Zhan Lu
+    role: PhD Student
+    alumni: false
+    group: phd_students
+    url: https://uk.linkedin.com/in/zhan-lu-8b358a26a
+    image: /images/team/placeholders/zhan-lu.svg
+  - name: Yinsicheng Jiang
+    role: PhD Student
+    alumni: false
+    group: phd_students
+    url: https://secretsettler.github.io/yinsicheng-jiang/
+    image: /images/team/photos/yinsicheng-jiang.webp
+  - name: Tairan Xu
+    role: PhD Student
+    alumni: false
+    group: phd_students
+    url: https://uk.linkedin.com/in/tairanxu
+    image: /images/team/placeholders/tairan-xu.svg
+  - name: Yangshen Deng
+    role: PhD Student
+    alumni: false
+    group: phd_students
+    url: https://dengyangshen.netlify.app/
+    image: /images/team/photos/yangshen-deng.webp
+  - name: Dayou Du
+    role: PhD Student (Primary supervisor Jianyi Cheng)
+    alumni: false
+    group: phd_students
+    url: https://uk.linkedin.com/in/dayou-du-023b19301
+    image: /images/team/photos/dayou-du.webp
+  - name: Maria Durackova
+    role: PhD Student (Primary supervisor Boris Grot)
+    alumni: false
+    group: phd_students
+    url: https://sk.linkedin.com/in/maria-durackova-34a4631b6
+    image: /images/team/photos/maria-durackova.webp
+  - name: Karen Zheng
+    role: PhD Student (Primary supervisor Jingjie Li)
+    alumni: false
+    group: phd_students
+    url: https://www.linkedin.com/in/karen-zheng-2b2267247/
+    image: /images/team/photos/karen-zheng.webp
+  - name: Yanwei Ye
+    role: PhD Student (Primary supervisor Jackson Woodruff)
+    alumni: false
+    group: phd_students
+    url: https://uk.linkedin.com/in/yanwei-ye
+    image: /images/team/placeholders/yanwei-ye.svg
+  - name: Yao Fu
+    role: PhD alumnus; now NVIDIA AI Horizon
+    alumni: true
+    group: alumni_collaborators
+    url: https://future-xy.github.io/
+    image: /images/team/photos/yao-fu.webp
+  - name: Alec Diallo
+    role: Postdoc alumnus; now Postdoc, Edinburgh
+    alumni: true
+    group: alumni_collaborators
+    url: https://alec-diallo.github.io/
+    image: /images/team/photos/alec-diallo.webp
+  - name: Leyang Xue
+    role: PhD alumnus; now Postdoc, Edinburgh
+    alumni: true
+    group: alumni_collaborators
+    url: https://drunkcoding.github.io/
+    image: /images/team/photos/leyang-xue.webp
+  - name: Zeyuan Tan
+    role: MScR alumnus; then Kumo AI; now Camel AI
+    alumni: true
+    group: alumni_collaborators
+    url: https://github.com/quiver-team/torch-quiver
+    image: /images/team/photos/zeyuan-tan.webp
+  - name: Jie Ren
+    role: Visitor alumnus; now KAUST PhD
+    alumni: true
+    group: alumni_collaborators
+    url: https://jieren98.github.io/
+    image: /images/team/photos/jie-ren.webp
+  - name: Jiawei Liu
+    role: Visitor alumnus; now OpenAI
+    alumni: true
+    group: alumni_collaborators
+    url: https://jw-liu.xyz/
+    image: /images/team/photos/jiawei-liu.webp
+  - name: Xiulong Yuan
+    role: Visitor alumnus; now Alibaba QWen
+    alumni: true
+    group: alumni_collaborators
+    url: https://github.com/eedalong
+    image: /images/team/photos/xiulong-yuan.webp
+  - name: Zihan Ding
+    role: Visitor alumnus; now ByteDance Seed
+    alumni: true
+    group: alumni_collaborators
+    url: https://quantumiracle.github.io/webpage/
+    image: /images/team/photos/zihan-ding.webp
+  - name: Andrei-Octavian Brabete
+    role: Visitor alumnus; now Millennium
+    alumni: true
+    group: alumni_collaborators
+    url: https://www.imperial.ac.uk/computing/prospective-students/distinguished-projects/ug-prizes/
+    image: /images/team/photos/andrei-octavian-brabete.webp
+  - name: Chijun Sima
+    role: Collaborator
+    alumni: false
+    group: alumni_collaborators
+    url: https://www.chijunsima.com/
+    image: /images/team/photos/chijun-sima.webp
+    hidden: true
+  - name: Guanqi Zhan
+    role: Alumnus
+    alumni: true
+    group: alumni_collaborators
+    image: /images/team/photos/guanqi-zhan.webp
+    hidden: true
+  - name: Ioan Budea
+    role: MEng Student
+    alumni: true
+    group: alumni_collaborators
+    url: https://www.imperial.ac.uk/computing/prospective-students/distinguished-projects/ug-prizes/
+    image: /images/team/photos/ioan-budea.webp
+    hidden: true
+  - name: Marcel Wagenlander
+    role: Alumnus
+    alumni: true
+    group: alumni_collaborators
+    image: /images/team/photos/marcel-wagenlander.webp
+    hidden: true
