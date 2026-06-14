@@ -23,6 +23,6 @@
     "yaml": "^2.8.2"
   },
   "devDependencies": {
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.6"
   }
 }
