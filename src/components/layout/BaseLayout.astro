@@ -17,6 +17,15 @@ const config = getConfig();
 const { title, description } = Astro.props;
 const pageTitle = title ? `${title} — ${config.site.title}` : config.site.title;
 const pageDescription = description || config.site.description;
+const siteUrl = config.site.url.replace(/\/$/, '');
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
+const profileImagePath = config.profile.avatar || '/images/avatar.jpg';
+const profileImageUrl = profileImagePath.startsWith('http')
+  ? profileImagePath
+  : `${siteUrl}${profileImagePath.startsWith('/') ? '' : '/'}${profileImagePath}`;
+const sameAs = Object.entries(config.social || {})
+  .filter(([key, url]) => key !== 'email' && typeof url === 'string' && url.length > 0)
+  .map(([, url]) => url);
 const gaId = config.analytics?.google_analytics?.trim();
 const gtmId = config.analytics?.google_tag_manager?.trim();
 ---
@@ -28,11 +37,23 @@ const gtmId = config.analytics?.google_tag_manager?.trim();
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content={pageDescription} />
   <meta name="author" content={config.profile.name} />
+  <link rel="canonical" href={canonicalUrl} />
+  <link rel="image_src" href={profileImageUrl} />
   <meta property="og:title" content={pageTitle} />
   <meta property="og:description" content={pageDescription} />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content={Astro.url.href} />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content={canonicalUrl} />
+  <meta property="og:site_name" content={config.site.title} />
+  <meta property="og:image" content={profileImageUrl} />
+  <meta property="og:image:alt" content={`${config.profile.name} profile photo`} />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="982" />
+  <meta property="og:image:height" content="1054" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={pageTitle} />
+  <meta name="twitter:description" content={pageDescription} />
+  <meta name="twitter:image" content={profileImageUrl} />
+  <meta name="twitter:image:alt" content={`${config.profile.name} profile photo`} />
   <link rel="sitemap" href="/sitemap-index.xml" />
   <link rel="alternate" type="application/rss+xml" title={config.site.title} href="/rss.xml" />
   <title>{pageTitle}</title>
@@ -45,8 +66,11 @@ const gtmId = config.analytics?.google_tag_manager?.trim();
     "name": config.profile.name,
     "jobTitle": config.profile.position,
     "affiliation": { "@type": "Organization", "name": config.profile.university },
-    "url": config.site.url,
+    "url": canonicalUrl,
+    "mainEntityOfPage": canonicalUrl,
+    "image": profileImageUrl,
     "email": config.profile.email,
+    "sameAs": sameAs,
   })} />
 
   <!-- Fonts -->
