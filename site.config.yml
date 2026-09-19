@@ -1,13 +1,13 @@
 # Luo Mai — Lumina prototype site configuration
 site:
   title: Luo Mai
-  description: Associate Professor (Reader) in Large-Scale Machine Learning Systems
+  description: Associate Professor in Large-Scale Machine Learning Systems
     at the University of Edinburgh
   url: https://luomai.github.io
   language: en
 profile:
   name: Luo Mai
-  position: Associate Professor (Reader)
+  position: Associate Professor
   affiliation: Large-Scale Machine Learning Systems Group
   university: University of Edinburgh
   email: luo.mai@ed.ac.uk

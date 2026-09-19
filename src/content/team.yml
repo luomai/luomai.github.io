@@ -83,6 +83,16 @@ members:
     group: phd_students
     url: https://dengyangshen.netlify.app/
     image: /images/team/photos/yangshen-deng.webp
+  - name: Woon Yee Ng
+    role: PhD Student
+    alumni: false
+    group: phd_students
+    url: https://woonyee.org/about-me/
+  - name: Jiaqi Ruan
+    role: PhD Student
+    alumni: false
+    group: phd_students
+    url: https://scholar.google.com/citations?user=PNERwX8AAAAJ&hl=zh-CN
   - name: Dayou Du
     role: PhD Student (Primary supervisor Jianyi Cheng)
     alumni: false
@@ -108,7 +118,7 @@ members:
     url: https://uk.linkedin.com/in/yanwei-ye
     image: /images/team/placeholders/yanwei-ye.svg
   - name: Yao Fu
-    role: PhD alumnus; now NVIDIA AI Horizon
+    role: PhD alumnus; now NVIDIA
     alumni: true
     group: alumni_collaborators
     url: https://future-xy.github.io/
@@ -120,7 +130,7 @@ members:
     url: https://alec-diallo.github.io/
     image: /images/team/photos/alec-diallo.webp
   - name: Leyang Xue
-    role: PhD alumnus; now Postdoc, Edinburgh
+    role: PhD alumnus; now Tencent AI Infra
     alumni: true
     group: alumni_collaborators
     url: https://drunkcoding.github.io/

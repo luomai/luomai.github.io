@@ -1,7 +1,7 @@
 ---
-title: "Promoted to Reader at Edinburgh"
+title: "Promoted to Associate Professor at Edinburgh"
 date: 2025-03-25
 pinned: false
 ---
 
-Promotion to Reader (Associate Professor) starts in August 2025.
+Promotion to Associate Professor starts in August 2025.
